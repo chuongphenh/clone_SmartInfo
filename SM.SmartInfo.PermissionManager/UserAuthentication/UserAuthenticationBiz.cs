@@ -255,7 +255,7 @@ namespace SM.SmartInfo.PermissionManager.UserAuthentication
 
             // Fixed BussinesCode
             List<int> lsRoleID = lstRole.Where(en => en.RoleID.HasValue).Select(en => en.RoleID.Value).ToList();
-            List<string> lsFixedPermissionCode = daoRole.GetFixedPermissionCode(lsRoleID);
+            //List<string> lsFixedPermissionCode = daoRole.GetFixedPermissionCode(lsRoleID);
 
             List<SystemSupporting> lstSup = new List<SystemSupporting>();
             SystemSupporting sup = null;
@@ -281,7 +281,7 @@ namespace SM.SmartInfo.PermissionManager.UserAuthentication
             profile.ListDirectManagingOrganizationID = lstOwningOrganizationID;
             profile.OrganizationID = organizationID;
             profile.Organization = org;
-            profile.ListFixedPermissionCode = lsFixedPermissionCode;
+            //profile.ListFixedPermissionCode = lsFixedPermissionCode;
             profile.ClientNetworkType = clientNetworkType;
             profile.SystemSupporting = sup;
 

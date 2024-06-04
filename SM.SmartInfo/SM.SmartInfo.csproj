@@ -251,6 +251,14 @@
     <Content Include="UI\Administrations\Notifications\Default.aspx" />
     <Content Include="UI\Administrations\Notifications\Display.aspx" />
     <Content Include="UI\Administrations\Notifications\Edit.aspx" />
+    <Content Include="UI\Administrations\Plans\AddNew.aspx" />
+    <Content Include="UI\Administrations\Plans\Default.aspx" />
+    <Content Include="UI\Administrations\Plans\Display.aspx" />
+    <Content Include="UI\Administrations\Plans\Edit.aspx" />
+    <Content Include="UI\Administrations\Targets\AddNew.aspx" />
+    <Content Include="UI\Administrations\Targets\Default.aspx" />
+    <Content Include="UI\Administrations\Targets\Display.aspx" />
+    <Content Include="UI\Administrations\Targets\Edit.aspx" />
     <Content Include="UI\CommonList\Attachment\DocumentViewer.aspx" />
     <Content Include="UI\CommonList\Attachment\Download.aspx" />
     <Content Include="UI\Configurations\EmulationAndRewardsSetting\Default.aspx" />
@@ -664,6 +672,34 @@
     <Compile Include="UI\Administrations\Organizations\OrgTreeViewUC.ascx.designer.cs">
       <DependentUpon>OrgTreeViewUC.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UI\Administrations\Plans\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Plans\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Plans\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Plans\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Plans\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Plans\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Plans\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Plans\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Administrations\Province\AddNew.aspx.cs">
       <DependentUpon>AddNew.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -811,6 +847,34 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UI\Administrations\Street\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Targets\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Targets\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Targets\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Targets\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Targets\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Targets\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Targets\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Targets\Edit.aspx.designer.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Administrations\Town\AddNew.aspx.cs">

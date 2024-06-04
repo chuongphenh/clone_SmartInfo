@@ -77,12 +77,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{CCE5A024-118
 		Lib\Thinktecture.IdentityModel.dll = Lib\Thinktecture.IdentityModel.dll
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MobileApp", "MobileApp", "{8E8F7654-B4CB-4F76-9C42-CC3BBC177A6B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.MobileApp.Api", "SM.SmartInfo.MobileApp.Api\SM.SmartInfo.MobileApp.Api.csproj", "{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.MobileApp.Business", "SM.SmartInfo.MobileApp.Business\SM.SmartInfo.MobileApp.Business.csproj", "{117F6B98-1EE8-42A6-9D56-BF857F660325}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.Service.Reporting", "SM.SmartInfo.Service.Reporting\SM.SmartInfo.Service.Reporting.csproj", "{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.Service.FireBase", "SM.SmartInfo.Service.FireBase\SM.SmartInfo.Service.FireBase.csproj", "{613FEDB4-BA81-4037-9144-B8DBBE268A16}"
@@ -145,14 +139,6 @@ Global
 		{A85DB3ED-EC13-48FB-943D-B6DF26993CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A85DB3ED-EC13-48FB-943D-B6DF26993CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A85DB3ED-EC13-48FB-943D-B6DF26993CB3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{117F6B98-1EE8-42A6-9D56-BF857F660325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{117F6B98-1EE8-42A6-9D56-BF857F660325}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{117F6B98-1EE8-42A6-9D56-BF857F660325}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{117F6B98-1EE8-42A6-9D56-BF857F660325}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -164,10 +150,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1} = {8E8F7654-B4CB-4F76-9C42-CC3BBC177A6B}
-		{117F6B98-1EE8-42A6-9D56-BF857F660325} = {8E8F7654-B4CB-4F76-9C42-CC3BBC177A6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E05D2AD6-5391-4AF1-A3F3-B1DD9ADCDA9E}

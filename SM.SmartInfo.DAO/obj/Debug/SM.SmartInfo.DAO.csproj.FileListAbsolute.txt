@@ -44,7 +44,6 @@ F:\Clone_SmartInfo\SM.SmartInfo.DAO\bin\Debug\SM.SmartInfo.CacheManager.pdb
 F:\Clone_SmartInfo\SM.SmartInfo.DAO\bin\Debug\SM.SmartInfo.DAO.Common.pdb
 F:\Clone_SmartInfo\SM.SmartInfo.DAO\bin\Debug\SM.SmartInfo.SharedComponent.pdb
 F:\Clone_SmartInfo\SM.SmartInfo.DAO\bin\Debug\SM.SmartInfo.Utils.pdb
-F:\Clone_SmartInfo\SM.SmartInfo.DAO\bin\Debug\Newtonsoft.Json.xml
 F:\Clone_SmartInfo\SM.SmartInfo.DAO\bin\Debug\EPPlus.xml
 F:\Clone_SmartInfo\SM.SmartInfo.DAO\bin\Debug\DocumentFormat.OpenXml.xml
 F:\Clone_SmartInfo\SM.SmartInfo.DAO\obj\Debug\SM.SmartInfo.DAO.csproj.AssemblyReference.cache

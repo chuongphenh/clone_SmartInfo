@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ClientAPI.aspx.cs" Inherits="SM.CollateralManagement.ClientAPI" %>

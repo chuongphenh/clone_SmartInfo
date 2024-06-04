@@ -61,3 +61,85 @@ System.InvalidCastException: Unable to cast object of type 'System.Int32' to typ
 2024-06-03 09:45:12,060 [7] DEBUG SmartInfo - End Cập nhật Danh bạ: ---- Xóa noti nếu update ngày sinh
 2024-06-03 09:55:22,079 [10] ERROR SmartInfo - System.Collections.Generic.List`1[SM.SmartInfo.SharedComponent.Entities.Role]
 2024-06-04 13:33:44,624 [11] ERROR SmartInfo - System.Collections.Generic.List`1[SM.SmartInfo.SharedComponent.Entities.Role]
+2024-06-04 14:20:08,424 [6] DEBUG SmartInfo - Khong tim thay nguoi dung trong he thong
+2024-06-04 15:14:31,250 [9] ERROR SmartInfo - System.Collections.Generic.List`1[SM.SmartInfo.SharedComponent.Entities.Role]
+2024-06-04 15:14:31,333 [9] DEBUG SmartInfo - MainController.Execute(Commons, GetCommon)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'agency_PressAgencyHRRelatives'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteSelect[T](SqlCommand command)
+   at SM.SmartInfo.DAO.Notification.NotificationDao.GetAllListNotificationForDefault(Int32 userId) in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Notification\NotificationDao.cs:line 1323
+   at SM.SmartInfo.BIZ.Notification.NotificationBiz.GetAllNotification(Int32 userId) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\Notification\NotificationBiz.cs:line 84
+   at SM.SmartInfo.BIZ.MainController.ExecuteCommon(CommonParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 172
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 43
+ClientConnectionId:4d84b45d-f371-40f4-a30e-e8ac7b5b7866
+Error Number:208,State:1,Class:16
+2024-06-04 15:17:06,527 [9] ERROR SmartInfo - System.Collections.Generic.List`1[SM.SmartInfo.SharedComponent.Entities.Role]
+2024-06-04 15:17:06,623 [9] DEBUG SmartInfo - MainController.Execute(Commons, GetCommon)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'agency_PressAgencyHRRelatives'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteSelect[T](SqlCommand command)
+   at SM.SmartInfo.DAO.Notification.NotificationDao.GetAllListNotificationForDefault(Int32 userId) in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Notification\NotificationDao.cs:line 1323
+   at SM.SmartInfo.BIZ.Notification.NotificationBiz.GetAllNotification(Int32 userId) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\Notification\NotificationBiz.cs:line 84
+   at SM.SmartInfo.BIZ.MainController.ExecuteCommon(CommonParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 172
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 43
+ClientConnectionId:a0678083-afd7-425d-a646-d9156c98ab82
+Error Number:208,State:1,Class:16
+2024-06-04 15:19:25,506 [8] ERROR SmartInfo - System.Collections.Generic.List`1[SM.SmartInfo.SharedComponent.Entities.Role]
+2024-06-04 15:19:25,593 [8] DEBUG SmartInfo - MainController.Execute(Commons, GetCommon)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'agency_PressAgencyHRRelatives'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteSelect[T](SqlCommand command)
+   at SM.SmartInfo.DAO.Notification.NotificationDao.GetAllListNotificationForDefault(Int32 userId) in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Notification\NotificationDao.cs:line 1323
+   at SM.SmartInfo.BIZ.Notification.NotificationBiz.GetAllNotification(Int32 userId) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\Notification\NotificationBiz.cs:line 84
+   at SM.SmartInfo.BIZ.MainController.ExecuteCommon(CommonParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 172
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 43
+ClientConnectionId:3dd56318-2196-4168-bf7e-7eeb24dc18cd
+Error Number:208,State:1,Class:16
+2024-06-04 16:03:57,901 [7] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplayOrganization)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.OrganizationConfigBiz.LoadDataDisplay(OrganizationParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\OrganizationConfigBiz.cs:line 173
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(OrganizationParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 761
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 20
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-04 16:14:18,285 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplayOrganization)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.OrganizationConfigBiz.LoadDataDisplay(OrganizationParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\OrganizationConfigBiz.cs:line 173
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(OrganizationParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 761
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 20
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40

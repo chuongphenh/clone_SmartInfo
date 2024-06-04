@@ -18,7 +18,7 @@ namespace SM.SmartInfo.UI.Shared.Common
 
             if (!IsPostBack)
             {
-                LoadData();
+                //LoadData();
             }
         }
 

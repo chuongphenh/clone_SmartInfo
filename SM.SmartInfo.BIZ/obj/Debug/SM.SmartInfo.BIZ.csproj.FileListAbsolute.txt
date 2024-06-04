@@ -42,10 +42,8 @@ F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.DAO.Common.dll
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.DAO.dll
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.PermissionManager.dll
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.Service.ECM.dll
-F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.Service.Notification.dll
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.SharedComponent.dll
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.Utils.dll
-F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SMCSM.dll
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SMCS.dll
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\EPPlus.dll
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SMCOO.dll
@@ -57,11 +55,9 @@ F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.DAO.pdb
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.PermissionManager.pdb
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.Service.ECM.pdb
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.Service.ECM.dll.config
-F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.Service.Notification.pdb
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.SharedComponent.pdb
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\SM.SmartInfo.Utils.pdb
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\DocumentFormat.OpenXml.xml
-F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\Newtonsoft.Json.xml
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\bin\Debug\EPPlus.xml
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\obj\Debug\SM.SmartInfo.BIZ.csproj.AssemblyReference.cache
 F:\Clone_SmartInfo\SM.SmartInfo.BIZ\obj\Debug\SM.SmartInfo.BIZ.csproj.CoreCompileInputs.cache
