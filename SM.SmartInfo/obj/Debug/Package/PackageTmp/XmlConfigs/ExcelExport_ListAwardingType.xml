@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<save_as_file_name>Danh sách hình thức khen thưởng</save_as_file_name>
+	<templates>
+		<template file_name="ExcelExport_ListAwardingType.xlsx" paper_size="A4" is_default="true" />
+	</templates>
+	<render_infos>
+		<render_info>
+			<source_dynamic>
+				<![CDATA[
+					SELECT 
+						at.Id as Id, 
+						at.Name as Name,
+						FORMAT(at.CreatedDTG, 'dd/MM/yyyy') as CreatedDTG, 
+						e.Username as Creator, 
+						FORMAT(at.UpdateDTG, 'dd/MM/yyyy') as UpdateDTG, 
+						CASE at.isDeleted 
+						WHEN 0 THEN N'Còn hiệu lực' 
+						ELSE N'Đã xóa' END AS Status 
+					FROM [dbo].[AwardingType] at join [dbo].[adm_Employee] e on at.CreateUserId = e.EmployeeID
+				]]>
+			</source_dynamic>
+			<virtual_table>
+				<template_row_name>Id</template_row_name>
+			</virtual_table>
+		</render_info>
+	</render_infos>
+</report>

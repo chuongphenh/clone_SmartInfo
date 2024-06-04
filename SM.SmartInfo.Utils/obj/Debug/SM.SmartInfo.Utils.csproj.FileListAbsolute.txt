@@ -1,0 +1,16 @@
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\SM.SmartInfo.Utils.dll
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\SM.SmartInfo.Utils.pdb
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\DocumentFormat.OpenXml.dll
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\EPPlus.dll
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\EPPlus.Interfaces.dll
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\EPPlus.System.Drawing.dll
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\SM.SmartInfo.SharedComponent.dll
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\SMCS.dll
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\SM.SmartInfo.SharedComponent.pdb
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\DocumentFormat.OpenXml.xml
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\bin\Debug\EPPlus.xml
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.csproj.AssemblyReference.cache
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.csproj.CoreCompileInputs.cache
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.csproj.CopyComplete
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.dll
+F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.pdb

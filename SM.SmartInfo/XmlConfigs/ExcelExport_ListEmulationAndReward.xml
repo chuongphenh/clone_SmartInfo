@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <save_as_file_name>Danh sách hồ sơ khen thưởng</save_as_file_name>
+  <templates>
+    <template file_name="ExcelExport_ListEmulationAndReward.xlsx" paper_size="A4" is_default="true" />
+  </templates>
+  <render_infos>
+    <render_info>
+      <source_dynamic>
+        <![CDATA[
+            select ers.EmulationAndRewardSubjectID as EmulationAndRewardSubjectID, 
+			    er.Event as AwardingPeriod, 
+                ers.Code as Code, 
+                ers.Name as Name, 
+                ers.LatestTitle as LatestTitle, 
+                ers.LatestEmulationAndRewardUnit as LatestEmulationAndRewardUnit,
+                ers.Unit as Unit,
+                CASE ers.Type
+                WHEN 1 THEN N'Cá nhân'
+                WHEN 2 THEN N'Đơn vị'
+                END AS Type,
+				erh.AwardingType,
+                ers.Email as Email,
+                ers.Mobile as Mobile,
+                CASE ers.Deleted
+                WHEN 0 THEN N'Lưu'
+                WHEN 1 THEN N'Đã xóa'
+                END AS Deleted,
+                ers.Version as Version,
+                ers.CreatedBy as CreatedBy,
+                ers.CreatedDTG as CreatedDTG,
+                ers.UpdatedBy as UpdatedBy,
+                ers.UpdatedDTG as UpdatedDTG
+            from [dbo].[er_EmulationAndRewardHistory] erh join [dbo].[er_EmulationAndReward] er on erh.EmulationAndRewardID = er.EmulationAndRewardID
+            join [dbo].[er_EmulationAndRewardSubject] ers on erh.EmulationAndRewardSubjectID = ers.EmulationAndRewardSubjectID
+				]]>
+      </source_dynamic>
+      <virtual_table>
+        <template_row_name>EmulationAndRewardSubjectID</template_row_name>
+      </virtual_table>
+    </render_info>
+  </render_infos>
+</report>

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{620A0576-DC4B-4EA0-9AC3-76A77F78AD46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SM.SmartInfo.BIZ</RootNamespace>
+    <AssemblyName>SM.SmartInfo.BIZ</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.8.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SM.SmartInfo\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCB">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCD">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCD.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCO">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\Service\SMCO.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCOOU">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCOOU.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCR">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCR.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCU">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCU.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCW">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCW.dll</HintPath>
+    </Reference>
+    <Reference Include="SMK">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMK.dll</HintPath>
+    </Reference>
+    <Reference Include="SMSB">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMSB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMSN">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMSN.dll</HintPath>
+    </Reference>
+    <Reference Include="SMSR">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMSR.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetGear2017.Core">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SpreadsheetGear2017.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetGear2017.Drawing">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SpreadsheetGear2017.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration\AnniversaryBiz.cs" />
+    <Compile Include="Administration\CountryBiz.cs" />
+    <Compile Include="Administration\DistrictBiz.cs" />
+    <Compile Include="Administration\EmailTemplateBiz.cs" />
+    <Compile Include="Administration\NotificationBiz.cs" />
+    <Compile Include="Administration\OrganizationConfigBiz.cs" />
+    <Compile Include="Administration\ProvinceBiz.cs" />
+    <Compile Include="Administration\RegionBiz.cs" />
+    <Compile Include="Administration\RightBiz.cs" />
+    <Compile Include="Administration\RoleConfigBiz.cs" />
+    <Compile Include="Administration\SegmentBiz.cs" />
+    <Compile Include="Administration\SettingBiz.cs" />
+    <Compile Include="Administration\StreetBiz.cs" />
+    <Compile Include="Administration\SystemParameterCRUDBaseBiz.cs" />
+    <Compile Include="Administration\TownBiz.cs" />
+    <Compile Include="Administration\UserConfigBiz.cs" />
+    <Compile Include="Administration\ZoneBiz.cs" />
+    <Compile Include="BizBase.cs" />
+    <Compile Include="CatalogNews\CatalogNewsBiz.cs" />
+    <Compile Include="Comment\CommentBiz.cs" />
+    <Compile Include="CommonList\ECMAttachmentFileBiz.cs" />
+    <Compile Include="CommonList\EmailBiz.cs" />
+    <Compile Include="CommonList\ExportFileHelperBiz.cs" />
+    <Compile Include="Commons\DataTrackingBiz.cs" />
+    <Compile Include="Commons\ExportFilesBiz.cs" />
+    <Compile Include="Commons\OrganizationBiz.cs" />
+    <Compile Include="Commons\UserBiz.cs" />
+    <Compile Include="EmulationAndRewards\EmulationAndRewardBiz.cs" />
+    <Compile Include="ImageLibrary\ImageLibraryBiz.cs" />
+    <Compile Include="MainController.cs" />
+    <Compile Include="MainControllerAdministration.cs" />
+    <Compile Include="MainControllerComment.cs" />
+    <Compile Include="MainControllerImageLibrary.cs" />
+    <Compile Include="MainControllerNotification.cs" />
+    <Compile Include="MainControllerEmulationAndReward.cs" />
+    <Compile Include="MainControllerPressAgency.cs" />
+    <Compile Include="MainControllerNews.cs" />
+    <Compile Include="MainControllerCommonList.cs" />
+    <Compile Include="NegativeNew\NegativeNewBiz.cs" />
+    <Compile Include="News\NewsBiz.cs" />
+    <Compile Include="Notification\NotificationBiz.cs" />
+    <Compile Include="PressAgency\PressAgencyBiz.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SM.SmartInfo.CacheManager\SM.SmartInfo.CacheManager.csproj">
+      <Project>{902f76ef-e820-4d29-b0ce-02bf1ec03cd4}</Project>
+      <Name>SM.SmartInfo.CacheManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.DAO.Common\SM.SmartInfo.DAO.Common.csproj">
+      <Project>{83951aa6-964e-4b10-ae95-c07577452be3}</Project>
+      <Name>SM.SmartInfo.DAO.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.DAO\SM.SmartInfo.DAO.csproj">
+      <Project>{24afba8d-1568-45de-8ffe-ac883b967884}</Project>
+      <Name>SM.SmartInfo.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.PermissionManager\SM.SmartInfo.PermissionManager.csproj">
+      <Project>{6a0cf689-88c9-4ed2-a91a-53958642af16}</Project>
+      <Name>SM.SmartInfo.PermissionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.Service.ECM\SM.SmartInfo.Service.ECM.csproj">
+      <Project>{a85db3ed-ec13-48fb-943d-b6df26993cb3}</Project>
+      <Name>SM.SmartInfo.Service.ECM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.Service.Notification\SM.SmartInfo.Service.Notification.csproj">
+      <Project>{98721faf-c70e-4465-a0a2-3fadcbc4f78f}</Project>
+      <Name>SM.SmartInfo.Service.Notification</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.SharedComponent\SM.SmartInfo.SharedComponent.csproj">
+      <Project>{4f9721d1-ae44-4068-a1ba-3f89540bb01a}</Project>
+      <Name>SM.SmartInfo.SharedComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.Utils\SM.SmartInfo.Utils.csproj">
+      <Project>{5e1ea896-bdb9-4118-8ed6-295eddc3cd64}</Project>
+      <Name>SM.SmartInfo.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

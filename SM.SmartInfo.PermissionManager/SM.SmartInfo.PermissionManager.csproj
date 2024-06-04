@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A0CF689-88C9-4ED2-A91A-53958642AF16}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SM.SmartInfo.PermissionManager</RootNamespace>
+    <AssemblyName>SM.SmartInfo.PermissionManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SMCB">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCD">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCD.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCS">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCU">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCU.dll</HintPath>
+    </Reference>
+    <Reference Include="SMK">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMK.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasePermission.cs" />
+    <Compile Include="Dao\EmployeeDao.cs" />
+    <Compile Include="Dao\EmployeeLogDao.cs" />
+    <Compile Include="Dao\FeatureDao.cs" />
+    <Compile Include="Dao\FixBusinessPermissionDao.cs" />
+    <Compile Include="Dao\OrganizationDAO.cs" />
+    <Compile Include="Dao\RightDao.cs" />
+    <Compile Include="Dao\RoleDao.cs" />
+    <Compile Include="Dao\RuleEngineDao.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="PermissionController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shared\FixedBusinessPermission.cs" />
+    <Compile Include="Shared\FunctionCode.cs" />
+    <Compile Include="Shared\IPermission.cs" />
+    <Compile Include="Shared\Messages.cs" />
+    <Compile Include="Shared\PermissionParam.cs" />
+    <Compile Include="Shared\RuleEngineInfo.cs" />
+    <Compile Include="Shared\ViewDataPermissionInfo.cs" />
+    <Compile Include="UserAuthentication\IFormsAuthenticationService.cs" />
+    <Compile Include="UserAuthentication\IMembershipService.cs" />
+    <Compile Include="UserAuthentication\MembershipHelper.cs" />
+    <Compile Include="UserAuthentication\UserAuthenticationBiz.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SM.SmartInfo.CacheManager\SM.SmartInfo.CacheManager.csproj">
+      <Project>{902f76ef-e820-4d29-b0ce-02bf1ec03cd4}</Project>
+      <Name>SM.SmartInfo.CacheManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.DAO.Common\SM.SmartInfo.DAO.Common.csproj">
+      <Project>{83951aa6-964e-4b10-ae95-c07577452be3}</Project>
+      <Name>SM.SmartInfo.DAO.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.SharedComponent\SM.SmartInfo.SharedComponent.csproj">
+      <Project>{4f9721d1-ae44-4068-a1ba-3f89540bb01a}</Project>
+      <Name>SM.SmartInfo.SharedComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.Utils\SM.SmartInfo.Utils.csproj">
+      <Project>{5e1ea896-bdb9-4118-8ed6-295eddc3cd64}</Project>
+      <Name>SM.SmartInfo.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

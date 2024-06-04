@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ErrorMessageUC.ascx.cs" Inherits="SM.SmartInfo.UI.UserControls.Common.ErrorMessageUC" %>
+<asp:ValidationSummary ID="valSum" runat="server" />

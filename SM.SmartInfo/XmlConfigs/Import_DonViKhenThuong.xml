@@ -1,0 +1,74 @@
+﻿<ExcelMappingInfo>
+  <HeaderRowIndex>5</HeaderRowIndex>
+  <StartRowIndex>6</StartRowIndex>
+  <EndSignalColIndex>C</EndSignalColIndex>
+  <NumOfEndSignal>1</NumOfEndSignal>
+  <ListLogOnRowErrorColumn>
+    <string>Code</string>
+  </ListLogOnRowErrorColumn>
+  <ListExcelMappingTableInfo>
+    <ExcelMappingTableInfo TableName="er_EmulationAndRewardSubject">
+      <ListExcelCellInfo>
+        <ExcelCellInfo>
+          <ColHeader>Code</ColHeader>
+          <PropertyName>Code</PropertyName>
+          <SqlDbType>NVarChar</SqlDbType>
+          <StringMaxLength>256</StringMaxLength>
+          <IsAllowNull>true</IsAllowNull>
+          <DateTimeFormat></DateTimeFormat>
+          <IsAutoSetProperty>true</IsAutoSetProperty>
+        </ExcelCellInfo>
+
+        <ExcelCellInfo>
+          <ColHeader>Name</ColHeader>
+          <PropertyName>Name</PropertyName>
+          <SqlDbType>NVarChar</SqlDbType>
+          <StringMaxLength>256</StringMaxLength>
+          <IsAllowNull>true</IsAllowNull>
+          <DateTimeFormat></DateTimeFormat>
+          <IsAutoSetProperty>true</IsAutoSetProperty>
+        </ExcelCellInfo>
+
+        <ExcelCellInfo>
+          <ColHeader>LatestTitle</ColHeader>
+          <PropertyName>LatestTitle</PropertyName>
+          <SqlDbType>NVarChar</SqlDbType>
+          <StringMaxLength>256</StringMaxLength>
+          <IsAllowNull>true</IsAllowNull>
+          <DateTimeFormat></DateTimeFormat>
+          <IsAutoSetProperty>true</IsAutoSetProperty>
+        </ExcelCellInfo>
+
+        <ExcelCellInfo>
+          <ColHeader>Unit</ColHeader>
+          <PropertyName>Unit</PropertyName>
+          <SqlDbType>NVarChar</SqlDbType>
+          <StringMaxLength>256</StringMaxLength>
+          <IsAllowNull>true</IsAllowNull>
+          <DateTimeFormat></DateTimeFormat>
+          <IsAutoSetProperty>true</IsAutoSetProperty>
+        </ExcelCellInfo>
+
+        <ExcelCellInfo>
+          <ColHeader>Email</ColHeader>
+          <PropertyName>Email</PropertyName>
+          <SqlDbType>NVarChar</SqlDbType>
+          <StringMaxLength>256</StringMaxLength>
+          <IsAllowNull>true</IsAllowNull>
+          <DateTimeFormat></DateTimeFormat>
+          <IsAutoSetProperty>true</IsAutoSetProperty>
+        </ExcelCellInfo>
+
+        <ExcelCellInfo>
+          <ColHeader>Mobile</ColHeader>
+          <PropertyName>Mobile</PropertyName>
+          <SqlDbType>NVarChar</SqlDbType>
+          <StringMaxLength>256</StringMaxLength>
+          <IsAllowNull>true</IsAllowNull>
+          <DateTimeFormat></DateTimeFormat>
+          <IsAutoSetProperty>true</IsAutoSetProperty>
+        </ExcelCellInfo>
+      </ListExcelCellInfo>
+    </ExcelMappingTableInfo>
+  </ListExcelMappingTableInfo>
+</ExcelMappingInfo>

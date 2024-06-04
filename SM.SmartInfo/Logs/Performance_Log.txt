@@ -1,0 +1,1110 @@
+﻿<LogInfo Name="/UI/SmartInfos/Contacts/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[13:43:02 140]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[13:43:02 186]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByFilterNoPaging" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetListPressAgencyHR_ByFilter" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Time="[13:43:02 226]" Name="DataContext - GetAttachments" Duration="6" />
+                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                              <Inners>
+                                <LogInfo Time="[13:43:02 233]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[13:43:02 237]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                    <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                      <Inners>
+                                        <LogInfo Time="[13:43:02 242]" Name="DataContext - GetListAgencyType" Duration="5" />
+                                        <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                          <Inners>
+                                            <LogInfo Time="[13:43:02 248]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[13:43:02 252]" Name="DataContext - GetListAgencyType" Duration="2" />
+                                                <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByFilter" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Name="DataContext - GetListPressAgencyHR_ByFilter" Duration="0">
+                                                      <Inners>
+                                                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                          <Inners>
+                                                            <LogInfo Time="[20240530 13:43:02 306]" Name="DataContext - GetAttachments" Duration="357">
+                                                              <Inners>
+                                                                <LogInfo Time="[13:43:02 314]" Name="DataContext - GetAttachments" Duration="5" />
+                                                              </Inners>
+                                                            </LogInfo>
+                                                          </Inners>
+                                                        </LogInfo>
+                                                      </Inners>
+                                                    </LogInfo>
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/SmartInfos/Contacts/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[13:49:08 305]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[13:49:08 329]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByFilterNoPaging" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetListPressAgencyHR_ByFilter" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Time="[13:49:08 403]" Name="DataContext - GetAttachments" Duration="7" />
+                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                              <Inners>
+                                <LogInfo Time="[13:49:08 411]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[13:49:08 416]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                    <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                      <Inners>
+                                        <LogInfo Time="[13:49:08 420]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                        <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                          <Inners>
+                                            <LogInfo Time="[13:49:08 424]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[13:49:08 428]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                                <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByFilter" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Name="DataContext - GetListPressAgencyHR_ByFilter" Duration="0">
+                                                      <Inners>
+                                                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                          <Inners>
+                                                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                              <Inners>
+                                                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                  <Inners>
+                                                                    <LogInfo Time="[20240530 13:49:08 502]" Name="DataContext - GetAttachments" Duration="378">
+                                                                      <Inners>
+                                                                        <LogInfo Time="[13:49:08 509]" Name="DataContext - GetAttachments" Duration="8" />
+                                                                      </Inners>
+                                                                    </LogInfo>
+                                                                  </Inners>
+                                                                </LogInfo>
+                                                              </Inners>
+                                                            </LogInfo>
+                                                          </Inners>
+                                                        </LogInfo>
+                                                      </Inners>
+                                                    </LogInfo>
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240603 09:31:19 832]" Name="/" Duration="90" />
+<LogInfo Time="[20240603 09:34:23 887]" Name="/" Duration="65" />
+<LogInfo Time="[20240603 09:34:37 652]" Name="/UI/Shared/Common/Default.aspx" Duration="49" />
+<LogInfo Time="[20240603 09:34:37 733]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" Duration="160" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetFixedPermissionCode" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[20240603 09:35:05 684]" Name="DataContext - InsertEmployeeLog" Duration="176004" />
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Shared/Common/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[09:38:24 103]" Name="Permission: AccessPage" Duration="2" />
+    <LogInfo Name="MainController: Commons - GetCommon" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetAllListNotificationForDefault" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - Get5TinTichCucMoiNhat" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[09:38:24 314]" Name="DataContext - Get4TinTieuCucMoiNhat" Duration="8" />
+                                    <LogInfo Time="[20240603 09:38:24 345]" Name="MainController: News - GetAllNegativeNews" Duration="75">
+                                      <Inners>
+                                        <LogInfo Time="[09:38:24 350]" Name="DataContext - GetAllNegativeNews" Duration="10" />
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240603 09:39:27 105]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" UserName="system" Duration="1" />
+<LogInfo Time="[20240603 09:42:42 414]" Name="/UI/Shared/Common/Login.aspx" Duration="153" />
+<LogInfo Name="/UI/Shared/Common/Login.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetFixedPermissionCode" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[20240603 09:42:46 821]" Name="DataContext - InsertEmployeeLog" Duration="10173" />
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Shared/Common/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[09:42:58 100]" Name="Permission: AccessPage" Duration="2" />
+    <LogInfo Name="MainController: Commons - GetCommon" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetAllListNotificationForDefault" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - Get5TinTichCucMoiNhat" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[09:42:58 288]" Name="DataContext - Get4TinTieuCucMoiNhat" Duration="6" />
+                                    <LogInfo Time="[20240603 09:42:58 315]" Name="MainController: News - GetAllNegativeNews" Duration="73">
+                                      <Inners>
+                                        <LogInfo Time="[09:42:58 320]" Name="DataContext - GetAllNegativeNews" Duration="14" />
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240603 09:43:12 522]" Name="/" Duration="77" />
+<LogInfo Time="[20240603 09:43:12 860]" Name="/UI/Shared/Common/Default.aspx" Duration="44" />
+<LogInfo Time="[20240603 09:43:12 934]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" Duration="137" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetFixedPermissionCode" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[20240603 09:43:29 297]" Name="DataContext - InsertEmployeeLog" Duration="38181" />
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Shared/Common/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[09:44:19 198]" Name="Permission: AccessPage" Duration="2" />
+    <LogInfo Name="MainController: Commons - GetCommon" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetAllListNotificationForDefault" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - Get5TinTichCucMoiNhat" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[09:44:19 462]" Name="DataContext - Get4TinTieuCucMoiNhat" Duration="4" />
+                                    <LogInfo Time="[20240603 09:44:19 487]" Name="MainController: News - GetAllNegativeNews" Duration="116">
+                                      <Inners>
+                                        <LogInfo Time="[09:44:19 492]" Name="DataContext - GetAllNegativeNews" Duration="9" />
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/SmartInfos/Contacts/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[09:44:28 315]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[09:44:28 348]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByFilterNoPaging" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetListPressAgencyHR_ByFilter" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[09:44:28 424]" Name="DataContext - GetAttachments" Duration="7" />
+                                    <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                      <Inners>
+                                        <LogInfo Time="[09:44:28 444]" Name="DataContext - GetListAgencyType" Duration="6" />
+                                        <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                          <Inners>
+                                            <LogInfo Time="[09:44:28 457]" Name="DataContext - GetListAgencyType" Duration="5" />
+                                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[09:44:28 462]" Name="DataContext - GetListAgencyType" Duration="5" />
+                                                <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Time="[09:44:28 468]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                                    <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                      <Inners>
+                                                        <LogInfo Time="[09:44:28 472]" Name="DataContext - GetListAgencyType" Duration="5" />
+                                                        <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                          <Inners>
+                                                            <LogInfo Time="[09:44:28 478]" Name="DataContext - GetListAgencyType" Duration="5" />
+                                                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                              <Inners>
+                                                                <LogInfo Time="[09:44:28 483]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                                                <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR" Duration="0">
+                                                                  <Inners>
+                                                                    <LogInfo Name="DataContext - GetListPressAgencyHR" Duration="0">
+                                                                      <Inners>
+                                                                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                          <Inners>
+                                                                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                              <Inners>
+                                                                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                  <Inners>
+                                                                                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                      <Inners>
+                                                                                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                          <Inners>
+                                                                                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                              <Inners>
+                                                                                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                                  <Inners>
+                                                                                                    <LogInfo Time="[20240603 09:44:28 582]" Name="DataContext - GetAttachments" Duration="942">
+                                                                                                      <Inners>
+                                                                                                        <LogInfo Time="[09:44:28 591]" Name="DataContext - GetAttachments" Duration="9" />
+                                                                                                      </Inners>
+                                                                                                    </LogInfo>
+                                                                                                  </Inners>
+                                                                                                </LogInfo>
+                                                                                              </Inners>
+                                                                                            </LogInfo>
+                                                                                          </Inners>
+                                                                                        </LogInfo>
+                                                                                      </Inners>
+                                                                                    </LogInfo>
+                                                                                  </Inners>
+                                                                                </LogInfo>
+                                                                              </Inners>
+                                                                            </LogInfo>
+                                                                          </Inners>
+                                                                        </LogInfo>
+                                                                      </Inners>
+                                                                    </LogInfo>
+                                                                  </Inners>
+                                                                </LogInfo>
+                                                              </Inners>
+                                                            </LogInfo>
+                                                          </Inners>
+                                                        </LogInfo>
+                                                      </Inners>
+                                                    </LogInfo>
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/PopupPages/PressAgencyHRs/Edit.aspx?ID=RXh3c0ZFZnk1b285QlJtUmRSTCtzUGJOSy9XWDVjeWR4UW9JcE5oMHM5U1JXaVlOTE44QkJyamJUbXB4NUljS01IYld0cFVTNWhzRTFOZ3hNWGVDRFE9PQ==&amp;callback=MainContent_btnReloadAppendix" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="CommentUC.ascx" Duration="0">
+      <Inners>
+        <LogInfo Name="MainController: PressAgency - GetPressAgencyHR_ByID" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetPressAgencyHR_ByID" Duration="0">
+              <Inners>
+                <LogInfo Time="[09:44:47 008]" Name="DataContext - GetAttachments" Duration="7" />
+                <LogInfo Name="MainController: PressAgency - GetListPressAgencyHRHistory_ByPressAgencyHRID" Duration="0">
+                  <Inners>
+                    <LogInfo Time="[09:44:47 021]" Name="DataContext - GetListPressAgencyHRHistory_ByPressAgencyHRID" Duration="5" />
+                    <LogInfo Name="MainController: PressAgency - GetListPressAgencyHRAlert_ByPressAgencyHRID" Duration="0">
+                      <Inners>
+                        <LogInfo Time="[09:44:47 027]" Name="DataContext - GetListPressAgencyHRAlert_ByPressAgencyHRID" Duration="4" />
+                        <LogInfo Name="MainController: PressAgency - GetListPressAgencyHRRelatives_ByPressAgencyHRID" Duration="0">
+                          <Inners>
+                            <LogInfo Time="[09:44:47 033]" Name="DataContext - GetListPressAgencyHRRelatives_ByPressAgencyHRID" Duration="5" />
+                            <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByPressAgencyID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetListPressAgencyHR_ByPressAgencyID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                      <Inners>
+                                        <LogInfo Time="[09:44:47 054]" Name="DataContext - GetAttachments" Duration="7" />
+                                        <LogInfo Name="MainController: PressAgency - LoadDataOtherImage_PressAgencyHR" Duration="0">
+                                          <Inners>
+                                            <LogInfo Time="[09:44:47 070]" Name="DataContext - GetAttachments" Duration="7" />
+                                            <LogInfo Name="MainController: Comment - GetAllCommentByRefIDAndRefType" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[09:44:47 082]" Name="DataContext - GetAllCommentByRefIDAndRefType" Duration="5" />
+                                                <LogInfo Time="[20240603 09:44:47 088]" Name="MainController: Administrations - GetAllActiveRoleExceptQTHT" Duration="57">
+                                                  <Inners>
+                                                    <LogInfo Time="[09:44:47 092]" Name="DataContext - GetAllActiveRoleExceptQTHT" Duration="7" />
+                                                    <LogInfo Time="[09:44:47 101]" Name="MainController: Administrations - GetListRoleIDByPressAgencyHRID" Duration="44">
+                                                      <Inners>
+                                                        <LogInfo Time="[09:44:47 104]" Name="DataContext - GetListRoleIDByPressAgencyHRID" Duration="19" />
+                                                      </Inners>
+                                                    </LogInfo>
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/PopupPages/PressAgencyHRs/Edit.aspx?ID=RXh3c0ZFZnk1b285QlJtUmRSTCtzUGJOSy9XWDVjeWR4UW9JcE5oMHM5U1JXaVlOTE44QkJyamJUbXB4NUljS01IYld0cFVTNWhzRTFOZ3hNWGVDRFE9PQ%3d%3d&amp;callback=MainContent_btnReloadAppendix" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="CommentUC.ascx" Duration="0">
+      <Inners>
+        <LogInfo Time="[20240603 09:45:12 049]" Name="MainController: PressAgency - SavePressAgencyHR" Duration="55">
+          <Inners>
+            <LogInfo Time="[09:45:12 053]" Name="DataContext - GetPressAgencyHR_ByID" Duration="50">
+              <Inners>
+                <LogInfo Time="[09:45:12 083]" Name="DataContext - UpdateItem" Duration="12" />
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/SmartInfos/Contacts/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[09:45:13 470]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[09:45:13 515]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByFilterNoPaging" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetListPressAgencyHR_ByFilter" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[09:45:13 587]" Name="DataContext - GetAttachments" Duration="10" />
+                                    <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                      <Inners>
+                                        <LogInfo Time="[09:45:13 598]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                        <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                          <Inners>
+                                            <LogInfo Time="[09:45:13 603]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[09:45:13 607]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                                <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Time="[09:45:13 611]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                                    <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                      <Inners>
+                                                        <LogInfo Time="[09:45:13 615]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                                        <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                          <Inners>
+                                                            <LogInfo Time="[09:45:13 619]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                              <Inners>
+                                                                <LogInfo Time="[09:45:13 623]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                                                <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByFilter" Duration="0">
+                                                                  <Inners>
+                                                                    <LogInfo Name="DataContext - GetListPressAgencyHR_ByFilter" Duration="0">
+                                                                      <Inners>
+                                                                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                          <Inners>
+                                                                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                              <Inners>
+                                                                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                  <Inners>
+                                                                                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                      <Inners>
+                                                                                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                          <Inners>
+                                                                                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                              <Inners>
+                                                                                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                                  <Inners>
+                                                                                                    <LogInfo Time="[20240603 09:45:13 743]" Name="DataContext - GetAttachments" Duration="704">
+                                                                                                      <Inners>
+                                                                                                        <LogInfo Time="[09:45:13 752]" Name="DataContext - GetAttachments" Duration="9" />
+                                                                                                      </Inners>
+                                                                                                    </LogInfo>
+                                                                                                  </Inners>
+                                                                                                </LogInfo>
+                                                                                              </Inners>
+                                                                                            </LogInfo>
+                                                                                          </Inners>
+                                                                                        </LogInfo>
+                                                                                      </Inners>
+                                                                                    </LogInfo>
+                                                                                  </Inners>
+                                                                                </LogInfo>
+                                                                              </Inners>
+                                                                            </LogInfo>
+                                                                          </Inners>
+                                                                        </LogInfo>
+                                                                      </Inners>
+                                                                    </LogInfo>
+                                                                  </Inners>
+                                                                </LogInfo>
+                                                              </Inners>
+                                                            </LogInfo>
+                                                          </Inners>
+                                                        </LogInfo>
+                                                      </Inners>
+                                                    </LogInfo>
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/PopupPages/PressAgencyHRs/Display.aspx?ID=QUhKK3lxb25NV0xIVHBnSjVQNS9ReVpEcXpNTDRkVVZZa0EyQnYxaGdveUYzaG5MM2JWTDloYlE5Z01sd093M2ZyZUNoYzlVSVRVNkMyQlNTQUM4WUE9PQ==&amp;callback=MainContent_btnReloadAppendix" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="CommentUC.ascx" Duration="0">
+      <Inners>
+        <LogInfo Time="[09:45:15 166]" Name="Permission: AccessPage" Duration="0" />
+        <LogInfo Name="MainController: PressAgency - GetPressAgencyHR_ByID" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetPressAgencyHR_ByID" Duration="0">
+              <Inners>
+                <LogInfo Time="[09:45:15 177]" Name="DataContext - GetAttachments" Duration="7" />
+                <LogInfo Name="MainController: PressAgency - GetListPressAgencyHRHistory_ByPressAgencyHRID" Duration="0">
+                  <Inners>
+                    <LogInfo Time="[09:45:15 186]" Name="DataContext - GetListPressAgencyHRHistory_ByPressAgencyHRID" Duration="4" />
+                    <LogInfo Name="MainController: PressAgency - GetListPressAgencyHRAlert_ByPressAgencyHRID" Duration="0">
+                      <Inners>
+                        <LogInfo Time="[09:45:15 191]" Name="DataContext - GetListPressAgencyHRAlert_ByPressAgencyHRID" Duration="3" />
+                        <LogInfo Name="MainController: PressAgency - GetListPressAgencyHRRelatives_ByPressAgencyHRID" Duration="0">
+                          <Inners>
+                            <LogInfo Time="[09:45:15 195]" Name="DataContext - GetListPressAgencyHRRelatives_ByPressAgencyHRID" Duration="3" />
+                            <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByPressAgencyID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetListPressAgencyHR_ByPressAgencyID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                      <Inners>
+                                        <LogInfo Time="[09:45:15 213]" Name="DataContext - GetAttachments" Duration="6" />
+                                        <LogInfo Time="[20240603 09:45:15 220]" Name="MainController: PressAgency - LoadDataOtherImage_PressAgencyHR" Duration="26">
+                                          <Inners>
+                                            <LogInfo Time="[09:45:15 221]" Name="DataContext - GetAttachments" Duration="8" />
+                                            <LogInfo Time="[09:45:15 230]" Name="MainController: Comment - GetAllCommentByRefIDAndRefType" Duration="16">
+                                              <Inners>
+                                                <LogInfo Time="[09:45:15 230]" Name="DataContext - GetAllCommentByRefIDAndRefType" Duration="5" />
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/SmartInfos/Contacts/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[09:53:01 519]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[09:53:01 519]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR_ByFilterNoPaging" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetListPressAgencyHR_ByFilter" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[09:53:01 609]" Name="DataContext - GetAttachments" Duration="6" />
+                                    <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                      <Inners>
+                                        <LogInfo Time="[09:53:01 616]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                        <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                          <Inners>
+                                            <LogInfo Time="[09:53:01 622]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[09:53:01 626]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                                <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Time="[09:53:01 630]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                                    <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                      <Inners>
+                                                        <LogInfo Time="[09:53:01 634]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                                        <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                          <Inners>
+                                                            <LogInfo Time="[09:53:01 638]" Name="DataContext - GetListAgencyType" Duration="4" />
+                                                            <LogInfo Name="MainController: PressAgency - GetListAgencyType" Duration="0">
+                                                              <Inners>
+                                                                <LogInfo Time="[09:53:01 643]" Name="DataContext - GetListAgencyType" Duration="3" />
+                                                                <LogInfo Name="MainController: PressAgency - GetListPressAgencyHR" Duration="0">
+                                                                  <Inners>
+                                                                    <LogInfo Name="DataContext - GetListPressAgencyHR" Duration="0">
+                                                                      <Inners>
+                                                                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                          <Inners>
+                                                                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                              <Inners>
+                                                                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                  <Inners>
+                                                                                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                      <Inners>
+                                                                                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                          <Inners>
+                                                                                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                              <Inners>
+                                                                                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                                                                                  <Inners>
+                                                                                                    <LogInfo Time="[20240603 09:53:01 723]" Name="DataContext - GetAttachments" Duration="710">
+                                                                                                      <Inners>
+                                                                                                        <LogInfo Time="[09:53:01 730]" Name="DataContext - GetAttachments" Duration="7" />
+                                                                                                      </Inners>
+                                                                                                    </LogInfo>
+                                                                                                  </Inners>
+                                                                                                </LogInfo>
+                                                                                              </Inners>
+                                                                                            </LogInfo>
+                                                                                          </Inners>
+                                                                                        </LogInfo>
+                                                                                      </Inners>
+                                                                                    </LogInfo>
+                                                                                  </Inners>
+                                                                                </LogInfo>
+                                                                              </Inners>
+                                                                            </LogInfo>
+                                                                          </Inners>
+                                                                        </LogInfo>
+                                                                      </Inners>
+                                                                    </LogInfo>
+                                                                  </Inners>
+                                                                </LogInfo>
+                                                              </Inners>
+                                                            </LogInfo>
+                                                          </Inners>
+                                                        </LogInfo>
+                                                      </Inners>
+                                                    </LogInfo>
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240603 09:53:09 924]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" UserName="system" Duration="1" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetFixedPermissionCode" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[20240603 09:53:11 873]" Name="DataContext - InsertEmployeeLog" Duration="130107" />
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Shared/Common/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[09:55:22 078]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="MainController: Commons - GetCommon" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetAllListNotificationForDefault" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - Get5TinTichCucMoiNhat" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[09:55:22 141]" Name="DataContext - Get4TinTieuCucMoiNhat" Duration="6" />
+                                    <LogInfo Time="[20240603 09:55:22 149]" Name="MainController: News - GetAllNegativeNews" Duration="13">
+                                      <Inners>
+                                        <LogInfo Time="[09:55:22 149]" Name="DataContext - GetAllNegativeNews" Duration="8" />
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240604 13:32:30 403]" Name="/" Duration="96" />
+<LogInfo Time="[20240604 13:32:43 201]" Name="/UI/Shared/Common/Default.aspx" Duration="45" />
+<LogInfo Time="[20240604 13:32:43 273]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" Duration="141" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetFixedPermissionCode" Duration="0">
+                                              <Inners>
+                                                <LogInfo Time="[20240604 13:33:23 236]" Name="DataContext - InsertEmployeeLog" Duration="21247" />
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Shared/Common/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[13:33:44 530]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="MainController: Commons - GetCommon" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - GetAllListNotificationForDefault" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - Get5TinTichCucMoiNhat" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetAttachments" Duration="0">
+                                  <Inners>
+                                    <LogInfo Time="[13:33:44 686]" Name="DataContext - Get4TinTieuCucMoiNhat" Duration="15" />
+                                    <LogInfo Time="[20240604 13:33:44 729]" Name="MainController: News - GetAllNegativeNews" Duration="51">
+                                      <Inners>
+                                        <LogInfo Time="[13:33:44 733]" Name="DataContext - GetAllNegativeNews" Duration="1" />
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>

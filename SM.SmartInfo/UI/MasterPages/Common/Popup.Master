@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Popup.master.cs"
+    Inherits="SM.SmartInfo.UI.MasterPages.Common.Popup" %>
+
+<%@ Register Assembly="SMCUI" Namespace="SoftMart.Core.UIControls" TagPrefix="tk" %>
+<%@ Register Src="~/UI/Shared/Common/HeaderContent.ascx" TagName="HeaderContent" TagPrefix="sm" %>
+<%@ Register Src="~/UI/Shared/Common/FooterContent.ascx" TagName="FooterContent" TagPrefix="sm" %>
+<%@ Register Src="~/UI/UserControls/Common/ErrorHandler.ascx" TagName="ErrorHandler" TagPrefix="uc" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=100" />
+    <title>Smart Info</title>
+
+    <link rel="Shortcut Icon" href="../../../Images/icon-softmart.ico" />
+    <link rel="stylesheet" type="text/css" href="../../../Styles/home.css" />
+    <link rel="stylesheet" type="text/css" href="../../../Styles/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../Styles/default.css" />
+    <link rel="stylesheet" type="text/css" href="../../../Styles/NewFonts.css" />
+
+    <script type="text/javascript" src="../../../../Scripts/new-layout/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../../Scripts/new-layout/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../Scripts/JScript.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- Thư viện Luni-solar Calendar -->
+    <script src="https://cdn.jsdelivr.net/npm/lunar-calendar-1.0.4.js"></script>
+        <%-- OWL CSS --%>
+    <link rel="stylesheet" type="text/css" href="../../../Styles/owl/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="../../../Styles/owl/owl.theme.default.css" />
+    <link rel="stylesheet" type="text/css" href="../../../Styles/owl/jquery.Jcrop.min.css" />
+
+    <script type="text/javascript" src="../../../../Scripts/new-layout/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../../../Scripts/new-layout/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../../Scripts/chart/Chart.js"></script>
+    <script type="text/javascript" src="../../../Scripts/JScript.js"></script>
+    
+    <%-- OWL JS --%>
+    <script type="text/javascript" src="../../../Scripts/owl.carousel.js"></script>
+    <script type="text/javascript" src="../../../Scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../../../Scripts/jquery.Jcrop.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.6/cropper.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.6/cropper.min.css" rel="stylesheet">
+
+    <script type="text/javascript" language="javascript">
+        function closeMe() {
+            try {
+                window.parent.closeActionPopup();
+            }
+            catch (e) {
+                alert(e);
+            }
+        }
+
+        $(function () {
+            $(':text').bind('keydown', function (e) {
+                //on keydown for all textboxes
+                if (e.target.className != "searchtextbox") {
+                    if (e.keyCode == 13) { //if this is enter key
+                        e.preventDefault();
+                        return false;
+                    }
+                    else
+                        return true;
+                }
+                else
+                    return true;
+            });
+        });
+
+        // ping server de keep session
+        /*
+        function heartBeat() {
+            try {
+                $.get("../../MasterPages/Common/KeepAlive.ashx?", function (data) { });
+            } catch (ex) { console.log(ex); }
+        }
+        $(function () {
+            setInterval("heartBeat()", 1000 * 30);
+        });
+        */
+    </script>
+
+    <%-- NgocBV: remove khi core sua loi style --%>
+    <style type="text/css">
+        .flex_datepicker_now span {
+            color: #FF6600 !important;
+            font-weight: bold;
+        }
+
+        body {
+            font-family: SF Pro Display !important;
+        }
+
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #e8e8e8 #fff;
+        }
+
+        select {
+            background: #fff;
+            -moz-appearance: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <tk:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" />
+        <asp:ScriptManager ID="scpritPopup" runat="server">
+        </asp:ScriptManager>
+        <div class="wrapper popup-wrapper">
+            <div class="  main-content">
+                <!-- Khong de UpdatePannel o day-->
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                    <ContentTemplate>
+                        <asp:ContentPlaceHolder ID="MainContentAjax" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <uc:ErrorHandler ID="asysErr" runat="server" />
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+        <uc:ErrorHandler ID="ucErr" runat="server" />
+    </form>
+    <%--<uc:Processing ID="Processing1" runat="server" />--%>
+    <!-- START PLUGINS -->
+    <script type="text/javascript" src="../../../../Scripts/new-layout/bootstrap.min.js"></script>
+    <script type='text/javascript' src='../../../../Scripts/new-layout/icheck.min.js'></script>
+    <script type="text/javascript" src="../../../../Scripts/new-layout/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="../../../../Scripts/new-layout/plugins.js"></script>
+    <script type="text/javascript" src="../../../../Scripts/new-layout/actions.js"></script>
+    <!-- END PLUGINS -->
+    <script type="text/javascript">
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+        function EndRequestHandler(sender, args) {
+            if (args.get_error() != undefined) {
+                args.set_errorHandled(true);
+                if (args.get_error().message.search("The status code returned from the server was: 500") >= 0)
+                    alert('- Không nhập dữ liệu dạng thẻ: <?>, <?<, >?>, &. \n- Khắc phục bằng cách: Nhập thêm dữ liệu trống (space) vào các dữ liệu dạng thẻ. \n- Ví dụ: < /strong >, thay vì </strong>');
+                else
+                    alert(args.get_error().message);
+            }
+        }
+
+        $('.closePopUp').click(function (event) {
+            $('.intro-bg').slideUp('300');
+        });
+
+        $(document).on('click', '.dropdown-menu', function (e) {
+            e.stopPropagation();
+        });
+
+        function flex_NumericTextBox_RemoveFormat(control) {
+            var reg = new RegExp(',', 'g');
+            var val = control.value.replace(reg, '');
+            control.value = val;
+        }
+    </script>
+</body>
+</html>

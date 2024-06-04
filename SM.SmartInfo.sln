@@ -1,0 +1,179 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo", "SM.SmartInfo\SM.SmartInfo.csproj", "{5E4FD221-C96C-4E20-91E6-8EA1A4303E93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.BIZ", "SM.SmartInfo.BIZ\SM.SmartInfo.BIZ.csproj", "{620A0576-DC4B-4EA0-9AC3-76A77F78AD46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.DAO", "SM.SmartInfo.DAO\SM.SmartInfo.DAO.csproj", "{24AFBA8D-1568-45DE-8FFE-AC883B967884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.CacheManager", "SM.SmartInfo.CacheManager\SM.SmartInfo.CacheManager.csproj", "{902F76EF-E820-4D29-B0CE-02BF1EC03CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.ConsoleTesting", "SM.SmartInfo.ConsoleTesting\SM.SmartInfo.ConsoleTesting.csproj", "{D2B6CA2A-31A4-4757-8937-B8DE2658B0F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.DAO.Common", "SM.SmartInfo.DAO.Common\SM.SmartInfo.DAO.Common.csproj", "{83951AA6-964E-4B10-AE95-C07577452BE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.PermissionManager", "SM.SmartInfo.PermissionManager\SM.SmartInfo.PermissionManager.csproj", "{6A0CF689-88C9-4ED2-A91A-53958642AF16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.SharedComponent", "SM.SmartInfo.SharedComponent\SM.SmartInfo.SharedComponent.csproj", "{4F9721D1-AE44-4068-A1BA-3F89540BB01A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.Utils", "SM.SmartInfo.Utils\SM.SmartInfo.Utils.csproj", "{5E1EA896-BDB9-4118-8ED6-295EDDC3CD64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.WinService", "SM.SmartInfo.WinService\SM.SmartInfo.WinService.csproj", "{14BE66AD-5851-4955-837E-B23A3541A7D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.Service.Management", "SM.SmartInfo.Service.Management\SM.SmartInfo.Service.Management.csproj", "{60E94846-2345-4CDE-A601-69559D07D46C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.Service.Notification", "SM.SmartInfo.Service.Notification\SM.SmartInfo.Service.Notification.csproj", "{98721FAF-C70E-4465-A0A2-3FADCBC4F78F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.Service.ECM", "SM.SmartInfo.Service.ECM\SM.SmartInfo.Service.ECM.csproj", "{A85DB3ED-EC13-48FB-943D-B6DF26993CB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{CCE5A024-1186-4A78-9DC4-A7C070B80E86}"
+	ProjectSection(SolutionItems) = preProject
+		Lib\DocumentFormat.OpenXml.dll = Lib\DocumentFormat.OpenXml.dll
+		Lib\ICSharpCode.SharpZipLib.dll = Lib\ICSharpCode.SharpZipLib.dll
+		Lib\itextsharp.dll = Lib\itextsharp.dll
+		Lib\log4net.dll = Lib\log4net.dll
+		Lib\Microsoft.AspNet.Identity.Core.dll = Lib\Microsoft.AspNet.Identity.Core.dll
+		Lib\Microsoft.AspNet.Identity.Owin.dll = Lib\Microsoft.AspNet.Identity.Owin.dll
+		Lib\Microsoft.IdentityModel.JsonWebTokens.dll = Lib\Microsoft.IdentityModel.JsonWebTokens.dll
+		Lib\Microsoft.IdentityModel.Logging.dll = Lib\Microsoft.IdentityModel.Logging.dll
+		Lib\Microsoft.IdentityModel.Tokens.dll = Lib\Microsoft.IdentityModel.Tokens.dll
+		Lib\Microsoft.Owin.Cors.dll = Lib\Microsoft.Owin.Cors.dll
+		Lib\Microsoft.Owin.dll = Lib\Microsoft.Owin.dll
+		Lib\Microsoft.Owin.Host.SystemWeb.dll = Lib\Microsoft.Owin.Host.SystemWeb.dll
+		Lib\Microsoft.Owin.Security.Cookies.dll = Lib\Microsoft.Owin.Security.Cookies.dll
+		Lib\Microsoft.Owin.Security.dll = Lib\Microsoft.Owin.Security.dll
+		Lib\Microsoft.Owin.Security.OAuth.dll = Lib\Microsoft.Owin.Security.OAuth.dll
+		Lib\Newtonsoft.Json.dll = Lib\Newtonsoft.Json.dll
+		Lib\Owin.dll = Lib\Owin.dll
+		Lib\SMCB.dll = Lib\SMCB.dll
+		Lib\SMCD.dll = Lib\SMCD.dll
+		Lib\SMCO.dll = Lib\SMCO.dll
+		Lib\SMCR.dll = Lib\SMCR.dll
+		Lib\SMCS.dll = Lib\SMCS.dll
+		Lib\SMCSM.dll = Lib\SMCSM.dll
+		Lib\SMCU.dll = Lib\SMCU.dll
+		Lib\SMCUI.dll = Lib\SMCUI.dll
+		Lib\SMCW.dll = Lib\SMCW.dll
+		Lib\SMK.dll = Lib\SMK.dll
+		Lib\SMSA.dll = Lib\SMSA.dll
+		Lib\SMSB.dll = Lib\SMSB.dll
+		Lib\SMSH.dll = Lib\SMSH.dll
+		Lib\SMSN.dll = Lib\SMSN.dll
+		Lib\SMSR.dll = Lib\SMSR.dll
+		Lib\SMSV.dll = Lib\SMSV.dll
+		Lib\System.IdentityModel.dll = Lib\System.IdentityModel.dll
+		Lib\System.IdentityModel.Selectors.dll = Lib\System.IdentityModel.Selectors.dll
+		Lib\System.identitymodel.services.dll = Lib\System.identitymodel.services.dll
+		Lib\System.IdentityModel.Tokens.Jwt.dll = Lib\System.IdentityModel.Tokens.Jwt.dll
+		Lib\System.Net.Http.Formatting.dll = Lib\System.Net.Http.Formatting.dll
+		Lib\System.Web.Cors.dll = Lib\System.Web.Cors.dll
+		Lib\System.Web.Http.Cors.dll = Lib\System.Web.Http.Cors.dll
+		Lib\System.Web.Http.dll = Lib\System.Web.Http.dll
+		Lib\System.Web.Http.Owin.dll = Lib\System.Web.Http.Owin.dll
+		Lib\System.Web.Http.WebHost.dll = Lib\System.Web.Http.WebHost.dll
+		Lib\Thinktecture.IdentityModel.dll = Lib\Thinktecture.IdentityModel.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MobileApp", "MobileApp", "{8E8F7654-B4CB-4F76-9C42-CC3BBC177A6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.MobileApp.Api", "SM.SmartInfo.MobileApp.Api\SM.SmartInfo.MobileApp.Api.csproj", "{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.MobileApp.Business", "SM.SmartInfo.MobileApp.Business\SM.SmartInfo.MobileApp.Business.csproj", "{117F6B98-1EE8-42A6-9D56-BF857F660325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.Service.Reporting", "SM.SmartInfo.Service.Reporting\SM.SmartInfo.Service.Reporting.csproj", "{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.SmartInfo.Service.FireBase", "SM.SmartInfo.Service.FireBase\SM.SmartInfo.Service.FireBase.csproj", "{613FEDB4-BA81-4037-9144-B8DBBE268A16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E4FD221-C96C-4E20-91E6-8EA1A4303E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4FD221-C96C-4E20-91E6-8EA1A4303E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4FD221-C96C-4E20-91E6-8EA1A4303E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4FD221-C96C-4E20-91E6-8EA1A4303E93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{620A0576-DC4B-4EA0-9AC3-76A77F78AD46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{620A0576-DC4B-4EA0-9AC3-76A77F78AD46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{620A0576-DC4B-4EA0-9AC3-76A77F78AD46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{620A0576-DC4B-4EA0-9AC3-76A77F78AD46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24AFBA8D-1568-45DE-8FFE-AC883B967884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24AFBA8D-1568-45DE-8FFE-AC883B967884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24AFBA8D-1568-45DE-8FFE-AC883B967884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24AFBA8D-1568-45DE-8FFE-AC883B967884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{902F76EF-E820-4D29-B0CE-02BF1EC03CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{902F76EF-E820-4D29-B0CE-02BF1EC03CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{902F76EF-E820-4D29-B0CE-02BF1EC03CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{902F76EF-E820-4D29-B0CE-02BF1EC03CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B6CA2A-31A4-4757-8937-B8DE2658B0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B6CA2A-31A4-4757-8937-B8DE2658B0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B6CA2A-31A4-4757-8937-B8DE2658B0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B6CA2A-31A4-4757-8937-B8DE2658B0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83951AA6-964E-4B10-AE95-C07577452BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83951AA6-964E-4B10-AE95-C07577452BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83951AA6-964E-4B10-AE95-C07577452BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83951AA6-964E-4B10-AE95-C07577452BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A0CF689-88C9-4ED2-A91A-53958642AF16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A0CF689-88C9-4ED2-A91A-53958642AF16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A0CF689-88C9-4ED2-A91A-53958642AF16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A0CF689-88C9-4ED2-A91A-53958642AF16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9721D1-AE44-4068-A1BA-3F89540BB01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9721D1-AE44-4068-A1BA-3F89540BB01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9721D1-AE44-4068-A1BA-3F89540BB01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9721D1-AE44-4068-A1BA-3F89540BB01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1EA896-BDB9-4118-8ED6-295EDDC3CD64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1EA896-BDB9-4118-8ED6-295EDDC3CD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1EA896-BDB9-4118-8ED6-295EDDC3CD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1EA896-BDB9-4118-8ED6-295EDDC3CD64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BE66AD-5851-4955-837E-B23A3541A7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BE66AD-5851-4955-837E-B23A3541A7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BE66AD-5851-4955-837E-B23A3541A7D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BE66AD-5851-4955-837E-B23A3541A7D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60E94846-2345-4CDE-A601-69559D07D46C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E94846-2345-4CDE-A601-69559D07D46C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E94846-2345-4CDE-A601-69559D07D46C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E94846-2345-4CDE-A601-69559D07D46C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98721FAF-C70E-4465-A0A2-3FADCBC4F78F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98721FAF-C70E-4465-A0A2-3FADCBC4F78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98721FAF-C70E-4465-A0A2-3FADCBC4F78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98721FAF-C70E-4465-A0A2-3FADCBC4F78F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A85DB3ED-EC13-48FB-943D-B6DF26993CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85DB3ED-EC13-48FB-943D-B6DF26993CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85DB3ED-EC13-48FB-943D-B6DF26993CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85DB3ED-EC13-48FB-943D-B6DF26993CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117F6B98-1EE8-42A6-9D56-BF857F660325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117F6B98-1EE8-42A6-9D56-BF857F660325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117F6B98-1EE8-42A6-9D56-BF857F660325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117F6B98-1EE8-42A6-9D56-BF857F660325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613FEDB4-BA81-4037-9144-B8DBBE268A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613FEDB4-BA81-4037-9144-B8DBBE268A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613FEDB4-BA81-4037-9144-B8DBBE268A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613FEDB4-BA81-4037-9144-B8DBBE268A16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DFC82B4A-7BB1-4257-BD90-748333A3A1B1} = {8E8F7654-B4CB-4F76-9C42-CC3BBC177A6B}
+		{117F6B98-1EE8-42A6-9D56-BF857F660325} = {8E8F7654-B4CB-4F76-9C42-CC3BBC177A6B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E05D2AD6-5391-4AF1-A3F3-B1DD9ADCDA9E}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN2019 - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

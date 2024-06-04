@@ -1,0 +1,1760 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5E4FD221-C96C-4E20-91E6-8EA1A4303E93}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SM.SmartInfo</RootNamespace>
+    <AssemblyName>SM.SmartInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=6.2.6.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.6.2.6\lib\net35\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Interfaces.6.1.1\lib\net35\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.System.Drawing.6.1.1\lib\net35\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.8.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Documents\Service\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.3.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.3\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCB">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCD">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCD.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCO">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\Service\SMCO.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCR">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCR.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCS">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCS.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCSM">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCSM.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCU">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCU.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCUI">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCUI.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCW">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCW.dll</HintPath>
+    </Reference>
+    <Reference Include="SMK">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMK.dll</HintPath>
+    </Reference>
+    <Reference Include="SMSB">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMSB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMSN">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMSN.dll</HintPath>
+    </Reference>
+    <Reference Include="SMSR">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMSR.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetGear2017.Core, Version=8.1.23.102, Culture=neutral, PublicKeyToken=39c186f5904944ec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SpreadsheetGear2017.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetGear2017.Drawing, Version=8.1.23.102, Culture=neutral, PublicKeyToken=39c186f5904944ec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SpreadsheetGear2017.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net45\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.9\lib\net45\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientAPI.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\apple.png.png" />
+    <Content Include="Images\avatar.png" />
+    <Content Include="Images\comment-icon.png" />
+    <Content Include="Images\defaultimage.png" />
+    <Content Include="Images\demo-images\11.jpg" />
+    <Content Include="Images\demo-images\12.jpg" />
+    <Content Include="Images\demo-images\13.jpg" />
+    <Content Include="Images\demo-images\21.jpg" />
+    <Content Include="Images\demo-images\22.jpg" />
+    <Content Include="Images\demo-images\23.jpg" />
+    <Content Include="Images\demo-images\3.jpg" />
+    <Content Include="Images\demo-images\33.jpg" />
+    <Content Include="Images\demo-images\5.jpg" />
+    <Content Include="Images\demo-images\6.jpg" />
+    <Content Include="Images\demo-images\7.jpg" />
+    <Content Include="Images\demo-images\8.jpg" />
+    <Content Include="Images\demo-images\chieu sang trong kho.jpg" />
+    <Content Include="Images\demo-images\cong kho.JPG" />
+    <Content Include="Images\demo-images\duong noi bo.jpg" />
+    <Content Include="Images\demo-images\nha bao ve.jpg" />
+    <Content Include="Images\demo-images\nha kho.jpg" />
+    <Content Include="Images\demo-images\no-image.png" />
+    <Content Include="Images\demo-images\pccc.gif" />
+    <Content Include="Images\demo-images\so do vi tri.jpg" />
+    <Content Include="Images\demo-images\trong_kho.jpg" />
+    <Content Include="Images\demo-images\trong_kho2.JPG" />
+    <Content Include="Images\demo-images\tuong rao bao ve.JPG" />
+    <Content Include="Images\demo-images\xe boc do hang.jpg" />
+    <Content Include="Images\edit.png" />
+    <Content Include="Images\flex-collin.png" />
+    <Content Include="Images\grid-images\active.png" />
+    <Content Include="Images\grid-images\add.png" />
+    <Content Include="Images\grid-images\default.png" />
+    <Content Include="Images\grid-images\delete.png" />
+    <Content Include="Images\grid-images\download-1.png" />
+    <Content Include="Images\grid-images\download.png" />
+    <Content Include="Images\grid-images\edit.png" />
+    <Content Include="Images\grid-images\excel.png" />
+    <Content Include="Images\grid-images\fill.png" />
+    <Content Include="Images\grid-images\green.png" />
+    <Content Include="Images\grid-images\image.png" />
+    <Content Include="Images\grid-images\inactive.png" />
+    <Content Include="Images\grid-images\New_icons_18.gif" />
+    <Content Include="Images\grid-images\pdf.png" />
+    <Content Include="Images\grid-images\preview.png" />
+    <Content Include="Images\grid-images\red.png" />
+    <Content Include="Images\grid-images\text.png" />
+    <Content Include="Images\grid-images\upload.png" />
+    <Content Include="Images\grid-images\valuation.png" />
+    <Content Include="Images\grid-images\word.png" />
+    <Content Include="Images\grid-images\yellow.png" />
+    <Content Include="Images\icon-softmart.ico" />
+    <Content Include="Images\iconpdf.png" />
+    <Content Include="Images\icon_approve.png" />
+    <Content Include="Images\icon_cancel.png" />
+    <Content Include="Images\icon_change.png" />
+    <Content Include="Images\icon_check.png" />
+    <Content Include="Images\icon_clone.png" />
+    <Content Include="Images\icon_comment.png" />
+    <Content Include="Images\icon_delete.png" />
+    <Content Include="Images\icon_done.png" />
+    <Content Include="Images\icon_download.png" />
+    <Content Include="Images\icon_edit.png" />
+    <Content Include="Images\icon_email.png" />
+    <Content Include="Images\icon_excel.png" />
+    <Content Include="Images\icon_exit.png" />
+    <Content Include="Images\icon_export.png" />
+    <Content Include="Images\icon_history.png" />
+    <Content Include="Images\icon_import.png" />
+    <Content Include="Images\icon_map.png" />
+    <Content Include="Images\icon_new.png" />
+    <Content Include="Images\icon_print.png" />
+    <Content Include="Images\icon_refresh.png" />
+    <Content Include="Images\icon_reject.png" />
+    <Content Include="Images\icon_request.png" />
+    <Content Include="Images\icon_reset.png" />
+    <Content Include="Images\icon_save.png" />
+    <Content Include="Images\icon_savecontinue.png" />
+    <Content Include="Images\icon_search.png" />
+    <Content Include="Images\icon_send.png" />
+    <Content Include="Images\icon_upload.png" />
+    <Content Include="Images\icon_word.png" />
+    <Content Include="Images\login-img.jpg" />
+    <Content Include="Images\logo-mb.png" />
+    <Content Include="Images\smart-infos\logo.png" />
+    <Content Include="Scripts\canvas\canvas2image.js" />
+    <Content Include="Scripts\canvas\designsheet.js" />
+    <Content Include="Scripts\canvas\html2canvas.min.js" />
+    <Content Include="Scripts\chart\Chart.js" />
+    <Content Include="Logging.config" />
+    <Content Include="Styles\fontawesome\font-awesome.css" />
+    <Content Include="Styles\fonts\fa-brands-400.svg" />
+    <Content Include="Styles\fonts\fa-regular-400.svg" />
+    <Content Include="Styles\fonts\fa-solid-900.svg" />
+    <Content Include="Styles\home.css" />
+    <Content Include="Styles\news.css" />
+    <Content Include="Styles\smart-info\smart-info.css" />
+    <Content Include="Styles\themify-icons.css" />
+    <Content Include="Styles\styles-2.css" />
+    <Content Include="UI\Administrations\Anniversarys\AddNew.aspx" />
+    <Content Include="UI\Administrations\Anniversarys\Default.aspx" />
+    <Content Include="UI\Administrations\Anniversarys\Display.aspx" />
+    <Content Include="UI\Administrations\Anniversarys\Edit.aspx" />
+    <Content Include="UI\Administrations\Notifications\AddNew.aspx" />
+    <Content Include="UI\Administrations\Notifications\Default.aspx" />
+    <Content Include="UI\Administrations\Notifications\Display.aspx" />
+    <Content Include="UI\Administrations\Notifications\Edit.aspx" />
+    <Content Include="UI\CommonList\Attachment\DocumentViewer.aspx" />
+    <Content Include="UI\CommonList\Attachment\Download.aspx" />
+    <Content Include="UI\Configurations\EmulationAndRewardsSetting\Default.aspx" />
+    <Content Include="UI\PopupPages\EmulationAndRewards\Edit.aspx" />
+    <Content Include="UI\PopupPages\EmulationAndRewards\Display.aspx" />
+    <Content Include="UI\PopupPages\ImageLibrary\CreateNewFolder.aspx" />
+    <Content Include="UI\PopupPages\ListAttachments\AttachmentUC.ascx" />
+    <Content Include="UI\PopupPages\ListAttachments\Edit.aspx" />
+    <Content Include="UI\PopupPages\ListAttachments\Display.aspx" />
+    <Content Include="UI\PopupPages\NegativeNews\Edit.aspx" />
+    <Content Include="UI\PopupPages\PressAgencyHRs\AddStaff.aspx" />
+    <Content Include="UI\PopupPages\PressAgencyHRs\Create.aspx" />
+    <Content Include="UI\PopupPages\PressAgencyHRs\Display.aspx" />
+    <Content Include="UI\PopupPages\PressAgencyHRs\Edit.aspx" />
+    <Content Include="UI\PopupPages\PressAgencyHRs\EventSharing.aspx" />
+    <Content Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRRelativesUC.ascx" />
+    <Content Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRAlertUC.ascx" />
+    <Content Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRHistoryUC.ascx" />
+    <Content Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRUC.ascx" />
+    <Content Include="UI\PopupPages\ViewImages\Display.aspx" />
+    <Content Include="UI\Shared\Common\SearchPressAgencyHR.aspx" />
+    <Content Include="UI\Shared\Common\SearchPage.aspx" />
+    <Content Include="UI\SmartInfos\CatalogNews\AddNew.aspx" />
+    <Content Include="UI\SmartInfos\CatalogNews\Display.aspx" />
+    <Content Include="UI\SmartInfos\CatalogNews\Edit.aspx" />
+    <Content Include="UI\SmartInfos\Contacts\Default.aspx" />
+    <Content Include="UI\SmartInfos\EmulationAndRewards\AddNew.aspx" />
+    <Content Include="UI\SmartInfos\EmulationAndRewards\Default.aspx" />
+    <Content Include="UI\SmartInfos\EmulationAndRewards\DisplayUC.ascx" />
+    <Content Include="UI\SmartInfos\EmulationAndRewards\SideBarTreeViewUC.ascx" />
+    <Content Include="UI\SmartInfos\EmulationAndRewards\AttachmentUC.ascx" />
+    <Content Include="UI\SmartInfos\ImageLibrary\Default.aspx" />
+    <Content Include="UI\SmartInfos\NegativeNews\Default.aspx" />
+    <Content Include="UI\PopupPages\NegativeNews\Display.aspx" />
+    <Content Include="UI\SmartInfos\NegativeNews\EditUC.ascx" />
+    <Content Include="UI\SmartInfos\NegativeNews\DisplayUC.ascx" />
+    <Content Include="UI\SmartInfos\NegativeNews\ListNagativeNewsUC.ascx" />
+    <Content Include="UI\PopupPages\NegativeNews\NegativeNewsResearchedUC.ascx" />
+    <Content Include="UI\SmartInfos\NegativeNews\NewsResearchedUC.ascx" />
+    <Content Include="UI\SmartInfos\News\CampaignNewsUC.ascx" />
+    <Content Include="UI\SmartInfos\News\Default.aspx" />
+    <Content Include="UI\SmartInfos\News\Display.aspx" />
+    <Content Include="UI\SmartInfos\News\AddNew.aspx" />
+    <Content Include="UI\SmartInfos\News\Edit.aspx" />
+    <Content Include="UI\SmartInfos\News\NewsUC.ascx" />
+    <Content Include="UI\SmartInfos\News\PostsUC.ascx" />
+    <Content Include="UI\SmartInfos\News\SideBarTreeViewUC.ascx" />
+    <Content Include="UI\SmartInfos\News\SideBarUC.ascx" />
+    <Content Include="UI\SmartInfos\News\SpecificResultsUC.ascx" />
+    <Content Include="UI\SmartInfos\Notifications\Default.aspx" />
+    <Content Include="UI\SmartInfos\Notifications\DisplayUC.ascx" />
+    <Content Include="UI\SmartInfos\Notifications\EditUC.ascx" />
+    <Content Include="UI\SmartInfos\PressAgencies\Default.aspx" />
+    <Content Include="UI\SmartInfos\PressAgencies\EditUC.ascx" />
+    <Content Include="UI\SmartInfos\PressAgencies\DisplayUC.ascx" />
+    <Content Include="UI\SmartInfos\PressAgencies\PressAgencyMeetingUC.ascx" />
+    <Content Include="UI\SmartInfos\PressAgencies\OtherImageUC.ascx" />
+    <Content Include="UI\SmartInfos\PressAgencies\RelationshipWithMBUC.ascx" />
+    <Content Include="UI\SmartInfos\PressAgencies\RelationsPressAgencyUC.ascx" />
+    <Content Include="UI\SmartInfos\PressAgencies\PressAgencyHistoryUC.ascx" />
+    <Content Include="UI\SmartInfos\PressAgencies\PressAgencyHRUC.ascx" />
+    <Content Include="UI\UserControls\AttachmentUC.ascx" />
+    <Content Include="UI\UserControls\CatalogNewsSelectorTreeUC.ascx" />
+    <Content Include="UI\UserControls\CatalogNewsTreeViewUC.ascx" />
+    <Content Include="UI\UserControls\Default\InprogressNegativeNewsUC.ascx" />
+    <Content Include="UI\UserControls\Default\ChartStatisticUC.ascx" />
+    <Content Include="UI\UserControls\Default\LatestNewsUC.ascx" />
+    <Content Include="UI\UserControls\Default\LatestNotificationUC.ascx" />
+    <Content Include="UI\UserControls\CommentUC.ascx" />
+    <Content Include="UI\UserControls\Pager.ascx" />
+    <Content Include="UI\UserControls\PressAgencySelector.ascx" />
+    <Content Include="UI\UserControls\Search\SearchNegativeNewsUC.ascx" />
+    <Content Include="UI\UserControls\Search\SearchNewsUC.ascx" />
+    <Content Include="UI\UserControls\Search\SearchPressAgencyUC.ascx" />
+    <Content Include="UI\UserControls\Search\SearchNotificationUC.ascx" />
+    <Content Include="XmlConfigs\Administration_Anniversary.xml" />
+    <Content Include="XmlConfigs\Administration_Committees.xml" />
+    <Content Include="XmlConfigs\Administration_Country.xml" />
+    <Content Include="XmlConfigs\Administration_District.xml" />
+    <Content Include="XmlConfigs\Administration_Emails.xml" />
+    <Content Include="XmlConfigs\Administration_Notification.xml" />
+    <Content Include="XmlConfigs\Administration_Province.xml" />
+    <Content Include="XmlConfigs\Administration_Roles.xml" />
+    <Content Include="XmlConfigs\Administration_Street.xml" />
+    <Content Include="XmlConfigs\Administration_Town.xml" />
+    <Content Include="XmlConfigs\Administration_UsersLog.xml" />
+    <Content Include="XmlConfigs\Administration_Zone.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListAwardingCatalog.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListAwardingLevel.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListAwardingPeriod.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListAwardingType.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListEmployeeInfo.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListEmulationAndReward.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListPressAgencyHR.xml" />
+    <Content Include="XmlConfigs\Import_DonViKhenThuong.xml" />
+    <Content Include="XmlConfigs\Import_CaNhanKhenThuong.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListPressAgency.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListNews.xml" />
+    <Content Include="XmlConfigs\ExcelExport_ListNegativeNews.xml" />
+    <Content Include="XmlConfigs\ExcelExport_NegativeNews.xml" />
+    <Content Include="XmlConfigs\ExcelExport_News.xml" />
+    <Content Include="XmlConfigs\WordExport_PhieuTrinhChiTietSuVu.xml" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.1.2.js" />
+    <Content Include="Scripts\jquery.signalR-2.1.2.min.js" />
+    <Content Include="Scripts\JScript.js" />
+    <Content Include="Scripts\new-layout\actions.js" />
+    <Content Include="Scripts\new-layout\bootstrap.min.js" />
+    <Content Include="Scripts\new-layout\demo_dashboard.js" />
+    <Content Include="Scripts\new-layout\flex_CheckboxCheckAll.js" />
+    <Content Include="Scripts\new-layout\icheck.min.js" />
+    <Content Include="Scripts\new-layout\jquery-1.11.3.js" />
+    <Content Include="Scripts\new-layout\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\new-layout\jquery-3.0.0.min.js" />
+    <Content Include="Scripts\new-layout\jquery-ui.min.js" />
+    <Content Include="Scripts\new-layout\jquery.ba-throttle-debounce.min.js" />
+    <Content Include="Scripts\new-layout\jquery.mCustomScrollbar.min.js" />
+    <Content Include="Scripts\new-layout\layout.js" />
+    <Content Include="Scripts\new-layout\morris\morris.min.js" />
+    <Content Include="Scripts\new-layout\morris\raphael-min.js" />
+    <Content Include="Scripts\new-layout\plugins.js" />
+    <Content Include="Scripts\new-layout\quick-sidebar.js" />
+    <Content Include="Scripts\new-layout\scrolltable.js" />
+    <Content Include="Scripts\new-layout\SMTableScrolling.js" />
+    <Content Include="Scripts\workfield.map.js" />
+    <Content Include="Styles\bootstrap\bootstrap.min.css" />
+    <Content Include="Styles\components.css" />
+    <Content Include="Styles\custom.css" />
+    <Content Include="Styles\default.css" />
+    <Content Include="Styles\fontawesome\font-awesome.min.css" />
+    <Content Include="Styles\fonts\fontawesome-webfont.svg" />
+    <Content Include="Styles\jquery\jquery-ui.min.css" />
+    <Content Include="Styles\layout.css" />
+    <Content Include="Styles\login.css" />
+    <Content Include="Styles\tabstrip.css" />
+    <Content Include="Styles\Toolbar.css" />
+    <Content Include="UI\Administrations\Country\AddNew.aspx" />
+    <Content Include="UI\Administrations\Country\Default.aspx" />
+    <Content Include="UI\Administrations\Country\Display.aspx" />
+    <Content Include="UI\Administrations\Country\Edit.aspx" />
+    <Content Include="UI\Administrations\District\AddNew.aspx" />
+    <Content Include="UI\Administrations\District\Default.aspx" />
+    <Content Include="UI\Administrations\District\Display.aspx" />
+    <Content Include="UI\Administrations\District\Edit.aspx" />
+    <Content Include="UI\Administrations\Emails\AddNew.aspx" />
+    <Content Include="UI\Administrations\Emails\Default.aspx" />
+    <Content Include="UI\Administrations\Emails\Display.aspx" />
+    <Content Include="UI\Administrations\Emails\Edit.aspx" />
+    <Content Include="UI\Administrations\Organizations\AddNew.aspx" />
+    <Content Include="UI\Administrations\Organizations\Display.aspx" />
+    <Content Include="UI\Administrations\Organizations\Edit.aspx" />
+    <Content Include="UI\Administrations\Organizations\OrganizationEmployeeUC.ascx" />
+    <Content Include="UI\Administrations\Organizations\OrgTreeViewUC.ascx" />
+    <Content Include="UI\Administrations\Province\AddNew.aspx" />
+    <Content Include="UI\Administrations\Province\Default.aspx" />
+    <Content Include="UI\Administrations\Province\Display.aspx" />
+    <Content Include="UI\Administrations\Province\Edit.aspx" />
+    <Content Include="UI\Administrations\Region\AddNew.aspx" />
+    <Content Include="UI\Administrations\Region\Default.aspx" />
+    <Content Include="UI\Administrations\Region\Display.aspx" />
+    <Content Include="UI\Administrations\Region\Edit.aspx" />
+    <Content Include="UI\Administrations\Roles\AddNew.aspx" />
+    <Content Include="UI\Administrations\Roles\Default.aspx" />
+    <Content Include="UI\Administrations\Roles\Display.aspx" />
+    <Content Include="UI\Administrations\Roles\Edit.aspx" />
+    <Content Include="UI\Administrations\Segments\AddNew.aspx" />
+    <Content Include="UI\Administrations\Segments\Default.aspx" />
+    <Content Include="UI\Administrations\Segments\Display.aspx" />
+    <Content Include="UI\Administrations\Segments\Edit.aspx" />
+    <Content Include="UI\Administrations\Setting\ConfigRight.aspx" />
+    <Content Include="UI\Administrations\Street\AddNew.aspx" />
+    <Content Include="UI\Administrations\Street\Default.aspx" />
+    <Content Include="UI\Administrations\Street\Display.aspx" />
+    <Content Include="UI\Administrations\Street\Edit.aspx" />
+    <Content Include="UI\Administrations\Town\AddNew.aspx" />
+    <Content Include="UI\Administrations\Town\Default.aspx" />
+    <Content Include="UI\Administrations\Town\Display.aspx" />
+    <Content Include="UI\Administrations\Town\Edit.aspx" />
+    <Content Include="UI\Administrations\Users\AddNew.aspx" />
+    <Content Include="UI\Administrations\Users\ChangePass.aspx" />
+    <Content Include="UI\Administrations\Users\Default.aspx" />
+    <Content Include="UI\Administrations\Users\Display.aspx" />
+    <Content Include="UI\Administrations\Users\Edit.aspx" />
+    <Content Include="UI\Administrations\Users\ListOrganizationUC.ascx" />
+    <Content Include="UI\Administrations\Users\LogView.aspx" />
+    <Content Include="UI\Administrations\Users\UserDetailUC.ascx" />
+    <Content Include="UI\Administrations\Zone\AddNew.aspx" />
+    <Content Include="UI\Administrations\Zone\Default.aspx" />
+    <Content Include="UI\Administrations\Zone\Display.aspx" />
+    <Content Include="UI\Administrations\Zone\Edit.aspx" />
+    <Content Include="UI\Configurations\RuleEngines\AddNew.aspx" />
+    <Content Include="UI\Configurations\RuleEngines\Default.aspx" />
+    <Content Include="UI\Configurations\RuleEngines\Display.aspx" />
+    <Content Include="UI\Configurations\RuleEngines\Edit.aspx" />
+    <Content Include="UI\Shared\Common\Default.aspx" />
+    <Content Include="UI\Shared\Common\Error.aspx" />
+    <Content Include="UI\Shared\Common\FooterContent.ascx" />
+    <Content Include="UI\Shared\Common\HeaderContent.ascx" />
+    <Content Include="UI\Shared\Common\LeftContent.ascx" />
+    <Content Include="UI\Shared\Common\Login.aspx" />
+    <Content Include="UI\Shared\Common\Logout.aspx" />
+    <Content Include="UI\Shared\Common\UserDetails.aspx" />
+    <Content Include="UI\UserControls\Common\ErrorHandler.ascx" />
+    <Content Include="UI\UserControls\Common\ErrorMessageUC.ascx" />
+    <Content Include="UI\UserControls\DynamicReportUC.ascx" />
+    <Content Include="UI\UserControls\EmployeeSearchBox.ascx" />
+    <Content Include="UI\UserControls\EmployeeSelectorUC.ascx" />
+    <Content Include="UI\UserControls\ReportControl\ExportingPopupUC.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientAPI.aspx.cs">
+      <DependentUpon>ClientAPI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClientAPI.aspx.designer.cs">
+      <DependentUpon>ClientAPI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomHttpModule.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LinkGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Administrations\Anniversarys\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Anniversarys\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Anniversarys\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Anniversarys\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Anniversarys\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Anniversarys\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Anniversarys\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Anniversarys\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Country\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Country\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Country\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Country\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Country\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Country\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Country\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Country\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\District\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\District\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\District\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\District\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\District\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\District\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\District\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\District\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Emails\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Emails\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Emails\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Emails\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Emails\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Emails\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Emails\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Emails\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Notifications\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Notifications\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Notifications\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Notifications\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Notifications\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Notifications\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Notifications\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Notifications\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\OrganizationBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\OrganizationEmployeeUC.ascx.cs">
+      <DependentUpon>OrganizationEmployeeUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\OrganizationEmployeeUC.ascx.designer.cs">
+      <DependentUpon>OrganizationEmployeeUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\OrgTreeViewUC.ascx.cs">
+      <DependentUpon>OrgTreeViewUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Organizations\OrgTreeViewUC.ascx.designer.cs">
+      <DependentUpon>OrgTreeViewUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Province\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Province\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Province\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Province\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Province\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Province\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Province\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Province\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Region\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Region\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Region\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Region\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Region\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Region\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Region\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Region\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Roles\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Roles\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Roles\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Roles\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Roles\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Roles\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Roles\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Roles\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Segments\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Segments\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Segments\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Segments\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Segments\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Segments\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Segments\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Segments\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Setting\ConfigRight.aspx.cs">
+      <DependentUpon>ConfigRight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Setting\ConfigRight.aspx.designer.cs">
+      <DependentUpon>ConfigRight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Setting\ConfigRightUIHelper.cs" />
+    <Compile Include="UI\Administrations\Setting\ItemTemplateControl.cs" />
+    <Compile Include="UI\Administrations\Street\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Street\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Street\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Street\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Street\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Street\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Street\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Street\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Town\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Town\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Town\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Town\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Town\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Town\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Town\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Town\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\ChangePass.aspx.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\ChangePass.aspx.designer.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\ListOrganizationUC.ascx.cs">
+      <DependentUpon>ListOrganizationUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\ListOrganizationUC.ascx.designer.cs">
+      <DependentUpon>ListOrganizationUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\LogView.aspx.cs">
+      <DependentUpon>LogView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\LogView.aspx.designer.cs">
+      <DependentUpon>LogView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\UploadAjax.ashx.cs">
+      <DependentUpon>UploadAjax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\UserDetailUC.ascx.cs">
+      <DependentUpon>UserDetailUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Users\UserDetailUC.ascx.designer.cs">
+      <DependentUpon>UserDetailUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Zone\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Zone\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Zone\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Zone\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Zone\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Zone\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Zone\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Zone\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BaseMaster.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BasePagePopup.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CommonList\Attachment\DocumentViewer.aspx.cs">
+      <DependentUpon>DocumentViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CommonList\Attachment\DocumentViewer.aspx.designer.cs">
+      <DependentUpon>DocumentViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CommonList\Attachment\Download.aspx.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\CommonList\Attachment\Download.aspx.designer.cs">
+      <DependentUpon>Download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Configurations\EmulationAndRewardsSetting\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Configurations\EmulationAndRewardsSetting\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Configurations\RuleEngines\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Configurations\RuleEngines\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Configurations\RuleEngines\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Configurations\RuleEngines\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Configurations\RuleEngines\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Configurations\RuleEngines\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Configurations\RuleEngines\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Configurations\RuleEngines\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterPages\Common\SmartInfo.Master.cs">
+      <DependentUpon>SmartInfo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\MasterPages\Common\SmartInfo.Master.designer.cs">
+      <DependentUpon>SmartInfo.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MasterPages\Common\Popup.Master.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\MasterPages\Common\Popup.Master.designer.cs">
+      <DependentUpon>Popup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\EmulationAndRewards\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\EmulationAndRewards\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\EmulationAndRewards\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\EmulationAndRewards\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\ImageLibrary\CreateNewFolder.aspx.cs">
+      <DependentUpon>CreateNewFolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\ImageLibrary\CreateNewFolder.aspx.designer.cs">
+      <DependentUpon>CreateNewFolder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\ListAttachments\AttachmentUC.ascx.cs">
+      <DependentUpon>AttachmentUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\ListAttachments\AttachmentUC.ascx.designer.cs">
+      <DependentUpon>AttachmentUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\ListAttachments\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\ListAttachments\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\ListAttachments\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\ListAttachments\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\NegativeNews\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\NegativeNews\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\AddStaff.aspx.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\AddStaff.aspx.designer.cs">
+      <DependentUpon>AddStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\Create.aspx.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\Create.aspx.designer.cs">
+      <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\EventSharing.aspx.cs">
+      <DependentUpon>EventSharing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\EventSharing.aspx.designer.cs">
+      <DependentUpon>EventSharing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRRelativesUC.ascx.cs">
+      <DependentUpon>PressAgencyHRRelativesUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRRelativesUC.ascx.designer.cs">
+      <DependentUpon>PressAgencyHRRelativesUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRAlertUC.ascx.cs">
+      <DependentUpon>PressAgencyHRAlertUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRAlertUC.ascx.designer.cs">
+      <DependentUpon>PressAgencyHRAlertUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRHistoryUC.ascx.cs">
+      <DependentUpon>PressAgencyHRHistoryUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRHistoryUC.ascx.designer.cs">
+      <DependentUpon>PressAgencyHRHistoryUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRUC.ascx.cs">
+      <DependentUpon>PressAgencyHRUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\PressAgencyHRs\PressAgencyHRUC.ascx.designer.cs">
+      <DependentUpon>PressAgencyHRUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\ViewImages\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\ViewImages\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\SearchPressAgencyHR.aspx.cs">
+      <DependentUpon>SearchPressAgencyHR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\SearchPressAgencyHR.aspx.designer.cs">
+      <DependentUpon>SearchPressAgencyHR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\SearchPage.aspx.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\SearchPage.aspx.designer.cs">
+      <DependentUpon>SearchPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\FooterContent.ascx.cs">
+      <DependentUpon>FooterContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\FooterContent.ascx.designer.cs">
+      <DependentUpon>FooterContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\HeaderContent.ascx.cs">
+      <DependentUpon>HeaderContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\HeaderContent.ascx.designer.cs">
+      <DependentUpon>HeaderContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\LeftContent.ascx.cs">
+      <DependentUpon>LeftContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\LeftContent.ascx.designer.cs">
+      <DependentUpon>LeftContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shared\Common\UserDetails.aspx.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Shared\Common\UserDetails.aspx.designer.cs">
+      <DependentUpon>UserDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\CatalogNews\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\CatalogNews\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\CatalogNews\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\CatalogNews\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\CatalogNews\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\CatalogNews\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\Contacts\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\Contacts\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\DisplayUC.ascx.cs">
+      <DependentUpon>DisplayUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\DisplayUC.ascx.designer.cs">
+      <DependentUpon>DisplayUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\SideBarTreeViewUC.ascx.cs">
+      <DependentUpon>SideBarTreeViewUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\SideBarTreeViewUC.ascx.designer.cs">
+      <DependentUpon>SideBarTreeViewUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\AttachmentUC.ascx.cs">
+      <DependentUpon>AttachmentUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\EmulationAndRewards\AttachmentUC.ascx.designer.cs">
+      <DependentUpon>AttachmentUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\ImageLibrary\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\ImageLibrary\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\NegativeNews\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\NegativeNews\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\EditUC.ascx.cs">
+      <DependentUpon>EditUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\EditUC.ascx.designer.cs">
+      <DependentUpon>EditUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\DisplayUC.ascx.cs">
+      <DependentUpon>DisplayUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\DisplayUC.ascx.designer.cs">
+      <DependentUpon>DisplayUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\ListNagativeNewsUC.ascx.cs">
+      <DependentUpon>ListNagativeNewsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\ListNagativeNewsUC.ascx.designer.cs">
+      <DependentUpon>ListNagativeNewsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\PopupPages\NegativeNews\NegativeNewsResearchedUC.ascx.cs">
+      <DependentUpon>NegativeNewsResearchedUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\PopupPages\NegativeNews\NegativeNewsResearchedUC.ascx.designer.cs">
+      <DependentUpon>NegativeNewsResearchedUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\NewsResearchedUC.ascx.cs">
+      <DependentUpon>NewsResearchedUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\NegativeNews\NewsResearchedUC.ascx.designer.cs">
+      <DependentUpon>NewsResearchedUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\CampaignNewsUC.ascx.cs">
+      <DependentUpon>CampaignNewsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\CampaignNewsUC.ascx.designer.cs">
+      <DependentUpon>CampaignNewsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\NewsUC.ascx.cs">
+      <DependentUpon>NewsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\NewsUC.ascx.designer.cs">
+      <DependentUpon>NewsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\PostsUC.ascx.cs">
+      <DependentUpon>PostsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\PostsUC.ascx.designer.cs">
+      <DependentUpon>PostsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\SideBarTreeViewUC.ascx.cs">
+      <DependentUpon>SideBarTreeViewUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\SideBarTreeViewUC.ascx.designer.cs">
+      <DependentUpon>SideBarTreeViewUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\SideBarUC.ascx.cs">
+      <DependentUpon>SideBarUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\SideBarUC.ascx.designer.cs">
+      <DependentUpon>SideBarUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\SpecificResultsUC.ascx.cs">
+      <DependentUpon>SpecificResultsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\SpecificResultsUC.ascx.designer.cs">
+      <DependentUpon>SpecificResultsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\News\TagAJax.ashx.cs">
+      <DependentUpon>TagAJax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\Notifications\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\Notifications\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\Notifications\DisplayUC.ascx.cs">
+      <DependentUpon>DisplayUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\Notifications\DisplayUC.ascx.designer.cs">
+      <DependentUpon>DisplayUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\Notifications\EditUC.ascx.cs">
+      <DependentUpon>EditUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\Notifications\EditUC.ascx.designer.cs">
+      <DependentUpon>EditUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\EditUC.ascx.cs">
+      <DependentUpon>EditUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\EditUC.ascx.designer.cs">
+      <DependentUpon>EditUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\DisplayUC.ascx.cs">
+      <DependentUpon>DisplayUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\DisplayUC.ascx.designer.cs">
+      <DependentUpon>DisplayUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\PressAgencyMeetingUC.ascx.cs">
+      <DependentUpon>PressAgencyMeetingUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\PressAgencyMeetingUC.ascx.designer.cs">
+      <DependentUpon>PressAgencyMeetingUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\OtherImageUC.ascx.cs">
+      <DependentUpon>OtherImageUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\OtherImageUC.ascx.designer.cs">
+      <DependentUpon>OtherImageUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\RelationshipWithMBUC.ascx.cs">
+      <DependentUpon>RelationshipWithMBUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\RelationshipWithMBUC.ascx.designer.cs">
+      <DependentUpon>RelationshipWithMBUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\RelationsPressAgencyUC.ascx.cs">
+      <DependentUpon>RelationsPressAgencyUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\RelationsPressAgencyUC.ascx.designer.cs">
+      <DependentUpon>RelationsPressAgencyUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\PressAgencyHistoryUC.ascx.cs">
+      <DependentUpon>PressAgencyHistoryUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\PressAgencyHistoryUC.ascx.designer.cs">
+      <DependentUpon>PressAgencyHistoryUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\PressAgencyHRUC.ascx.cs">
+      <DependentUpon>PressAgencyHRUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SmartInfos\PressAgencies\PressAgencyHRUC.ascx.designer.cs">
+      <DependentUpon>PressAgencyHRUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIUtilities\ExportAccountingHelper.cs" />
+    <Compile Include="UI\UIUtilities\ExportHelper.cs" />
+    <Compile Include="UI\UIUtility.cs" />
+    <Compile Include="UI\UserControls\AttachmentUC.ascx.cs">
+      <DependentUpon>AttachmentUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\AttachmentUC.ascx.designer.cs">
+      <DependentUpon>AttachmentUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Captchar.cs" />
+    <Compile Include="UI\UserControls\CatalogNewsSelectorTreeUC.ascx.cs">
+      <DependentUpon>CatalogNewsSelectorTreeUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\CatalogNewsSelectorTreeUC.ascx.designer.cs">
+      <DependentUpon>CatalogNewsSelectorTreeUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\CatalogNewsTreeViewUC.ascx.cs">
+      <DependentUpon>CatalogNewsTreeViewUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\CatalogNewsTreeViewUC.ascx.designer.cs">
+      <DependentUpon>CatalogNewsTreeViewUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Common\ErrorHandler.ascx.cs">
+      <DependentUpon>ErrorHandler.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Common\ErrorHandler.ascx.designer.cs">
+      <DependentUpon>ErrorHandler.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Common\ErrorMessageUC.ascx.cs">
+      <DependentUpon>ErrorMessageUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Common\ErrorMessageUC.ascx.designer.cs">
+      <DependentUpon>ErrorMessageUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\DynamicReportUC.ascx.cs">
+      <DependentUpon>DynamicReportUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\DynamicReportUC.ascx.designer.cs">
+      <DependentUpon>DynamicReportUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\EmployeeSearchBox.ascx.cs">
+      <DependentUpon>EmployeeSearchBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\EmployeeSearchBox.ascx.designer.cs">
+      <DependentUpon>EmployeeSearchBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Default\InprogressNegativeNewsUC.ascx.cs">
+      <DependentUpon>InprogressNegativeNewsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Default\InprogressNegativeNewsUC.ascx.designer.cs">
+      <DependentUpon>InprogressNegativeNewsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Default\ChartStatisticUC.ascx.cs">
+      <DependentUpon>ChartStatisticUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Default\ChartStatisticUC.ascx.designer.cs">
+      <DependentUpon>ChartStatisticUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Default\LatestNewsUC.ascx.cs">
+      <DependentUpon>LatestNewsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Default\LatestNewsUC.ascx.designer.cs">
+      <DependentUpon>LatestNewsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Default\LatestNotificationUC.ascx.cs">
+      <DependentUpon>LatestNotificationUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Default\LatestNotificationUC.ascx.designer.cs">
+      <DependentUpon>LatestNotificationUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\EmployeeSelectorUC.ascx.cs">
+      <DependentUpon>EmployeeSelectorUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\EmployeeSelectorUC.ascx.designer.cs">
+      <DependentUpon>EmployeeSelectorUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\CommentUC.ascx.cs">
+      <DependentUpon>CommentUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\CommentUC.ascx.designer.cs">
+      <DependentUpon>CommentUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\PressAgencySelector.ascx.cs">
+      <DependentUpon>PressAgencySelector.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\PressAgencySelector.ascx.designer.cs">
+      <DependentUpon>PressAgencySelector.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\ReportControl\ExportingPopupUC.ascx.cs">
+      <DependentUpon>ExportingPopupUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\ReportControl\ExportingPopupUC.ascx.designer.cs">
+      <DependentUpon>ExportingPopupUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Search\SearchNegativeNewsUC.ascx.cs">
+      <DependentUpon>SearchNegativeNewsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Search\SearchNegativeNewsUC.ascx.designer.cs">
+      <DependentUpon>SearchNegativeNewsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Search\SearchNewsUC.ascx.cs">
+      <DependentUpon>SearchNewsUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Search\SearchNewsUC.ascx.designer.cs">
+      <DependentUpon>SearchNewsUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Search\SearchPressAgencyUC.ascx.cs">
+      <DependentUpon>SearchPressAgencyUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Search\SearchPressAgencyUC.ascx.designer.cs">
+      <DependentUpon>SearchPressAgencyUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Search\SearchNotificationUC.ascx.cs">
+      <DependentUpon>SearchNotificationUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\UserControls\Search\SearchNotificationUC.ascx.designer.cs">
+      <DependentUpon>SearchNotificationUC.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap\bootstrap.css.map" />
+    <Content Include="Styles\fonts\fontawesome-webfont.eot" />
+    <Content Include="Styles\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Styles\fonts\fontawesome-webfont.woff" />
+    <Content Include="Styles\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Styles\fonts\FontAwesome.otf" />
+    <Content Include="UI\MasterPages\Common\SmartInfo.Master" />
+    <Content Include="UI\MasterPages\Common\Popup.Master" />
+    <Content Include="Styles\fonts\SVN-Gilroy Black Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Black.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Bold Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Bold.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Heavy Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Heavy.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Light Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Light.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Medium Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Medium.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Regular.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy SemiBold Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy SemiBold.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Thin Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Thin.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy XBold Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy XBold.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Xlight Italic.ttf" />
+    <Content Include="Styles\fonts\SVN-Gilroy Xlight.ttf" />
+    <Content Include="Styles\fonts\VLNEXABOLD-BOLD.otf" />
+    <Content Include="Styles\fonts\VLNEXALIGHT.otf" />
+    <Content Include="Styles\fonts\FontsFree-Net-SFProDisplay-Regular.ttf" />
+    <Content Include="Styles\fonts\fa-brands-400.eot" />
+    <Content Include="Styles\fonts\fa-brands-400.ttf" />
+    <Content Include="Styles\fonts\fa-brands-400.woff" />
+    <Content Include="Styles\fonts\fa-brands-400.woff2" />
+    <Content Include="Styles\fonts\fa-regular-400.eot" />
+    <Content Include="Styles\fonts\fa-regular-400.ttf" />
+    <Content Include="Styles\fonts\fa-regular-400.woff" />
+    <Content Include="Styles\fonts\fa-regular-400.woff2" />
+    <Content Include="Styles\fonts\fa-solid-900.eot" />
+    <Content Include="Styles\fonts\fa-solid-900.ttf" />
+    <Content Include="Styles\fonts\fa-solid-900.woff" />
+    <Content Include="Styles\fonts\fa-solid-900.woff2" />
+    <Content Include="Templates\ExcelExport_News.xlsx" />
+    <Content Include="Templates\ExcelExport_NegativeNews.xlsx" />
+    <Content Include="Templates\WordExport_PhieuTrinhChiTietSuVu.docx" />
+    <Content Include="Templates\ExcelExport_ListNegativeNews.xlsx" />
+    <Content Include="Templates\ExcelExport_ListNews.xlsx" />
+    <Content Include="Templates\ExcelExport_ListPressAgency.xlsx" />
+    <Content Include="Templates\Import_CaNhanKhenThuong.xlsx" />
+    <Content Include="Templates\Import_DonViKhenThuong.xlsx" />
+    <Content Include="Templates\ExcelExport_ListEmulationAndReward.xlsx" />
+    <Content Include="Templates\Excel_DanhSach_NguoiDung.xlsx" />
+    <Content Include="Templates\ExcelExport_ListAwardingCatalog.xlsx" />
+    <Content Include="Templates\ExcelExport_ListAwardingLevel.xlsx" />
+    <Content Include="Templates\ExcelExport_ListAwardingPeriod.xlsx" />
+    <Content Include="Templates\ExcelExport_ListAwardingType.xlsx" />
+    <Content Include="Templates\Import_UserContact.xlsx" />
+    <Content Include="Templates\ExcelExport_ListPressAgencyHR.xlsx" />
+    <Content Include="UI\SmartInfos\News\TagAJax.ashx" />
+    <Content Include="UI\Shared\Common\UploadAjax.ashx" />
+    <Content Include="Templates\ExcelExport_ListPressAgencyHR_New.xlsx" />
+    <Content Include="Templates\Import_UserInformation.xlsx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SM.SmartInfo.BIZ\SM.SmartInfo.BIZ.csproj">
+      <Project>{620a0576-dc4b-4ea0-9ac3-76a77f78ad46}</Project>
+      <Name>SM.SmartInfo.BIZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.CacheManager\SM.SmartInfo.CacheManager.csproj">
+      <Project>{902f76ef-e820-4d29-b0ce-02bf1ec03cd4}</Project>
+      <Name>SM.SmartInfo.CacheManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.DAO\SM.SmartInfo.DAO.csproj">
+      <Project>{24AFBA8D-1568-45DE-8FFE-AC883B967884}</Project>
+      <Name>SM.SmartInfo.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.PermissionManager\SM.SmartInfo.PermissionManager.csproj">
+      <Project>{6a0cf689-88c9-4ed2-a91a-53958642af16}</Project>
+      <Name>SM.SmartInfo.PermissionManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.Service.ECM\SM.SmartInfo.Service.ECM.csproj">
+      <Project>{a85db3ed-ec13-48fb-943d-b6df26993cb3}</Project>
+      <Name>SM.SmartInfo.Service.ECM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.Service.Reporting\SM.SmartInfo.Service.Reporting.csproj">
+      <Project>{3C029D22-BFC8-4103-B1A5-969ACA4BBA2B}</Project>
+      <Name>SM.SmartInfo.Service.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.SharedComponent\SM.SmartInfo.SharedComponent.csproj">
+      <Project>{4f9721d1-ae44-4068-a1ba-3f89540bb01a}</Project>
+      <Name>SM.SmartInfo.SharedComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.Utils\SM.SmartInfo.Utils.csproj">
+      <Project>{5e1ea896-bdb9-4118-8ed6-295eddc3cd64}</Project>
+      <Name>SM.SmartInfo.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62728</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63728/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

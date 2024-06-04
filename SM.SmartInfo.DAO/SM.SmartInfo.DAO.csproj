@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24AFBA8D-1568-45DE-8FFE-AC883B967884}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SM.SmartInfo.DAO</RootNamespace>
+    <AssemblyName>SM.SmartInfo.DAO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SM.SmartInfo\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCB">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCB.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCD">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCD.dll</HintPath>
+    </Reference>
+    <Reference Include="SMCU">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMCU.dll</HintPath>
+    </Reference>
+    <Reference Include="SMK">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMK.dll</HintPath>
+    </Reference>
+    <Reference Include="SMSR">
+      <HintPath>..\..\..\..\..\Desktop\SmartSolution\smart-info\Documents\bin\SMSR.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administration\EmailTemplateDao.cs" />
+    <Compile Include="Administration\EmployeeDao.cs" />
+    <Compile Include="Administration\FeatureDao.cs" />
+    <Compile Include="Administration\OrganizationConfigDao.cs" />
+    <Compile Include="Administration\RegionDao.cs" />
+    <Compile Include="Administration\RightDao.cs" />
+    <Compile Include="Administration\RoleDao.cs" />
+    <Compile Include="Administration\SettingDao.cs" />
+    <Compile Include="Administration\SystemParameterConfigDao.cs" />
+    <Compile Include="Administration\SystemParameterDao.cs" />
+    <Compile Include="Administration\UserConfigDao.cs" />
+    <Compile Include="BaseDao.cs" />
+    <Compile Include="CatalogNews\CatalogNewsDao.cs" />
+    <Compile Include="Comment\CommentDao.cs" />
+    <Compile Include="CommonList\AttachmentDao.cs" />
+    <Compile Include="CommonList\EmailDao.cs" />
+    <Compile Include="Commons\DataTrackingDao.cs" />
+    <Compile Include="Commons\OrganizationDAO.cs" />
+    <Compile Include="Commons\UserDao.cs" />
+    <Compile Include="EmulationAndRewards\EmulationAndRewardDao.cs" />
+    <Compile Include="ExceptionConvert.cs" />
+    <Compile Include="Firebase\ApiFirebase.cs" />
+    <Compile Include="Firebase\MessageDto.cs" />
+    <Compile Include="ImageLibrary\ImageLibraryDao.cs" />
+    <Compile Include="NegativeNew\NegativeNewDao.cs" />
+    <Compile Include="News\NewsDao.cs" />
+    <Compile Include="Notification\TokenDeviceDao.cs" />
+    <Compile Include="Notification\NotificationDao.cs" />
+    <Compile Include="PressAgency\PressAgencyDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VietNamCalendar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SM.SmartInfo.CacheManager\SM.SmartInfo.CacheManager.csproj">
+      <Project>{902f76ef-e820-4d29-b0ce-02bf1ec03cd4}</Project>
+      <Name>SM.SmartInfo.CacheManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.DAO.Common\SM.SmartInfo.DAO.Common.csproj">
+      <Project>{83951aa6-964e-4b10-ae95-c07577452be3}</Project>
+      <Name>SM.SmartInfo.DAO.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.SharedComponent\SM.SmartInfo.SharedComponent.csproj">
+      <Project>{4f9721d1-ae44-4068-a1ba-3f89540bb01a}</Project>
+      <Name>SM.SmartInfo.SharedComponent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SM.SmartInfo.Utils\SM.SmartInfo.Utils.csproj">
+      <Project>{5e1ea896-bdb9-4118-8ed6-295eddc3cd64}</Project>
+      <Name>SM.SmartInfo.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

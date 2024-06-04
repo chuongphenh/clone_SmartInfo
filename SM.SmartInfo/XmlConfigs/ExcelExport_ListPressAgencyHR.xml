@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<save_as_file_name>Danh sách nhân sự tổ chức</save_as_file_name>
+	<templates>
+		<template file_name="ExcelExport_ListPressAgencyHR_New.xlsx" paper_size="A4" is_default="true" />
+	</templates>
+	<render_infos>
+		<render_info>
+			<source_dynamic>
+				<![CDATA[
+					--SELECT DISTINCT
+--                        hr.PressAgencyHRID AS PressAgencyHRID, 
+--                        hr.PressAgencyID AS PressAgencyID, 
+--                        hr.FullName AS FullName, 
+--                        hr.Position AS Position,
+--                        hr.DOB AS DOB,
+--                        hr.Mobile AS Mobile, 
+--                        hr.Email AS Email, 
+--                        hr.Hobby AS Hobby, 
+--                        CASE hr.Attitude
+--                            WHEN 1 THEN N'Tích cực'
+--                            WHEN 2 THEN N'Tiêu cực'
+--                            WHEN 3 THEN N'Trung lập'
+--                            ELSE NULL
+--                        END AS Attitude, 
+--                        hr.Address AS Address,
+--                        pa.Name AS PressAgencyName, 
+--                        agt.TypeName AS PressAgencyType, 
+--                        hr.RelatedInformation AS RelatedInfo
+--                    FROM AgencyType agt
+--                    LEFT JOIN agency_PressAgency pa ON agt.Id = pa.Type
+--                    JOIN agency_PressAgencyHR hr ON pa.PressAgencyID = hr.PressAgencyID AND pa.Deleted = 0
+--                    LEFT JOIN [dbo].[SharingManagement] sm ON hr.PressAgencyHRID = sm.PressAgencyHRID AND @userId <> 1
+--                    WHERE hr.Deleted = 0 AND pa.Type IS NOT NULL AND pa.Type = CASE @optionalParam WHEN 0 THEN pa.Type ELSE @optionalParam END
+--                    AND sm.UserId = @userId AND isShared = 1 
+
+--                    UNION
+
+--                    SELECT DISTINCT
+--                        hr.PressAgencyHRID AS PressAgencyHRID, 
+--                        hr.PressAgencyID AS PressAgencyID, 
+--                        hr.FullName AS FullName, 
+--                        hr.Position AS Position,
+--                        hr.DOB AS DOB,
+--                        hr.Mobile AS Mobile, 
+--                        hr.Email AS Email, 
+--                        hr.Hobby AS Hobby, 
+--                        CASE hr.Attitude
+--                            WHEN 1 THEN N'Tích cực'
+--                            WHEN 2 THEN N'Tiêu cực'
+--                            WHEN 3 THEN N'Trung lập'
+--                            ELSE NULL
+--                        END AS Attitude, 
+--                        hr.Address AS Address,
+--                        pa.Name AS PressAgencyName, 
+--                        agt.TypeName AS PressAgencyType, 
+--                        hr.RelatedInformation AS RelatedInfo
+--                    FROM AgencyType agt
+--                    LEFT JOIN agency_PressAgency pa ON agt.Id = pa.Type
+--                    JOIN agency_PressAgencyHR hr ON pa.PressAgencyID = hr.PressAgencyID AND pa.Deleted = 0
+--                    WHERE hr.Deleted = 0 AND pa.Type IS NOT NULL AND pa.Type = CASE @optionalParam WHEN 0 THEN pa.Type ELSE @optionalParam END
+--                    AND @userId IN (select EmployeeID from adm_EmployeeRole where RoleID = 1)
+--                    ORDER BY PressAgencyType;
+
+
+                        DECLARE @userId INT = @empId; 
+                        DECLARE @roleName NVARCHAR(50) = N'qthtt'; 
+
+                        -- Khai báo một biến để lưu trữ kết quả kiểm tra sự tồn tại của bản ghi
+                        DECLARE @RecordExists BIT;
+
+                        -- Kiểm tra xem giá trị của @roleName có bằng 'qtht' hay không
+                       SET @RecordExists = (
+					        SELECT CASE 
+							        WHEN EXISTS (
+								        SELECT 1
+								        FROM [adm_EmployeeRole] empRole
+								        JOIN [adm_Employee] emp ON emp.EmployeeID = empRole.EmployeeID
+								        JOIN [adm_Role] role ON role.RoleID = empRole.RoleID
+								        WHERE LOWER(role.Name) = 'qtht'
+								        AND emp.EmployeeID = @userId
+							        ) THEN 1
+							        ELSE 0
+						           END
+				        );
+
+                        -- Tạo biến để lưu trữ điều kiện bổ sung nếu cần thiết
+                        DECLARE @AdditionalCondition NVARCHAR(MAX) = '';
+
+                        -- Nếu không tồn tại bản ghi thì thêm điều kiện bổ sung vào biến
+                        IF @RecordExists = 0
+                        BEGIN
+                            SET @AdditionalCondition = N' AND EXISTS (
+                                SELECT 1 
+                                FROM [dbo].[SharingManagement] sm 
+                                WHERE 
+                                    (hr.PressAgencyHRID = sm.PressAgencyHRID AND sm.UserId = ' + CAST(@userId AS NVARCHAR) + ' AND isShared = 1 AND GroupName IS NULL) 
+                                    OR 
+                                    (hr.PressAgencyHRID = sm.PressAgencyHRID AND sm.UserId IS NULL AND sm.UserEmail IS NULL AND GroupName IN (
+                                        SELECT adm_Role.Name
+                                        FROM [adm_EmployeeRole] empRole
+                                        JOIN [adm_Employee] emp ON emp.EmployeeID = empRole.EmployeeID
+                                        JOIN [adm_Role] ON adm_Role.RoleID = empRole.RoleID
+                                        WHERE emp.EmployeeID = ' + CAST(@userId AS NVARCHAR) + '
+                                    ))
+                            )';
+                        END
+
+                        -- Xây dựng câu truy vấn chính
+                        DECLARE @sql NVARCHAR(MAX);
+
+                        SET @sql = N'
+                        WITH PressAgencyHRGroups AS (
+                            SELECT
+                                sm.PressAgencyHRID,
+                                MAX(CASE WHEN LOWER(sm.GroupName) = LOWER(''Nhóm 1'') THEN ''x'' ELSE '''' END) AS Group1,
+                                MAX(CASE WHEN LOWER(sm.GroupName) = LOWER(''Nhóm 2'') THEN ''x'' ELSE '''' END) AS Group2,
+                                MAX(CASE WHEN LOWER(sm.GroupName) = LOWER(''Nhóm 3'') THEN ''x'' ELSE '''' END) AS Group3,
+                                MAX(CASE WHEN LOWER(sm.GroupName) = LOWER(''Nhóm 4'') THEN ''x'' ELSE '''' END) AS Group4,
+                                MAX(CASE WHEN LOWER(sm.GroupName) = LOWER(''Nhóm 5'') THEN ''x'' ELSE '''' END) AS Group5
+                            FROM
+                                SharingManagement sm
+                            GROUP BY
+                                sm.PressAgencyHRID
+                        )
+
+                        SELECT 
+                             ROW_NUMBER() OVER (
+									ORDER BY 
+										hrg.Group1 DESC,
+										hrg.Group2 DESC,
+										hrg.Group3 DESC,
+										hrg.Group4 DESC,
+										hrg.Group5 DESC,
+										hr.FullName
+								) AS STT,
+                            hr.FullName AS FullName, 
+                            hr.Position AS Position,
+                            CASE hr.Attitude
+                                WHEN 1 THEN N''Tích cực''
+                                WHEN 2 THEN N''Tiêu cực''
+                                WHEN 3 THEN N''Trung lập''
+                                ELSE NULL
+                            END AS Attitude, 
+                            CASE 
+                                WHEN hr.DOB IS NULL THEN ''''
+                                ELSE CAST(DATEDIFF(YEAR, hr.DOB, GETDATE()) AS NVARCHAR)
+                            END AS Age,
+                            hr.DOB AS DOB,
+                            hr.Mobile AS Mobile, 
+                            hr.Email AS Email, 
+                            hr.Address AS Address,
+                            hr.Hobby AS Hobby, 
+                            hr.RelatedInformation AS RelatedInfo,
+                            agt.TypeName AS PressAgencyType, 
+                            agt.Code AS PressAgencyID,
+                            pa.Name AS PressAgencyName,
+                            hrg.Group1,
+                            hrg.Group2,
+                            hrg.Group3,
+                            hrg.Group4,
+                            hrg.Group5
+                        FROM 
+                            AgencyType agt
+                        LEFT JOIN 
+                            agency_PressAgency pa ON agt.Id = pa.Type
+                        JOIN 
+                            agency_PressAgencyHR hr ON pa.PressAgencyID = hr.PressAgencyID AND pa.Deleted = 0
+                        LEFT JOIN 
+                            PressAgencyHRGroups hrg ON hrg.PressAgencyHRID = hr.PressAgencyHRID
+                        WHERE 
+                            hr.Deleted = 0 
+                            AND pa.Type IS NOT NULL
+                        ' + @AdditionalCondition+ N'
+                        ORDER BY 
+                            hrg.Group1 DESC,
+                            hrg.Group2 DESC,
+                            hrg.Group3 DESC,
+                            hrg.Group4 DESC,
+                            hrg.Group5 DESC,
+							hr.FullName;';
+
+                        EXEC sp_executesql @sql;
+
+				]]>
+			</source_dynamic>
+			<virtual_table>
+				<template_row_name>STT</template_row_name>
+			</virtual_table>
+		</render_info>
+	</render_infos>
+</report>
