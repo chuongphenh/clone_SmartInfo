@@ -143,3 +143,479 @@ SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật kh
    at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(OrganizationParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 761
    at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 20
    at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-05 11:30:06,220 [41] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataEdit)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'flex_EmailTemplate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.SelectFieldsByColumnName[T](String[] fieldNames, ConditionList conditions)
+   at SoftMart.Core.Dao.EnterpriseService.SelectItemByID[T](Object id)
+   at SM.SmartInfo.DAO.Administration.EmailTemplateDao.GetEmailTemplateByID(Nullable`1 id) in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Administration\EmailTemplateDao.cs:line 47
+   at SM.SmartInfo.BIZ.Administration.EmailTemplateBiz.LoadDataEdit(EmailTemplateParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\EmailTemplateBiz.cs:line 74
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(EmailTemplateParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 692
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 38
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+ClientConnectionId:85dd5589-11b5-4b6f-bc59-b9a2c0650b27
+Error Number:208,State:1,Class:16
+2024-06-12 14:41:47,127 [7] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.Exception: Param not supported: TargetParam
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+2024-06-12 14:42:26,877 [9] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'flex_EmailTemplate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.SelectFieldsByColumnName[T](String[] fieldNames, ConditionList conditions)
+   at SoftMart.Core.Dao.EnterpriseService.SelectItemByID[T](Object id)
+   at SM.SmartInfo.DAO.Administration.EmailTemplateDao.GetEmailTemplateByID(Nullable`1 id) in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Administration\EmailTemplateDao.cs:line 47
+   at SM.SmartInfo.BIZ.Administration.EmailTemplateBiz.LoadDataDisplay(EmailTemplateParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(EmailTemplateParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+ClientConnectionId:beb84618-3ddf-4d80-926a-f6aa220d24f6
+Error Number:208,State:1,Class:16
+2024-06-12 14:54:51,017 [5] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataEdit)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'flex_EmailTemplate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.SelectFieldsByColumnName[T](String[] fieldNames, ConditionList conditions)
+   at SoftMart.Core.Dao.EnterpriseService.SelectItemByID[T](Object id)
+   at SM.SmartInfo.DAO.Administration.EmailTemplateDao.GetEmailTemplateByID(Nullable`1 id) in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Administration\EmailTemplateDao.cs:line 47
+   at SM.SmartInfo.BIZ.Administration.EmailTemplateBiz.LoadDataEdit(EmailTemplateParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\EmailTemplateBiz.cs:line 74
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(EmailTemplateParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 695
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 38
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+ClientConnectionId:08da3583-35a4-44dc-8155-147d1cff05fa
+Error Number:208,State:1,Class:16
+2024-06-12 15:00:14,764 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataEdit)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'flex_EmailTemplate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.SelectFieldsByColumnName[T](String[] fieldNames, ConditionList conditions)
+   at SoftMart.Core.Dao.EnterpriseService.SelectItemByID[T](Object id)
+   at SM.SmartInfo.DAO.Administration.EmailTemplateDao.GetEmailTemplateByID(Nullable`1 id) in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Administration\EmailTemplateDao.cs:line 47
+   at SM.SmartInfo.BIZ.Administration.EmailTemplateBiz.LoadDataEdit(EmailTemplateParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\EmailTemplateBiz.cs:line 74
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(EmailTemplateParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 695
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 38
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+ClientConnectionId:26f012c1-a530-4289-8965-02c392213fad
+Error Number:208,State:1,Class:16
+2024-06-12 17:58:05,551 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'flex_EmailTemplate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.SelectFieldsByColumnName[T](String[] fieldNames, ConditionList conditions)
+   at SoftMart.Core.Dao.EnterpriseService.SelectItemByID[T](Object id)
+   at SM.SmartInfo.DAO.Administration.EmailTemplateDao.GetEmailTemplateByID(Nullable`1 id) in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Administration\EmailTemplateDao.cs:line 47
+   at SM.SmartInfo.BIZ.Administration.EmailTemplateBiz.LoadDataDisplay(EmailTemplateParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\EmailTemplateBiz.cs:line 64
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(EmailTemplateParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 689
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 38
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in F:\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+ClientConnectionId:d09f8f6c-1142-4841-b1cc-431a8678e677
+Error Number:208,State:1,Class:16
+2024-06-17 14:41:22,710 [6] DEBUG SmartInfo - MainController.Execute(Commons, GetShortTargetByID)
+System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.get_Value()
+   at SM.SmartInfo.BIZ.Commons.UserBiz.GetShortUserByID(CommonParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Commons\UserBiz.cs:line 66
+   at SM.SmartInfo.BIZ.MainController.ExecuteCommon(CommonParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 207
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 43
+2024-06-17 18:30:40,140 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Plan'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteSelect[T](SqlCommand command)
+   at SM.SmartInfo.DAO.Administration.PlanDao.IsPlanCodeDuplicate(Nullable`1 planID, String planCode)
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.ValidatePlanInDatabase(PlanParam param, Boolean isEdit) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 81
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 41
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+ClientConnectionId:1c4b72bc-bab5-46c7-8cbb-c85bdae1a24c
+Error Number:156,State:1,Class:15
+2024-06-17 18:30:54,860 [7] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Plan'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteScalar(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.InsertItem[T](BaseEntity entity)
+   at SM.SmartInfo.DAO.Administration.PlanDao.InsertPlan(Plan item)
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 47
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+ClientConnectionId:1c4b72bc-bab5-46c7-8cbb-c85bdae1a24c
+Error Number:156,State:1,Class:15
+2024-06-17 22:00:42,938 [9] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'Plan'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteScalar(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.InsertItem[T](BaseEntity entity)
+   at SM.SmartInfo.DAO.Administration.PlanDao.InsertPlan(Plan item) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Administration\PlanDao.cs:line 22
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 47
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+ClientConnectionId:132a855d-34b5-4b4b-b4a5-fb760bb7431e
+Error Number:156,State:1,Class:15
+2024-06-17 22:12:57,380 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.Data.SqlClient.SqlException (0x80131904): The parameterized query '(@PlanCode nvarchar(3),@Name nvarchar(29),@OrganizationName nvar' expects the parameter '@OrganizationName', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at SM.SmartInfo.DAO.Administration.PlanDao.InsertPlan(Plan item) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Administration\PlanDao.cs:line 49
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 47
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+ClientConnectionId:76928ba3-6fdb-483b-888a-acb0efc9b74f
+Error Number:8178,State:1,Class:16
+2024-06-17 22:18:20,660 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.get_Value()
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 48
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-17 22:21:14,284 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+SoftMart.Kernel.Exceptions.SMXException: Mã kế hoạch đã tồn tại trong hệ thống. Vui lòng nhập mã khác.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.ValidatePlanInDatabase(PlanParam param, Boolean isEdit) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 87
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 41
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-17 22:21:41,950 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.get_Value()
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 48
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-17 22:22:22,674 [15] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+SoftMart.Kernel.Exceptions.SMXException: Mã kế hoạch đã tồn tại trong hệ thống. Vui lòng nhập mã khác.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.ValidatePlanInDatabase(PlanParam param, Boolean isEdit) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 87
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 41
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-17 22:24:42,225 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.get_Value()
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 48
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-17 22:25:14,633 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.MissingMethodException: Method not found: 'Int32 SM.SmartInfo.DAO.Administration.PlanDao.InsertPlan(SM.SmartInfo.SharedComponent.Entities.Plan)'.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+2024-06-17 22:27:09,630 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.MissingMethodException: Method not found: 'Int32 SM.SmartInfo.DAO.Administration.PlanDao.InsertPlan(SM.SmartInfo.SharedComponent.Entities.Plan)'.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+2024-06-17 22:31:50,916 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+System.Exception: Failed to insert Plan or retrieve PlanID.
+   at SM.SmartInfo.DAO.Administration.PlanDao.InsertPlan(Plan item)
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 47
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-17 22:31:58,377 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+SoftMart.Kernel.Exceptions.SMXException: Mã kế hoạch đã tồn tại trong hệ thống. Vui lòng nhập mã khác.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.ValidatePlanInDatabase(PlanParam param, Boolean isEdit) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 86
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 41
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 762
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-17 22:34:21,903 [6] DEBUG SmartInfo - MainController.Execute(Administrations, AddNewItem)
+SoftMart.Kernel.Exceptions.SMXException: Mã kế hoạch đã tồn tại trong hệ thống. Vui lòng nhập mã khác.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.ValidatePlanInDatabase(PlanParam param, Boolean isEdit)
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.AddNewItem(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+2024-06-17 22:34:31,887 [8] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'flex_EmailTemplate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.SelectFieldsByColumnName[T](String[] fieldNames, ConditionList conditions)
+   at SoftMart.Core.Dao.EnterpriseService.SelectItemByID[T](Object id)
+   at SM.SmartInfo.DAO.Administration.EmailTemplateDao.GetEmailTemplateByID(Nullable`1 id)
+   at SM.SmartInfo.BIZ.Administration.EmailTemplateBiz.LoadDataDisplay(EmailTemplateParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(EmailTemplateParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+ClientConnectionId:bb0d34af-d9b9-428e-9170-1aec3e45ea41
+Error Number:208,State:1,Class:16
+2024-06-18 10:01:18,855 [8] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 118
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 765
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 10:22:09,091 [6] DEBUG SmartInfo - MainController.Execute(Commons, GetShortTargetByID)
+System.InvalidCastException: Unable to cast object of type 'System.Object' to type 'SoftMart.Core.Dao.BaseEntity'.
+   at SoftMart.Core.Dao.EnterpriseService.‎‍⁮‬⁫⁬‬‮⁭‮‭⁪⁫​‍‍⁬⁪⁮‬​‍⁭‌‏‮⁫‬⁪‌​‭‍​‪⁮⁪⁬​‮[]()
+   at SoftMart.Core.Dao.EnterpriseService.‍‌‮‏‌‭⁮‮‍⁪‮⁯‎‏‍‮⁮⁪‍‍‌⁫⁪‎‌​⁮⁯⁭⁮‮‫‮‎‬‏⁯⁫‌‮[](String[] , ConditionList , Nullable`1 , String )
+   at SoftMart.Core.Dao.EnterpriseService.SelectFieldsByColumnName[T](String[] fieldNames, ConditionList conditions)
+   at SM.SmartInfo.DAO.Commons.TargetCommonDao.GetShortTargetByID(Int32 targetID) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Commons\TargetCommonDao.cs:line 47
+   at SM.SmartInfo.BIZ.Commons.TargetCommonBiz.GetShortTargetByID(CommonParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Commons\TargetCommonBiz.cs:line 35
+   at SM.SmartInfo.BIZ.MainController.ExecuteCommon(CommonParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 207
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 43
+2024-06-18 10:22:48,676 [8] DEBUG SmartInfo - MainController.Execute(Commons, GetShortTargetByID)
+System.InvalidCastException: Unable to cast object of type 'System.Object' to type 'SoftMart.Core.Dao.BaseEntity'.
+   at SoftMart.Core.Dao.EnterpriseService.‎‍⁮‬⁫⁬‬‮⁭‮‭⁪⁫​‍‍⁬⁪⁮‬​‍⁭‌‏‮⁫‬⁪‌​‭‍​‪⁮⁪⁬​‮[]()
+   at SoftMart.Core.Dao.EnterpriseService.‍‌‮‏‌‭⁮‮‍⁪‮⁯‎‏‍‮⁮⁪‍‍‌⁫⁪‎‌​⁮⁯⁭⁮‮‫‮‎‬‏⁯⁫‌‮[](String[] , ConditionList , Nullable`1 , String )
+   at SoftMart.Core.Dao.EnterpriseService.SelectFieldsByColumnName[T](String[] fieldNames, ConditionList conditions)
+   at SM.SmartInfo.DAO.Commons.TargetCommonDao.GetShortTargetByID(Int32 targetID) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Commons\TargetCommonDao.cs:line 47
+   at SM.SmartInfo.BIZ.Commons.TargetCommonBiz.GetShortTargetByID(CommonParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Commons\TargetCommonBiz.cs:line 35
+   at SM.SmartInfo.BIZ.MainController.ExecuteCommon(CommonParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 207
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 43
+2024-06-18 10:25:23,143 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 118
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 765
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 10:26:27,358 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 118
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 765
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 10:31:12,694 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataEdit)
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'flex_EmailTemplate'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader()
+   at SoftMart.Core.Dao.EnterpriseService.ExecuteDataTable(SqlCommand sqlCmd)
+   at SoftMart.Core.Dao.EnterpriseService.SelectFieldsByColumnName[T](String[] fieldNames, ConditionList conditions)
+   at SoftMart.Core.Dao.EnterpriseService.SelectItemByID[T](Object id)
+   at SM.SmartInfo.DAO.Administration.EmailTemplateDao.GetEmailTemplateByID(Nullable`1 id)
+   at SM.SmartInfo.BIZ.Administration.EmailTemplateBiz.LoadDataEdit(EmailTemplateParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\EmailTemplateBiz.cs:line 74
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(EmailTemplateParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 698
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 38
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+ClientConnectionId:e47ebf36-54f0-49a3-a9c1-ccb92931bcc8
+Error Number:208,State:1,Class:16
+2024-06-18 10:31:31,812 [17] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 118
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 765
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 13:23:43,205 [7] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 118
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 765
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 13:24:58,248 [6] DEBUG SmartInfo - MainController.Execute(Administrations, UpdateItem)
+System.Exception: Primary key of updating item could not be null.
+   at SoftMart.Core.Dao.EnterpriseService.UpdateItem[T](BaseEntity entity, Boolean autoIncreaseVersion)
+   at SM.SmartInfo.DAO.Administration.PlanDao.UpdatePlan(Plan item) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Administration\PlanDao.cs:line 65
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.UpdateItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 143
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 774
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 13:27:03,258 [6] DEBUG SmartInfo - MainController.Execute(Administrations, UpdateItem)
+System.Exception: Primary key of updating item could not be null.
+   at SoftMart.Core.Dao.EnterpriseService.UpdateItem[T](BaseEntity entity, Boolean autoIncreaseVersion)
+   at SM.SmartInfo.DAO.Administration.PlanDao.UpdatePlan(Plan item) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Administration\PlanDao.cs:line 65
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.UpdateItem(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 143
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 774
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 13:53:25,750 [7] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 121
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 765
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 13:53:34,300 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataEdit)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 121
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataEdit(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 133
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 771
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 13:53:40,063 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataEdit)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 121
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataEdit(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 133
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 771
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 13:53:43,675 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 121
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 765
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 14:01:12,322 [9] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+2024-06-18 14:02:07,137 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataEdit)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param)
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataEdit(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+2024-06-18 14:02:10,530 [8] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+2024-06-18 14:05:20,966 [9] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataDisplay)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+2024-06-18 14:05:48,488 [6] DEBUG SmartInfo - MainController.Execute(Administrations, LoadDataEdit)
+SoftMart.Kernel.Exceptions.SMXException: Dữ liệu bạn đang cập nhật không tồn tại trong hệ thống.
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataDisplay(PlanParam param)
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.LoadDataEdit(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param)
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param)
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam)
+2024-06-18 14:17:22,646 [5] DEBUG SmartInfo - MainController.Execute(Administrations, DeleteItem)
+System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.get_Value()
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.DeleteItems(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 180
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 780
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 14:18:11,068 [8] DEBUG SmartInfo - MainController.Execute(Administrations, DeleteItem)
+System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.get_Value()
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.DeleteItems(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 180
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 780
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40
+2024-06-18 14:21:47,080 [5] DEBUG SmartInfo - MainController.Execute(Administrations, DeleteItem)
+System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at System.Nullable`1.get_Value()
+   at SM.SmartInfo.BIZ.Administration.PlanBiz.DeleteItems(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\Administration\PlanBiz.cs:line 180
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(PlanParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 780
+   at SM.SmartInfo.BIZ.MainController.ExecuteAdministration(BaseParam param) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainControllerAdministration.cs:line 44
+   at SM.SmartInfo.BIZ.MainController.Execute(BaseParam baseParam) in D:\AHT\Clone_SmartInfo\SM.SmartInfo.BIZ\MainController.cs:line 40

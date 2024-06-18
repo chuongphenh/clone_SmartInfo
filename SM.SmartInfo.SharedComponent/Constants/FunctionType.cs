@@ -33,9 +33,12 @@
             public const string GetOrganizationByParentID = "GetOrganizationByParentID";
             public const string GetOrganizationByTypeAndCommitteeCode = "GetOrganizationByTypeAndCommitteeCode";
             public const string SearchShortEmployee = "SearchShortEmployee";
+            public const string SearchShortTarget = "SearchShortTarget";
             public const string SearchUserByName = "SearchUserByName";
             public const string EmployeeSelectorSearch = "EmployeeSelectorSearch";
+            public const string TargetSelectorSearch = "TargetSelectorSearch";
             public const string GetShortUserByID = "GetShortUserByID";
+            public const string GetShortTargetByID = "GetShortTargetByID";
             public const string GetShortEmployeeInOrg = "GetShortEmployeeInOrg";
 
             public const string OrganizationSelectorSearch = "OrganizationSelectorSearch";
@@ -478,6 +481,36 @@
                 public const string GetItemsForView = "GetItemsForView";
 
                 public const string ApproveRejectEmailTemplate = "ApproveRejectEmailTemplate";
+            }
+            public class Target
+            {
+                public const string SetupAddNewForm = "SetupAddNewForm";
+                public const string AddNewItem = "AddNewItem";
+
+                public const string LoadDataDisplay = "LoadDataDisplay";
+
+                public const string SetupEditForm = "SetupEditForm";
+                public const string LoadDataEdit = "LoadDataEdit";
+                public const string UpdateItem = "UpdateItem";
+
+                public const string SetupViewForm = "SetupViewForm";
+                public const string DeleteItem = "DeleteItem";
+                public const string GetItemsForView = "GetItemsForView";
+            }
+            public class Plan
+            {
+                public const string SetupAddNewForm = "SetupAddNewForm";
+                public const string AddNewItem = "AddNewItem";
+
+                public const string LoadDataDisplay = "LoadDataDisplay";
+
+                public const string SetupEditForm = "SetupEditForm";
+                public const string LoadDataEdit = "LoadDataEdit";
+                public const string UpdateItem = "UpdateItem";
+
+                public const string SetupViewForm = "SetupViewForm";
+                public const string DeleteItem = "DeleteItem";
+                public const string GetItemsForView = "GetItemsForView";
             }
         }
 

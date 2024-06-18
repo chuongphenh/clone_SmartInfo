@@ -462,6 +462,35 @@ namespace SM.SmartInfo.SharedComponent.Constants
                 { SMS,   "SMS" }
             };
         }
+        public class TargetType
+        {
+            public const int SUM = 1;
+            public const int AVG = 2;
+
+            public static Dictionary<int?, string> dctTargetTypes = new Dictionary<int?, string>()
+            {
+                { SUM, "Tính tổng" },
+                { AVG,   "Tính trung bình" }
+            };
+        }
+        
+        public class PlanType
+        {
+            public const int DAY = 1;
+            public const int WEEK = 2;
+            public const int MONTH = 3;
+            public const int QUARTER = 4;
+            public const int YEAR = 5;
+
+            public static Dictionary<int?, string> dctReportCycle = new Dictionary<int?, string>()
+            {
+                { DAY, "Ngày" },
+                { WEEK, "Tuần" },
+                { MONTH, "Tháng" },
+                { QUARTER, "Quý" },
+                { YEAR, "Năm" },
+            };
+        }
 
         #endregion
 
@@ -595,6 +624,8 @@ namespace SM.SmartInfo.SharedComponent.Constants
             public const string AdministrationCountry = "AdministrationCountry";
             public const string AdministrationNotification = "AdministrationNotification";
             public const string AdministrationAnniversary = "AdministrationAnniversary";
+            public const string AdministrationTargets = "AdministrationTargets";
+            public const string AdministrationPlans = "AdministrationPlans";
             // Lich su truy cap
             public const string REPORT_LOGINHISTORYSUMMARY = "REPORT_LOGINHISTORYSUMMARY";
 
@@ -615,6 +646,9 @@ namespace SM.SmartInfo.SharedComponent.Constants
                 {REPORT_LOGINHISTORYSUMMARY             , new DynamicReportUserInputInfo("Thống kê lịch sử truy cập"                                , "Report_LoginHistorySummary.xml")},
                 {AdministrationNotification             , new DynamicReportUserInputInfo("Danh sách cấu hình gửi thông báo"                         , "Administration_Notification.xml")},
                 {AdministrationAnniversary             , new DynamicReportUserInputInfo("Danh sách cấu hình các ngày kỷ niệm truyền thống"          , "Administration_Anniversary.xml")},
+                //
+                {AdministrationTargets             , new DynamicReportUserInputInfo("Danh sách các chỉ tiêu"          , "Administration_Targets.xml")},
+                {AdministrationPlans             , new DynamicReportUserInputInfo("Danh sách các kế hoạch"          , "Administration_Plans.xml")},
             };
 
         }
@@ -628,7 +662,7 @@ namespace SM.SmartInfo.SharedComponent.Constants
             public const int ImportDiaChi = 1;
             public const int ImportUserInformation = 2;
             public const int ImportUserState = 3;
-            
+
 
             public const int ImportCaNhanKhenThuong = 4;
             public const int ImportDonViKhenThuong = 5;

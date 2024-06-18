@@ -15,22 +15,13 @@ namespace SM.SmartInfo.UI.Administrations.Plans
     {
 
         /// <summary>
-        /// hiID control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hiID;
-
-        /// <summary>
-        /// hidBinaryContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidBinaryContent;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
         /// hidVersion control.
@@ -42,22 +33,22 @@ namespace SM.SmartInfo.UI.Administrations.Plans
         protected global::System.Web.UI.WebControls.HiddenField hidVersion;
 
         /// <summary>
-        /// hidStatus control.
+        /// hidDefaultFlowID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidStatus;
+        protected global::System.Web.UI.WebControls.HiddenField hidDefaultFlowID;
 
         /// <summary>
-        /// hiTransformType control.
+        /// hidID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hiTransformType;
+        protected global::System.Web.UI.WebControls.HiddenField hidID;
 
         /// <summary>
         /// lnkEdit control.
@@ -96,102 +87,75 @@ namespace SM.SmartInfo.UI.Administrations.Plans
         protected global::SM.SmartInfo.UI.UserControls.Common.ErrorMessageUC ucErr;
 
         /// <summary>
-        /// lblCode control.
+        /// pnlEditInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCode;
+        protected global::System.Web.UI.WebControls.Panel pnlEditInfo;
 
         /// <summary>
-        /// lblName control.
+        /// lblPlanCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+        protected global::System.Web.UI.WebControls.Label lblPlanCode;
 
         /// <summary>
-        /// lblTemplateType control.
+        /// lblPlanName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTemplateType;
+        protected global::System.Web.UI.WebControls.Label lblPlanName;
 
         /// <summary>
-        /// lblTransformType control.
+        /// lblStartDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTransformType;
+        protected global::System.Web.UI.WebControls.Label lblStartDate;
 
         /// <summary>
-        /// lblStatus control.
+        /// lblEndDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStatus;
+        protected global::System.Web.UI.WebControls.Label lblEndDate;
 
         /// <summary>
-        /// lblProperties control.
+        /// lblReportCycle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProperties;
+        protected global::System.Web.UI.WebControls.Label lblReportCycle;
 
         /// <summary>
-        /// lblTriggerType control.
+        /// lblReportCycleType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTriggerType;
+        protected global::System.Web.UI.WebControls.Label lblReportCycleType;
 
         /// <summary>
-        /// lblTriggerTime control.
+        /// ucTarget control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTriggerTime;
-
-        /// <summary>
-        /// lblSubject control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSubject;
-
-        /// <summary>
-        /// lblContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SoftMart.Core.UIControls.MultiLineLabel lblContent;
-
-        /// <summary>
-        /// lbtImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtImage;
+        protected global::SM.SmartInfo.UI.Administrations.Plans.TargetUC ucTarget;
     }
 }

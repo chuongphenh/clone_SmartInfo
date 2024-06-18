@@ -61,7 +61,7 @@ namespace SM.SmartInfo.BIZ
                             ExecuteEmulationAndReward(baseParam as EmulationAndRewardParam);
                             break;
                         case BusinessType.ImageLibrary:
-                                ExecuteImageLibrary(baseParam as ImageLibraryParam);
+                            ExecuteImageLibrary(baseParam as ImageLibraryParam);
                             break;
                         ////case BusinessType.Action:
                         ////    ExecuteAction(baseParam as ActionParam);
@@ -181,7 +181,92 @@ namespace SM.SmartInfo.BIZ
                         break;
                     }
                 #endregion
+                #region Target
 
+                case FunctionType.Common.SearchShortTarget:
+                    {
+                        var biz = new TargetCommonBiz();
+                        biz.SearchShortTarget(param);
+                        break;
+                    }
+                case FunctionType.Common.TargetSelectorSearch:
+                    {
+                        var biz = new TargetCommonBiz();
+                        biz.TargetSelectorSearch(param);
+                        break;
+                    }
+                //case FunctionType.Common.SearchUserByName:
+                //    {
+                //        var biz = new UserBiz();
+                //        biz.SearchUserByName(param);
+                //        break;
+                //    }
+                case FunctionType.Common.GetShortTargetByID:
+                    {
+                        var biz = new TargetCommonBiz();
+                        biz.GetShortTargetByID(param);
+                        break;
+                    }
+                //case FunctionType.Common.GetListEmployeeByOrganizationID:
+                //    {
+                //        var biz = new UserBiz();
+                //        biz.GetListEmployeeByOrganizationID(param);
+                //        break;
+                //    }
+                //case FunctionType.Common.GetListEmployeeByListStringOrganizationID:
+                //    {
+                //        var biz = new UserBiz();
+                //        biz.GetListEmployeeByListStringOrganizationID(param);
+                //        break;
+                //    }
+                //case FunctionType.Common.NewsSearch:
+                //    {
+                //        var bizNews = new NewsBiz();
+                //        int? type = param.SearchType;
+                //        if (type == null || type == SMX.TypeSearch.News)
+                //            bizNews.SearchNews(param);
+                //        break;
+                //    }
+                //case FunctionType.Common.NegativeNewsSearch:
+                //    {
+                //        var bizNews = new NewsBiz();
+                //        int? type = param.SearchType;
+                //        if (type == null || type == SMX.TypeSearch.NegativeNews)
+                //            bizNews.SearchNegativeNews(param);
+                //        break;
+                //    }
+                //case FunctionType.Common.PressAgencySearch:
+                //    {
+                //        var bizPressAgency = new PressAgency.PressAgencyBiz();
+                //        int? type = param.SearchType;
+                //        if (type == null || type == SMX.TypeSearch.PressAgency)
+                //            bizPressAgency.SearchPressAgency(param);
+                //        break;
+                //    }
+                //case FunctionType.Common.NotificationSearch:
+                //    {
+                //        var bizNoti = new Notification.NotificationBiz();
+                //        int? type = param.SearchType;
+                //        if (type == null || type == SMX.TypeSearch.Notification)
+                //            bizNoti.SearchNotification(param);
+                //        break;
+                //    }
+                //case FunctionType.Common.GetCommon:
+                //    {
+                //        var biz = new NewsBiz();
+                //        var bizNoti = new Notification.NotificationBiz();
+                //        param.ListNotification = bizNoti.GetAllNotification(param.EmployeeId.GetValueOrDefault(0));
+                //        param.ListTinTuc = biz.Get5TinTuc();
+                //        param.ListSuVu = biz.Get4TinSuVu();
+                //        break;
+                //    }
+                //case FunctionType.Common.FilterNotification:
+                //    {
+                //        var bizNoti = new Notification.NotificationBiz();
+                //        bizNoti.FilterNotification(param);
+                //        break;
+                //    }
+                #endregion
                 #region Organization
                 case FunctionType.Common.OrganizationSelectorSearch:
                     {

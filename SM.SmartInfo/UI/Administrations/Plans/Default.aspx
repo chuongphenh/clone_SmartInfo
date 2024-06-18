@@ -20,7 +20,7 @@
         }
     </style>
     <div class="toolbar">
-        DANH SÁCH MẪU EMAIL/SMS
+        DANH SÁCH KẾ HOẠCH
         <ul class="icon_toolbar">
             <li>
                 <asp:LinkButton ID="btnExport" runat="server" OnClick="btnExport_Click">

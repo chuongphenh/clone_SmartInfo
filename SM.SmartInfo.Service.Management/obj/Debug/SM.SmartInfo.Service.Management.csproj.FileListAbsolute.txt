@@ -33,3 +33,7 @@ F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Service.Management\obj\Debug\S
 F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.dll
 F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.pdb
 F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Service.Management\bin\Debug\Newtonsoft.Json.xml
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.csproj.AssemblyReference.cache
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.csproj.CoreCompileInputs.cache
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.dll
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.pdb

@@ -12,10 +12,14 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <SccProjectName>Svn</SccProjectName>
-    <SccLocalPath>Svn</SccLocalPath>
-    <SccAuxPath>Svn</SccAuxPath>
-    <SccProvider>SubversionScc</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -80,10 +84,6 @@
     <ProjectReference Include="..\SM.SmartInfo.CacheManager\SM.SmartInfo.CacheManager.csproj">
       <Project>{902f76ef-e820-4d29-b0ce-02bf1ec03cd4}</Project>
       <Name>SM.SmartInfo.CacheManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SM.SmartInfo.Service.Notification\SM.SmartInfo.Service.Notification.csproj">
-      <Project>{98721faf-c70e-4465-a0a2-3fadcbc4f78f}</Project>
-      <Name>SM.SmartInfo.Service.Notification</Name>
     </ProjectReference>
     <ProjectReference Include="..\SM.SmartInfo.Service.Reporting\SM.SmartInfo.Service.Reporting.csproj">
       <Project>{3c029d22-bfc8-4103-b1a5-969aca4bba2b}</Project>

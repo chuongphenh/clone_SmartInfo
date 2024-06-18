@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 namespace SM.SmartInfo.UI.Administrations.Targets
 {
-    public partial class Display : BasePage, ISMFormDisplay<Flex_EmailTemplate>
+    public partial class Display : BasePage, ISMFormDisplay<Target>
     {
         #region Event
 
@@ -114,20 +114,20 @@ namespace SM.SmartInfo.UI.Administrations.Targets
 
         public void LoadData()
         {
-            EmailTemplateParam param = new EmailTemplateParam(FunctionType.Administration.EmailTemplate.LoadDataDisplay);
-            param.EmailTemplateID = Utility.GetNullableInt(hiID.Value);
+            TargetParam param = new TargetParam(FunctionType.Administration.Target.LoadDataDisplay);
+            param.TargetID = Utility.GetNullableInt(hiID.Value);
             MainController.Provider.Execute(param);
 
-            BindObjectToForm(param.EmailTemplate);
+            BindObjectToForm(param.Target);
         }
 
         public void DeleteItems()
         {
-            EmailTemplateParam param = new EmailTemplateParam(FunctionType.Administration.EmailTemplate.DeleteItem);
-            Flex_EmailTemplate email = new Flex_EmailTemplate();
-            email.EmailTemplateID = Utility.GetNullableInt(hiID.Value);
-            email.Status = Utility.GetInt(hidStatus.Value);
-            param.EmailTemplate = email;
+            TargetParam param = new TargetParam(FunctionType.Administration.Target.DeleteItem);
+            Target target = new Target();
+            target.TargetID = Utility.GetNullableInt(hiID.Value);
+            //target.Status = Utility.GetInt(hidStatus.Value);
+            param.Target = target;
             MainController.Provider.Execute(param);
         }
 
@@ -135,80 +135,20 @@ namespace SM.SmartInfo.UI.Administrations.Targets
 
         #region Specifix
 
-        public void BindObjectToForm(Flex_EmailTemplate item)
+        public void BindObjectToForm(Target item)
         {
             // Button edit
-            lnkEdit.Visible = lnkEdit.Visible && (item.Status == SMX.Status.EmailTemplate.Updating || item.Status == SMX.Status.EmailTemplate.Final);
+            //lnkEdit.Visible = lnkEdit.Visible && (item.Status == SMX.Status.EmailTemplate.Updating || item.Status == SMX.Status.EmailTemplate.Final);
             if (lnkEdit.Visible)
             {
-                lnkEdit.NavigateUrl = string.Format(PageURL.Edit, item.EmailTemplateID);
+                lnkEdit.NavigateUrl = string.Format(PageURL.Edit, item.TargetID);
             }
 
             // Record data
-            lblCode.Text = item.Code;
+            lblCode.Text = item.TargetCode;
             lblName.Text = item.Name;
-            lblTemplateType.Text = Utils.Utility.GetDictionaryValue(SMX.TemplateType.dctTemplateTypes, item.TemplateType);
-            hiTransformType.Value = Utility.GetString(item.TransformType);
-            lblTransformType.Text = Utils.Utility.GetDictionaryValue(SMX.TransformType.dctName, item.TransformType);
-            lblProperties.Text = item.Properties;
-            lblSubject.Text = item.Subject;
-            lblContent.Text = item.Content;
-            lblStatus.Text = Utils.Utility.GetDictionaryValue(SMX.Status.dctStatus, item.Status);
-            hidStatus.Value = Utility.GetString(item.Status);
-            hidVersion.Value = item.Version.ToString();
-
-            if (item.TransformType == SMX.TransformType.Map)
-                lblContent.Visible = true;
-
-            if (item.TriggerType.HasValue)
-            {
-                lblTriggerType.Text = Utility.GetDictionaryValue<int?>(SMX.TriggerType.dicDes, item.TriggerType);
-                switch (item.TriggerType)
-                {
-                    case SMX.TriggerType.Event:
-                        break;
-                    case SMX.TriggerType.Daily:
-                        break;
-                    case SMX.TriggerType.Weekly:
-                        {
-                            switch (item.TriggerTime.Value.DayOfWeek)
-                            {
-                                case DayOfWeek.Monday:
-                                    lblTriggerTime.Text = "Thứ 2";
-                                    break;
-                                case DayOfWeek.Tuesday:
-                                    lblTriggerTime.Text = "Thứ 3";
-                                    break;
-                                case DayOfWeek.Wednesday:
-                                    lblTriggerTime.Text = "Thứ 4";
-                                    break;
-                                case DayOfWeek.Thursday:
-                                    lblTriggerTime.Text = "Thứ 5";
-                                    break;
-                                case DayOfWeek.Friday:
-                                    lblTriggerTime.Text = "Thứ 6";
-                                    break;
-                                case DayOfWeek.Saturday:
-                                    lblTriggerTime.Text = "Thứ 7";
-                                    break;
-                                case DayOfWeek.Sunday:
-                                    lblTriggerTime.Text = "Chủ nhật";
-                                    break;
-                            }
-                        }
-                        break;
-                    case SMX.TriggerType.Monthly:
-                        lblTriggerTime.Text = item.TriggerTime.Value.Day.ToString();
-                        break;
-                }
-            }
-
-            //Photo
-            if (item.ContentBinary != null && item.ContentBinary.Length > 0 && item.TransformType != SMX.TransformType.Map)
-            {
-                hidBinaryContent.Value = Convert.ToBase64String(item.ContentBinary);
-                lbtImage.Visible = true;
-            }
+            lblTemplateType.Text = Utils.Utility.GetDictionaryValue(SMX.TargetType.dctTargetTypes, item.TargetType);
+            lblDescription.Text = item.Description;
         }
 
         #endregion

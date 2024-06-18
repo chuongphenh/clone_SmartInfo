@@ -122,6 +122,9 @@
     <Compile Include="Entities\ntf_NotificationPushHistory.cs" />
     <Compile Include="Entities\Profile.cs" />
     <Compile Include="Entities\Setting.cs" />
+    <Compile Include="Entities\Plan.cs" />
+    <Compile Include="Entities\PlanTarget.cs" />
+    <Compile Include="Entities\Target.cs" />
     <Compile Include="Entities\SharingManagement.cs" />
     <Compile Include="Entities\ntf_TokenDevice.cs" />
     <Compile Include="Entities\Organization.cs" />
@@ -136,11 +139,14 @@
     <Compile Include="Entities\SystemSupporting.cs" />
     <Compile Include="Entities\WordTransform.cs" />
     <Compile Include="EntityInfos\BatchProcessingInfo.cs" />
+    <Compile Include="EntityInfos\TargetInfo.cs" />
     <Compile Include="EntityInfos\EmployeeInfo.cs" />
     <Compile Include="EntityInfos\ExcelRenderInfo.cs" />
     <Compile Include="EntityInfos\ReportInfo.cs" />
     <Compile Include="EntityViews\vOrganization.cs" />
     <Compile Include="Interfaces\IPVIC.cs" />
+    <Compile Include="Params\Administration\PlanParam.cs" />
+    <Compile Include="Params\Administration\TargetParam.cs" />
     <Compile Include="Params\Administration\EmailTemplateParam.cs" />
     <Compile Include="Params\Administration\OrganizationParam.cs" />
     <Compile Include="Params\Administration\RegionParam.cs" />

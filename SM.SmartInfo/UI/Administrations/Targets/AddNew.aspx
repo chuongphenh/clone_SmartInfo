@@ -20,7 +20,7 @@
             }
     </style>
     <div class="toolbar">
-        THÊM MỚI SỬA MẪU EMAIL/SMS
+        THÊM MỚI CHỈ TIÊU
         <ul class="icon_toolbar">
             <li>
                 <asp:LinkButton ID="btnSave" OnClick="btnSave_Click" runat="server"
@@ -43,34 +43,33 @@
         </div>
         <table class="tableDisplay" cellpadding="0" cellspacing="0" width="100%">
             <tr>
-                <th>Mã mẫu<span class="star">*</span>
+                <th>Mã chỉ tiêu<span class="star">*</span>
                 </th>
                 <td>
                     <asp:TextBox ID="txtCode" runat="server" MaxLength="256" Width="200"></asp:TextBox>
                 </td>
-                <th>Tên mẫu<span class="star">*</span>
+                <th>Tên chỉ tiêu<span class="star">*</span>
                 </th>
                 <td>
                     <asp:TextBox ID="txtName" runat="server" MaxLength="256" Width="200" />
                 </td>
             </tr>
             <tr>
-                <th>Loại mẫu<span class="star">*</span>
+                <th>Mô tả
+                </th>
+                <td >
+                    <tk:TextArea ID="txtDescription" runat="server"  TextMode="MultiLine"  Width="100%"
+                        Rows="1"></tk:TextArea>
+                </td>
+                <th>Loại chỉ tiêu<%-- <span class="star">*</span>--%>
                 </th>
                 <td>
-                    <asp:DropDownList ID="ddTemplateType" runat="server" DataTextField="Value" DataValueField="Key"
+                    <asp:DropDownList ID="ddTargrtType" runat="server" DataTextField="Value" DataValueField="Key"
                         Width="200">
                     </asp:DropDownList>
                 </td>
-                <th>Cách thức sinh<span class="star">*</span>
-                </th>
-                <td>
-                    <asp:DropDownList ID="ddTransformType" AutoPostBack="true" OnSelectedIndexChanged="ddTransformType_OnSelectedIndexChanged"
-                        runat="server" DataTextField="Value" DataValueField="Key" Width="200">
-                    </asp:DropDownList>
-                </td>
             </tr>
-            <tr>
+            <%--<tr>
                 <th>Trạng thái
                 </th>
                 <td colspan="3">
@@ -116,7 +115,7 @@
                         Display="None" ForeColor="Red" ErrorMessage="Chỉ cho phép upload file word or html"
                         ValidationExpression="(.*?)\.(doc|docx|html|xsl)$"></asp:RegularExpressionValidator>
                 </td>
-            </tr>
+            </tr>--%>
         </table>
     </div>
 </asp:Content>

@@ -61,6 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administration\PlanDao.cs" />
+    <Compile Include="Administration\TargetDao.cs" />
     <Compile Include="Administration\EmailTemplateDao.cs" />
     <Compile Include="Administration\EmployeeDao.cs" />
     <Compile Include="Administration\FeatureDao.cs" />
@@ -79,6 +81,7 @@
     <Compile Include="CommonList\EmailDao.cs" />
     <Compile Include="Commons\DataTrackingDao.cs" />
     <Compile Include="Commons\OrganizationDAO.cs" />
+    <Compile Include="Commons\TargetCommonDao.cs" />
     <Compile Include="Commons\UserDao.cs" />
     <Compile Include="EmulationAndRewards\EmulationAndRewardDao.cs" />
     <Compile Include="ExceptionConvert.cs" />

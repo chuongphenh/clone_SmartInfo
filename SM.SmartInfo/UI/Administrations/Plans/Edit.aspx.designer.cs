@@ -15,42 +15,6 @@ namespace SM.SmartInfo.UI.Administrations.Plans
     {
 
         /// <summary>
-        /// hidBinaryContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidBinaryContent;
-
-        /// <summary>
-        /// hidId control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidId;
-
-        /// <summary>
-        /// hidVersion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hidVersion;
-
-        /// <summary>
-        /// hiTransformType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hiTransformType;
-
-        /// <summary>
         /// btnSave control.
         /// </summary>
         /// <remarks>
@@ -69,6 +33,51 @@ namespace SM.SmartInfo.UI.Administrations.Plans
         protected global::System.Web.UI.WebControls.HyperLink lnkExit;
 
         /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+
+        /// <summary>
+        /// hidID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hidID;
+
+        /// <summary>
+        /// hidVersion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hidVersion;
+
+        /// <summary>
+        /// hidOldParentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hidOldParentID;
+
+        /// <summary>
+        /// hidNewParentID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hidNewParentID;
+
+        /// <summary>
         /// ucErr control.
         /// </summary>
         /// <remarks>
@@ -78,129 +87,75 @@ namespace SM.SmartInfo.UI.Administrations.Plans
         protected global::SM.SmartInfo.UI.UserControls.Common.ErrorMessageUC ucErr;
 
         /// <summary>
-        /// lblCode control.
+        /// pnlEditInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCode;
+        protected global::System.Web.UI.WebControls.Panel pnlEditInfo;
 
         /// <summary>
-        /// lblName control.
+        /// txtPlanCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblName;
+        protected global::System.Web.UI.WebControls.TextBox txtPlanCode;
 
         /// <summary>
-        /// ddTemplateType control.
+        /// txtPlanName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddTemplateType;
+        protected global::System.Web.UI.WebControls.TextBox txtPlanName;
 
         /// <summary>
-        /// ddTransformType control.
+        /// rdpStartDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddTransformType;
+        protected global::SoftMart.Core.UIControls.DatePicker rdpStartDate;
 
         /// <summary>
-        /// ddStatus control.
+        /// rdpEndDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddStatus;
+        protected global::SoftMart.Core.UIControls.DatePicker rdpEndDate;
 
         /// <summary>
-        /// lblProperties control.
+        /// txtReportCycle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProperties;
+        protected global::System.Web.UI.WebControls.TextBox txtReportCycle;
 
         /// <summary>
-        /// ddlTriggerType control.
+        /// rcbReportCycleType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTriggerType;
+        protected global::System.Web.UI.WebControls.DropDownList rcbReportCycleType;
 
         /// <summary>
-        /// ddlTriggerTime control.
+        /// ucTarget control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTriggerTime;
-
-        /// <summary>
-        /// lblTriggerTimeNote control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTriggerTimeNote;
-
-        /// <summary>
-        /// txtSubject control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSubject;
-
-        /// <summary>
-        /// txtContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::SoftMart.Core.UIControls.TextArea txtContent;
-
-        /// <summary>
-        /// fileUpload control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fileUpload;
-
-        /// <summary>
-        /// regexValidator control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexValidator;
-
-        /// <summary>
-        /// lbtImage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtImage;
+        protected global::SM.SmartInfo.UI.Administrations.Plans.TargetUC ucTarget;
     }
 }

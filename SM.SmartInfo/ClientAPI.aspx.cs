@@ -29,7 +29,23 @@ namespace SM.CollateralManagement
             // Chuyển đổi IList<DynamicObject> về JSONString
             return AjaxSearchBox.ParseClientData(lstCommittee);
         }
+        [WebMethod]
+        public static string SearchTarget(string keyword, string optionValue)
+       {
+            CommonParam param = new CommonParam(FunctionType.Common.SearchShortTarget);
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                param.TargetName = keyword;
+            }
+            MainController.Provider.Execute(param);
 
+
+            // Chuyển đổi dữ liệu tìm kiếm được về IList<DynamicObject>
+            IList lstTarget = param.Targets.Select(en => new { en.TargetID, en.Name, TargetCode = en.TargetCode }).ToList();
+
+            // Chuyển đổi IList<DynamicObject> về JSONString
+            return AjaxSearchBox.ParseClientData(lstTarget);
+        }
         [WebMethod]
         public static string SearchvOrgWithAll(string keyword, string optionValue)
         {

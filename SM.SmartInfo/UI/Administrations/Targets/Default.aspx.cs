@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Web.UI.WebControls;
 using SM.SmartInfo.Utils;
 using SM.SmartInfo.SharedComponent.Constants;
@@ -17,7 +16,7 @@ namespace SM.SmartInfo.UI.Administrations.Targets
 {
     public partial class Default : BasePage, ISMForm
     {
-        private const string REPORT_TYPE = SMX.DynamicReport.AdministrationEmails;
+        private const string REPORT_TYPE = SMX.DynamicReport.AdministrationTargets;
 
         #region events
 

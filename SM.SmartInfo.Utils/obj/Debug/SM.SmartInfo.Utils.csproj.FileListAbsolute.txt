@@ -30,3 +30,17 @@ F:\Clone_SmartInfo\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.csproj.CoreCo
 F:\Clone_SmartInfo\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.csproj.CopyComplete
 F:\Clone_SmartInfo\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.dll
 F:\Clone_SmartInfo\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.pdb
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\bin\Debug\SM.SmartInfo.Utils.dll
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\bin\Debug\SM.SmartInfo.Utils.pdb
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\bin\Debug\EPPlus.dll
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\bin\Debug\EPPlus.Interfaces.dll
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\bin\Debug\EPPlus.System.Drawing.dll
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\bin\Debug\SM.SmartInfo.SharedComponent.dll
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\bin\Debug\SMCS.dll
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\bin\Debug\SM.SmartInfo.SharedComponent.pdb
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\bin\Debug\EPPlus.xml
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.csproj.AssemblyReference.cache
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.csproj.CoreCompileInputs.cache
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\obj\Debug\SM.Smart.F0E65A8B.Up2Date
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.dll
+D:\AHT\Clone_SmartInfo\SM.SmartInfo.Utils\obj\Debug\SM.SmartInfo.Utils.pdb

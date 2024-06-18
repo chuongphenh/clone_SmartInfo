@@ -99,6 +99,8 @@
     <Compile Include="Administration\AnniversaryBiz.cs" />
     <Compile Include="Administration\CountryBiz.cs" />
     <Compile Include="Administration\DistrictBiz.cs" />
+    <Compile Include="Administration\PlanBiz.cs" />
+    <Compile Include="Administration\TargetBiz.cs" />
     <Compile Include="Administration\EmailTemplateBiz.cs" />
     <Compile Include="Administration\NotificationBiz.cs" />
     <Compile Include="Administration\OrganizationConfigBiz.cs" />
@@ -122,6 +124,7 @@
     <Compile Include="Commons\DataTrackingBiz.cs" />
     <Compile Include="Commons\ExportFilesBiz.cs" />
     <Compile Include="Commons\OrganizationBiz.cs" />
+    <Compile Include="Commons\TargetCommonBiz.cs" />
     <Compile Include="Commons\UserBiz.cs" />
     <Compile Include="EmulationAndRewards\EmulationAndRewardBiz.cs" />
     <Compile Include="ImageLibrary\ImageLibraryBiz.cs" />
@@ -160,10 +163,6 @@
     <ProjectReference Include="..\SM.SmartInfo.Service.ECM\SM.SmartInfo.Service.ECM.csproj">
       <Project>{a85db3ed-ec13-48fb-943d-b6df26993cb3}</Project>
       <Name>SM.SmartInfo.Service.ECM</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SM.SmartInfo.Service.Notification\SM.SmartInfo.Service.Notification.csproj">
-      <Project>{98721faf-c70e-4465-a0a2-3fadcbc4f78f}</Project>
-      <Name>SM.SmartInfo.Service.Notification</Name>
     </ProjectReference>
     <ProjectReference Include="..\SM.SmartInfo.SharedComponent\SM.SmartInfo.SharedComponent.csproj">
       <Project>{4f9721d1-ae44-4068-a1ba-3f89540bb01a}</Project>

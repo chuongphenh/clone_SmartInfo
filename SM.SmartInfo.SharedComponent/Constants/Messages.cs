@@ -76,5 +76,25 @@
             public const string NoName = "Bạn chưa nhập [Tên mẫu].";
             public const string IsChanged = "Mẫu Email/SMS đã bị thay đổi. Hãy refresh và thử lại.";
         }
+        public class Target
+        {
+            public const string NoItemTarget = "Không có Chỉ tiêu nào để thực thi.";
+            public const string NoTransformType = "Bạn cần phải chọn [Cách thức sinh].";
+            public const string NoTemplateType = "Bạn cần phải chọn [Loại mẫu].";
+            public const string NoCode = "Bạn chưa nhập [Mã chỉ tiêu].";
+            public const string NoName = "Bạn chưa nhập [Tên chỉ tiêu].";
+            public const string IsChanged = "Chỉ tiêu đã bị thay đổi. Hãy refresh và thử lại.";
+            public const string DuplicateTargetInGrid = "Danh sách chỉ tiêu không được phép trùng chỉ tiêu.";
+        }
+        public class Plan
+        {
+            public const string NoItemPlan = "Không có Kế hoạch nào để thực thi.";
+            public const string NoTransformType = "Bạn cần phải chọn [Cách thức sinh].";
+            public const string NoTemplateType = "Bạn cần phải chọn [Loại mẫu].";
+            public const string NoCode = "Bạn chưa nhập [Mã kế hoạch].";
+            public const string NoName = "Bạn chưa nhập [Tên tên kế hoạch].";
+            public const string IsChanged = "Kế hoạch đã bị thay đổi. Hãy refresh và thử lại.";
+            public const string DuplicateCode = "Mã kế hoạch đã tồn tại trong hệ thống. Vui lòng nhập mã khác.";
+        }
     }
 }

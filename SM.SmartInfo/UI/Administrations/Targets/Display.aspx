@@ -11,7 +11,7 @@
     <asp:HiddenField ID="hidStatus" runat="server" />
     <asp:HiddenField ID="hiTransformType" runat="server" />
     <div class="toolbar">
-        CHI TIẾT MẪU EMAIL/SMS
+        CHI TIẾT CHỈ TIÊU
         <ul class="icon_toolbar">
             <li>
                 <asp:HyperLink ID="lnkEdit" runat="server" Visible="false">
@@ -21,7 +21,7 @@
             </li>
             <li>
                 <asp:LinkButton ID="btnDelete" runat="server" OnClick="btnDelete_Click"
-                    OnClientClick="return confirm('Bạn có chắc chắn muốn xóa mẫu email/sms không?')"
+                    OnClientClick="return confirm('Bạn có chắc chắn muốn xóa chỉ tiêu không?')"
                     Visible="false">
                     <i class="fa fa-trash" aria-hidden="true" style="color:black; margin-top: 4px; font-size: 16px;" title="Xóa"> </i>
                     <span style="color:black;font-weight:700">Xóa</span>
@@ -42,13 +42,13 @@
         <table cellpadding="0" cellspacing="0" class="tableDisplay" width="100%">
             <tr>
                 <th>
-                    Mã mẫu
+                    Mã chỉ tiêu
                 </th>
                 <td>
                     <asp:Label ID="lblCode" runat="server"></asp:Label>
                 </td>
                 <th>
-                    Tên mẫu
+                    Tên chỉ tiêu
                 </th>
                 <td>
                     <asp:Label ID="lblName" runat="server"></asp:Label>
@@ -56,19 +56,25 @@
             </tr>
             <tr>
                 <th>
+                    Mô tả
+                </th>
+                <td>
+                    <tk:MultiLineLabel ID="lblDescription" runat="server"></tk:MultiLineLabel>
+                </td>
+                <th>
                     Loại mẫu
                 </th>
                 <td>
                     <asp:Label ID="lblTemplateType" runat="server"></asp:Label>
                 </td>
-                <th>
+                <%--<th>
                     Cách thức sinh
                 </th>
                 <td>
                     <asp:Label ID="lblTransformType" runat="server"></asp:Label>
-                </td>
+                </td>--%>
             </tr>
-            <tr>
+            <%--<tr>
                 <th>
                     Trạng thái
                 </th>
@@ -115,7 +121,7 @@
                     <asp:LinkButton ID="lbtImage" runat="server" Text="Tải file" Font-Underline="false"
                         ForeColor="Blue" OnClick="lbtImage_Click" Visible="false"></asp:LinkButton>
                 </td>
-            </tr>
+            </tr>--%>
         </table>
     </div>
 </asp:Content>

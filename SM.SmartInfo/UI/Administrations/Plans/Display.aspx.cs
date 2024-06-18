@@ -1,21 +1,22 @@
-﻿
-using System;
-
-using SM.SmartInfo.SharedComponent.Entities;
-using SM.SmartInfo.SharedComponent.Constants;
-using SM.SmartInfo.Utils;
-using System.IO;
-using SM.SmartInfo.SharedComponent.Params.Administration;
+﻿using System;
 using SM.SmartInfo.BIZ;
-
+using SoftMart.Core.BRE;
+using SM.SmartInfo.Utils;
+using SoftMart.Core.UIControls;
+using SM.SmartInfo.CacheManager;
 using SoftMart.Kernel.Exceptions;
-using SM.SmartInfo.PermissionManager;
-using SM.SmartInfo.PermissionManager.Shared;
 using System.Collections.Generic;
+using SoftMart.Core.BRE.SharedComponent;
+using SM.SmartInfo.SharedComponent.Entities;
+using SM.SmartInfo.PermissionManager.Shared;
+using SM.SmartInfo.SharedComponent.Constants;
+using SM.SmartInfo.SharedComponent.Params.CommonList;
+using System.Linq;
+using SM.SmartInfo.SharedComponent.Params.Administration;
 
 namespace SM.SmartInfo.UI.Administrations.Plans
 {
-    public partial class Display : BasePage, ISMFormDisplay<Flex_EmailTemplate>
+    public partial class Display : PlansBase, ISMFormDisplay<Plan>
     {
         #region Event
 
@@ -28,6 +29,7 @@ namespace SM.SmartInfo.UI.Administrations.Plans
                     SetupForm();
                     LoadData();
                 }
+
             }
             catch (SMXException ex)
             {
@@ -40,6 +42,7 @@ namespace SM.SmartInfo.UI.Administrations.Plans
             try
             {
                 DeleteItems();
+
                 Response.Redirect(PageURL.Default);
             }
             catch (SMXException ex)
@@ -47,173 +50,70 @@ namespace SM.SmartInfo.UI.Administrations.Plans
                 ucErr.ShowError(ex);
             }
         }
-
-        protected void lbtImage_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (!string.IsNullOrWhiteSpace(hidBinaryContent.Value))
-                {
-                    string fileType = string.Empty;
-                    int? transformType = Utility.GetNullableInt(hiTransformType.Value);
-                    if (transformType.HasValue)
-                    {
-                        switch (transformType.Value)
-                        {
-                            case SMX.TransformType.TransformByWord:
-                                {
-                                    fileType = ".doc";
-                                    break;
-                                }
-                            case SMX.TransformType.TransformByXslt:
-                                {
-                                    fileType = ".xsl";
-                                    break;
-                                }
-                            default:
-                                break;
-                        }
-                    }
-                    string displayName = lblCode.Text + fileType;//.xls: Extension of 4 templates
-                    byte[] bytes = Convert.FromBase64String(hidBinaryContent.Value);
-
-                    SoftMart.Core.Utilities.DownloadHelper.PushBinaryContent(SoftMart.Core.Utilities.DownloadHelper.CONTENT_TYPE_TEXT, bytes, displayName);
-                }
-            }
-            catch (SMXException ex)
-            {
-                ucErr.ShowError(ex);
-            }
-        }
-
-        #endregion
-
-        #region Private
-
-        private void ApproveReject(int status)
-        {
-            EmailTemplateParam param = new EmailTemplateParam(FunctionType.Administration.EmailTemplate.ApproveRejectEmailTemplate);
-
-            Flex_EmailTemplate email = new Flex_EmailTemplate();
-            email.EmailTemplateID = base.GetIntIdParam(SMX.Parameter.ID);
-            email.Status = status;
-            email.Version = Utility.GetNullableInt(hidVersion.Value);
-
-            param.EmailTemplate = email;
-
-            MainController.Provider.Execute(param);
-        }
-
         #endregion
 
         #region Common
 
         public void SetupForm()
         {
-            hiID.Value = Utility.GetString(base.GetIntIdParam());
+            hidID.Value = Utility.GetString(base.GetIntIdParam());
             lnkExit.NavigateUrl = PageURL.Default;
-            lnkEdit.NavigateUrl = string.Format(PageURL.Edit, GetIntIdParam());
         }
 
         public void LoadData()
         {
-            EmailTemplateParam param = new EmailTemplateParam(FunctionType.Administration.EmailTemplate.LoadDataDisplay);
-            param.EmailTemplateID = Utility.GetNullableInt(hiID.Value);
-            MainController.Provider.Execute(param);
-
-            BindObjectToForm(param.EmailTemplate);
+            int itemID = 0;
+            string strID = Request.Params[SMX.Parameter.ID];
+            if (!string.IsNullOrWhiteSpace(strID))
+            {
+                itemID = base.GetIntIdParam();
+            }
+            lnkEdit.NavigateUrl = string.Format(PageURL.Edit, itemID);
+            DisplaySelectedItem(itemID);
         }
 
         public void DeleteItems()
         {
-            EmailTemplateParam param = new EmailTemplateParam(FunctionType.Administration.EmailTemplate.DeleteItem);
-            Flex_EmailTemplate email = new Flex_EmailTemplate();
-            email.EmailTemplateID = Utility.GetNullableInt(hiID.Value);
-            email.Status = Utility.GetInt(hidStatus.Value);
-            param.EmailTemplate = email;
+            PlanParam param = new PlanParam(FunctionType.Administration.Plan.DeleteItem);
+            Plan deletionPlan = new Plan();
+            deletionPlan.PlanID = Utility.GetNullableInt(hidID.Value);
+            //target.Status = Utility.GetInt(hidStatus.Value);
+            param.Plan = deletionPlan;
             MainController.Provider.Execute(param);
+        }
+
+        public void BindObjectToForm(Plan item)
+        {
+            // Main information
+            lblPlanCode.Text = item.PlanCode;
+            lblPlanName.Text = item.Name;
+            lblStartDate.Text = item.StartDate.HasValue ? item.StartDate.Value.ToString("dd/MM/yyyy") : string.Empty;
+            lblEndDate.Text = item.EndDate.HasValue ? item.EndDate.Value.ToString("dd/MM/yyyy") : string.Empty;
+            lblReportCycle.Text = item.ReportCycle;
+            lblReportCycleType.Text = Utils.Utility.GetDictionaryValue(SMX.PlanType.dctReportCycle, item.ReportCycleType);
         }
 
         #endregion
 
-        #region Specifix
+        #region Methods
 
-        public void BindObjectToForm(Flex_EmailTemplate item)
+        /// <summary>
+        /// Display selected organization on tree
+        /// </summary>
+        /// <param name="planID"></param>
+        private void DisplaySelectedItem(int planID)
         {
-            // Button edit
-            lnkEdit.Visible = lnkEdit.Visible && (item.Status == SMX.Status.EmailTemplate.Updating || item.Status == SMX.Status.EmailTemplate.Final);
-            if (lnkEdit.Visible)
-            {
-                lnkEdit.NavigateUrl = string.Format(PageURL.Edit, item.EmailTemplateID);
-            }
+            //2. Get Data
+            var param = new PlanParam(FunctionType.Administration.Plan.LoadDataDisplay);
+            param.PlanID = planID;
+            MainController.Provider.Execute(param);
 
-            // Record data
-            lblCode.Text = item.Code;
-            lblName.Text = item.Name;
-            lblTemplateType.Text = Utils.Utility.GetDictionaryValue(SMX.TemplateType.dctTemplateTypes, item.TemplateType);
-            hiTransformType.Value = Utility.GetString(item.TransformType);
-            lblTransformType.Text = Utils.Utility.GetDictionaryValue(SMX.TransformType.dctName, item.TransformType);
-            lblProperties.Text = item.Properties;
-            lblSubject.Text = item.Subject;
-            lblContent.Text = item.Content;
-            lblStatus.Text = Utils.Utility.GetDictionaryValue(SMX.Status.dctStatus, item.Status);
-            hidStatus.Value = Utility.GetString(item.Status);
-            hidVersion.Value = item.Version.ToString();
-
-            if (item.TransformType == SMX.TransformType.Map)
-                lblContent.Visible = true;
-
-            if (item.TriggerType.HasValue)
-            {
-                lblTriggerType.Text = Utility.GetDictionaryValue<int?>(SMX.TriggerType.dicDes, item.TriggerType);
-                switch (item.TriggerType)
-                {
-                    case SMX.TriggerType.Event:
-                        break;
-                    case SMX.TriggerType.Daily:
-                        break;
-                    case SMX.TriggerType.Weekly:
-                        {
-                            switch (item.TriggerTime.Value.DayOfWeek)
-                            {
-                                case DayOfWeek.Monday:
-                                    lblTriggerTime.Text = "Thứ 2";
-                                    break;
-                                case DayOfWeek.Tuesday:
-                                    lblTriggerTime.Text = "Thứ 3";
-                                    break;
-                                case DayOfWeek.Wednesday:
-                                    lblTriggerTime.Text = "Thứ 4";
-                                    break;
-                                case DayOfWeek.Thursday:
-                                    lblTriggerTime.Text = "Thứ 5";
-                                    break;
-                                case DayOfWeek.Friday:
-                                    lblTriggerTime.Text = "Thứ 6";
-                                    break;
-                                case DayOfWeek.Saturday:
-                                    lblTriggerTime.Text = "Thứ 7";
-                                    break;
-                                case DayOfWeek.Sunday:
-                                    lblTriggerTime.Text = "Chủ nhật";
-                                    break;
-                            }
-                        }
-                        break;
-                    case SMX.TriggerType.Monthly:
-                        lblTriggerTime.Text = item.TriggerTime.Value.Day.ToString();
-                        break;
-                }
-            }
-
-            //Photo
-            if (item.ContentBinary != null && item.ContentBinary.Length > 0 && item.TransformType != SMX.TransformType.Map)
-            {
-                hidBinaryContent.Value = Convert.ToBase64String(item.ContentBinary);
-                lbtImage.Visible = true;
-            }
+            //3. Bind data to form
+            var item = param.Plan;
+            BindObjectToForm(item);
+            // Grid Employee
+            ucTarget.BindData(param.TargetInfos);
         }
-
         #endregion
 
         protected override Dictionary<object, string> FunctionCodeMapping

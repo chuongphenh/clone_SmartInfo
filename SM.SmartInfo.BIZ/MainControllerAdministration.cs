@@ -37,6 +37,12 @@ namespace SM.SmartInfo.BIZ
                 case "EmailTemplateParam":
                     ExecuteAdministration(param as EmailTemplateParam);
                     break;
+                case "TargetParam":
+                    ExecuteAdministration(param as TargetParam);
+                    break; 
+                case "PlanParam":
+                    ExecuteAdministration(param as PlanParam);
+                    break;
                 //case "CommitteeParam":
                 //    ExecuteAdministration(param as CommitteeParam);
                 //    break;
@@ -705,6 +711,76 @@ namespace SM.SmartInfo.BIZ
                     break;
                 case FunctionType.Administration.EmailTemplate.ApproveRejectEmailTemplate:
                     biz.ApproveRejectEmailTemplate(param);
+                    break;
+            }
+        }
+        private void ExecuteAdministration(TargetParam param)
+        {
+            TargetBiz biz = new TargetBiz();
+
+            switch (param.FunctionType)
+            {
+                case FunctionType.Administration.Target.SetupAddNewForm:
+                    biz.SetupAddNewForm(param);
+                    break;
+                case FunctionType.Administration.Target.AddNewItem:
+                    biz.AddNewItem(param);
+                    break;
+                case FunctionType.Administration.Target.LoadDataDisplay:
+                    biz.LoadDataDisplay(param);
+                    break;
+                case FunctionType.Administration.Target.SetupEditForm:
+                    biz.SetupEditForm(param);
+                    break;
+                case FunctionType.Administration.Target.LoadDataEdit:
+                    biz.LoadDataEdit(param); 
+                    break;
+                case FunctionType.Administration.Target.UpdateItem:
+                    biz.UpdateItem(param);
+                    break;
+                case FunctionType.Administration.Target.SetupViewForm:
+                    biz.SetupViewForm(param);
+                    break;
+                case FunctionType.Administration.Target.DeleteItem:
+                    biz.DeleteItems(param);
+                    break;
+                case FunctionType.Administration.Target.GetItemsForView:
+                    biz.SearchItemsForView(param);
+                    break;
+            }
+        }
+        private void ExecuteAdministration(PlanParam param)
+        {
+            PlanBiz biz = new PlanBiz();
+
+            switch (param.FunctionType)
+            {
+                case FunctionType.Administration.Plan.SetupAddNewForm:
+                    biz.SetupAddNewForm(param);
+                    break;
+                case FunctionType.Administration.Plan.AddNewItem:
+                    biz.AddNewItem(param);
+                    break;
+                case FunctionType.Administration.Plan.LoadDataDisplay:
+                    biz.LoadDataDisplay(param);
+                    break;
+                case FunctionType.Administration.Plan.SetupEditForm:
+                    biz.SetupEditForm(param);
+                    break;
+                case FunctionType.Administration.Plan.LoadDataEdit:
+                    biz.LoadDataEdit(param);
+                    break;
+                case FunctionType.Administration.Plan.UpdateItem:
+                    biz.UpdateItem(param);
+                    break;
+                case FunctionType.Administration.Plan.SetupViewForm:
+                    biz.SetupViewForm(param);
+                    break;
+                case FunctionType.Administration.Plan.DeleteItem:
+                    biz.DeleteItems(param);
+                    break;
+                case FunctionType.Administration.Plan.GetItemsForView:
+                    biz.SearchItemsForView(param);
                     break;
             }
         }

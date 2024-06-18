@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Danh sách mẫu Email/Sms" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
+﻿<%@ Page Title="Danh sách chỉ tiêu" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
     Inherits="SM.SmartInfo.UI.Administrations.Targets.Default" %>
 
 <%@ Register Src="~/UI/UserControls/DynamicReportUC.ascx" TagName="DynamicReportUC"
@@ -8,19 +8,20 @@
 <%@ Register Src="~/UI/UserControls/ReportControl/ExportingPopupUC.ascx" TagName="ExportingPopup"
     TagPrefix="uc" %>
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="MainContent">
-                    <style>
-                .icon_toolbar li a{
-            background:#F2F3F8;
-            padding:5px 10px;
-            border-radius:4px;
-            font-weight:bold;
+    <style>
+        .icon_toolbar li a {
+            background: #F2F3F8;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
         }
-        .icon_toolbar li a i{
-            padding-top:0;
-        }
+
+            .icon_toolbar li a i {
+                padding-top: 0;
+            }
     </style>
     <div class="toolbar">
-        DANH SÁCH MẪU EMAIL/SMS
+        DANH SÁCH CHỈ TIÊU
         <ul class="icon_toolbar">
             <li>
                 <asp:LinkButton ID="btnExport" runat="server" OnClick="btnExport_Click">

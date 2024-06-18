@@ -19,6 +19,11 @@ namespace SM.SmartInfo.SharedComponent.Params.Common
         public EmployeeInfo EmployeeInfo { get; set; }
         public string SelectorModeType { get; set; }
 
+        public int? TargetId { get; set; }
+        public string TargetName { get; set; }
+        public TargetInfo TargetInfo { get; set; }
+        public List<Target> Targets { get; set; }
+
         public OrganizationSelectorTreeMode OrganizationSelectorTreeMode { get; set; }
         public int? OrganizationID { get; set; }
         public int? OrganizationType { get; set; }

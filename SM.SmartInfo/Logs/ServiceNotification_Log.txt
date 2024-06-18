@@ -514,3 +514,618 @@ Parameter name: uriString
 2024-06-04 18:17:32,462 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
 2024-06-04 18:17:32,462 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
 2024-06-04 18:17:32,462 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-04 18:21:26,340 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-04 18:21:26,364 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-04 18:21:26,364 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-04 18:21:26,364 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-04 18:21:26,364 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-04 18:21:26,364 [7] DEBUG ServiceNotification - Password                : 
+2024-06-04 18:21:26,364 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-04 18:21:26,429 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-04 18:21:26,429 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-04 18:21:26,429 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-04 18:21:26,429 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-05 10:35:53,741 [9] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-05 10:35:53,759 [9] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-05 10:35:53,759 [9] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-05 10:35:53,759 [9] DEBUG ServiceNotification - Grant Type              : 
+2024-06-05 10:35:53,759 [9] DEBUG ServiceNotification - UserName                : 
+2024-06-05 10:35:53,759 [9] DEBUG ServiceNotification - Password                : 
+2024-06-05 10:35:53,759 [9] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-05 10:35:53,826 [9] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-05 10:35:53,826 [9] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-05 10:35:53,826 [9] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-05 10:35:53,826 [9] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-05 10:52:49,508 [8] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-05 10:52:49,533 [8] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-05 10:52:49,533 [8] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-05 10:52:49,533 [8] DEBUG ServiceNotification - Grant Type              : 
+2024-06-05 10:52:49,533 [8] DEBUG ServiceNotification - UserName                : 
+2024-06-05 10:52:49,533 [8] DEBUG ServiceNotification - Password                : 
+2024-06-05 10:52:49,533 [8] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-05 10:52:49,602 [8] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-05 10:52:49,602 [8] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-05 10:52:49,602 [8] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-05 10:52:49,602 [8] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-05 10:54:57,914 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-05 10:54:57,931 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-05 10:54:57,931 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-05 10:54:57,931 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-05 10:54:57,931 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-05 10:54:57,931 [7] DEBUG ServiceNotification - Password                : 
+2024-06-05 10:54:57,931 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-05 10:54:57,990 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-05 10:54:57,990 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-05 10:54:57,990 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-05 10:54:57,990 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-05 11:07:54,999 [8] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-05 11:07:55,029 [8] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-05 11:07:55,029 [8] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-05 11:07:55,029 [8] DEBUG ServiceNotification - Grant Type              : 
+2024-06-05 11:07:55,029 [8] DEBUG ServiceNotification - UserName                : 
+2024-06-05 11:07:55,030 [8] DEBUG ServiceNotification - Password                : 
+2024-06-05 11:07:55,030 [8] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-05 11:07:55,109 [8] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-05 11:07:55,109 [8] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-05 11:07:55,109 [8] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-05 11:07:55,109 [8] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-05 11:10:04,293 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-05 11:10:04,313 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-05 11:10:04,314 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-05 11:10:04,314 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-05 11:10:04,314 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-05 11:10:04,314 [6] DEBUG ServiceNotification - Password                : 
+2024-06-05 11:10:04,314 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-05 11:10:04,400 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-05 11:10:04,400 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-05 11:10:04,400 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-05 11:10:04,400 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-05 11:13:00,739 [8] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-05 11:13:00,757 [8] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-05 11:13:00,757 [8] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-05 11:13:00,757 [8] DEBUG ServiceNotification - Grant Type              : 
+2024-06-05 11:13:00,757 [8] DEBUG ServiceNotification - UserName                : 
+2024-06-05 11:13:00,758 [8] DEBUG ServiceNotification - Password                : 
+2024-06-05 11:13:00,758 [8] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-05 11:13:00,827 [8] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-05 11:13:00,827 [8] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-05 11:13:00,827 [8] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-05 11:13:00,827 [8] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-12 14:35:00,927 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-12 14:35:00,955 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-12 14:35:00,956 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-12 14:35:00,956 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-12 14:35:00,956 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-12 14:35:00,956 [6] DEBUG ServiceNotification - Password                : 
+2024-06-12 14:35:00,956 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-12 14:35:01,036 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-12 14:35:01,036 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-12 14:35:01,036 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-12 14:35:01,037 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-12 14:54:41,132 [5] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-12 14:54:41,158 [5] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-12 14:54:41,158 [5] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-12 14:54:41,158 [5] DEBUG ServiceNotification - Grant Type              : 
+2024-06-12 14:54:41,158 [5] DEBUG ServiceNotification - UserName                : 
+2024-06-12 14:54:41,158 [5] DEBUG ServiceNotification - Password                : 
+2024-06-12 14:54:41,158 [5] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-12 14:54:41,232 [5] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-12 14:54:41,232 [5] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-12 14:54:41,232 [5] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-12 14:54:41,232 [5] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-12 15:00:06,316 [9] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-12 15:00:06,350 [9] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-12 15:00:06,350 [9] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-12 15:00:06,350 [9] DEBUG ServiceNotification - Grant Type              : 
+2024-06-12 15:00:06,350 [9] DEBUG ServiceNotification - UserName                : 
+2024-06-12 15:00:06,350 [9] DEBUG ServiceNotification - Password                : 
+2024-06-12 15:00:06,350 [9] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-12 15:00:06,424 [9] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-12 15:00:06,424 [9] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-12 15:00:06,424 [9] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-12 15:00:06,424 [9] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-12 15:10:35,506 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-12 15:10:35,531 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-12 15:10:35,531 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-12 15:10:35,531 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-12 15:10:35,531 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-12 15:10:35,532 [7] DEBUG ServiceNotification - Password                : 
+2024-06-12 15:10:35,532 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-12 15:10:35,599 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-12 15:10:35,599 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-12 15:10:35,599 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-12 15:10:35,599 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-12 15:25:16,090 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-12 15:25:16,115 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-12 15:25:16,115 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-12 15:25:16,115 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-12 15:25:16,115 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-12 15:25:16,115 [7] DEBUG ServiceNotification - Password                : 
+2024-06-12 15:25:16,115 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-12 15:25:16,199 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-12 15:25:16,200 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-12 15:25:16,200 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-12 15:25:16,200 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-12 17:55:15,977 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-12 17:55:15,992 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-12 17:55:15,992 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-12 17:55:15,992 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-12 17:55:15,992 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-12 17:55:15,992 [6] DEBUG ServiceNotification - Password                : 
+2024-06-12 17:55:15,992 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-12 17:55:16,065 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-12 17:55:16,065 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-12 17:55:16,065 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-12 17:55:16,065 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-14 15:34:08,936 [8] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-14 15:34:08,960 [8] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-14 15:34:08,960 [8] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-14 15:34:08,960 [8] DEBUG ServiceNotification - Grant Type              : 
+2024-06-14 15:34:08,960 [8] DEBUG ServiceNotification - UserName                : 
+2024-06-14 15:34:08,960 [8] DEBUG ServiceNotification - Password                : 
+2024-06-14 15:34:08,960 [8] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-14 15:34:09,012 [8] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-14 15:34:09,012 [8] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-14 15:34:09,012 [8] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-14 15:34:09,012 [8] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-16 23:36:24,065 [5] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-16 23:36:24,093 [5] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-16 23:36:24,093 [5] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-16 23:36:24,093 [5] DEBUG ServiceNotification - Grant Type              : 
+2024-06-16 23:36:24,093 [5] DEBUG ServiceNotification - UserName                : 
+2024-06-16 23:36:24,093 [5] DEBUG ServiceNotification - Password                : 
+2024-06-16 23:36:24,093 [5] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-16 23:36:24,312 [5] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-16 23:36:24,312 [5] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-16 23:36:24,313 [5] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-16 23:36:24,313 [5] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-16 23:40:29,385 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-16 23:40:29,415 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-16 23:40:29,415 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-16 23:40:29,415 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-16 23:40:29,415 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-16 23:40:29,415 [7] DEBUG ServiceNotification - Password                : 
+2024-06-16 23:40:29,415 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-16 23:40:29,695 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-16 23:40:29,695 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-16 23:40:29,695 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-16 23:40:29,695 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-16 23:51:00,262 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-16 23:51:00,288 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-16 23:51:00,289 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-16 23:51:00,289 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-16 23:51:00,289 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-16 23:51:00,289 [6] DEBUG ServiceNotification - Password                : 
+2024-06-16 23:51:00,289 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-16 23:51:00,545 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-16 23:51:00,545 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-16 23:51:00,545 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-16 23:51:00,545 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 00:10:35,097 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 00:10:35,113 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 00:10:35,113 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 00:10:35,113 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 00:10:35,113 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-17 00:10:35,113 [6] DEBUG ServiceNotification - Password                : 
+2024-06-17 00:10:35,114 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 00:10:35,232 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 00:10:35,232 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 00:10:35,232 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 00:10:35,232 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 00:16:41,041 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 00:16:41,062 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 00:16:41,062 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 00:16:41,062 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 00:16:41,062 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-17 00:16:41,062 [6] DEBUG ServiceNotification - Password                : 
+2024-06-17 00:16:41,063 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 00:16:41,263 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 00:16:41,263 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 00:16:41,264 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 00:16:41,264 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 09:25:38,731 [11] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 09:25:38,747 [11] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 09:25:38,747 [11] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 09:25:38,747 [11] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 09:25:38,747 [11] DEBUG ServiceNotification - UserName                : 
+2024-06-17 09:25:38,747 [11] DEBUG ServiceNotification - Password                : 
+2024-06-17 09:25:38,747 [11] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 09:25:38,877 [11] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 09:25:38,877 [11] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 09:25:38,877 [11] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 09:25:38,877 [11] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 13:34:55,881 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 13:34:55,905 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 13:34:55,905 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 13:34:55,905 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 13:34:55,905 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-17 13:34:55,905 [6] DEBUG ServiceNotification - Password                : 
+2024-06-17 13:34:55,905 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 13:34:56,077 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 13:34:56,077 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 13:34:56,077 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 13:34:56,077 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 14:12:58,440 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 14:12:58,453 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 14:12:58,453 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 14:12:58,453 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 14:12:58,453 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-17 14:12:58,453 [6] DEBUG ServiceNotification - Password                : 
+2024-06-17 14:12:58,453 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 14:12:58,592 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 14:12:58,592 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 14:12:58,592 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 14:12:58,592 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 14:22:32,075 [5] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 14:22:32,100 [5] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 14:22:32,101 [5] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 14:22:32,101 [5] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 14:22:32,101 [5] DEBUG ServiceNotification - UserName                : 
+2024-06-17 14:22:32,101 [5] DEBUG ServiceNotification - Password                : 
+2024-06-17 14:22:32,101 [5] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 14:22:32,236 [5] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 14:22:32,236 [5] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 14:22:32,236 [5] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 14:22:32,236 [5] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 14:36:08,368 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 14:36:08,390 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 14:36:08,390 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 14:36:08,390 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 14:36:08,390 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-17 14:36:08,390 [7] DEBUG ServiceNotification - Password                : 
+2024-06-17 14:36:08,390 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 14:36:08,544 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 14:36:08,544 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 14:36:08,544 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 14:36:08,544 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 14:48:14,823 [5] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 14:48:14,845 [5] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 14:48:14,846 [5] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 14:48:14,846 [5] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 14:48:14,846 [5] DEBUG ServiceNotification - UserName                : 
+2024-06-17 14:48:14,846 [5] DEBUG ServiceNotification - Password                : 
+2024-06-17 14:48:14,846 [5] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 14:48:15,001 [5] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 14:48:15,001 [5] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 14:48:15,001 [5] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 14:48:15,001 [5] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 15:32:25,804 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 15:32:25,820 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 15:32:25,820 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 15:32:25,820 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 15:32:25,820 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-17 15:32:25,820 [6] DEBUG ServiceNotification - Password                : 
+2024-06-17 15:32:25,820 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 15:32:25,980 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 15:32:25,981 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 15:32:25,981 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 15:32:25,981 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 16:42:44,257 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 16:42:44,278 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 16:42:44,278 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 16:42:44,278 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 16:42:44,278 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-17 16:42:44,278 [7] DEBUG ServiceNotification - Password                : 
+2024-06-17 16:42:44,278 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 16:42:44,426 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 16:42:44,426 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 16:42:44,426 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 16:42:44,426 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 17:13:39,968 [5] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 17:13:39,981 [5] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 17:13:39,981 [5] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 17:13:39,981 [5] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 17:13:39,981 [5] DEBUG ServiceNotification - UserName                : 
+2024-06-17 17:13:39,981 [5] DEBUG ServiceNotification - Password                : 
+2024-06-17 17:13:39,981 [5] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 17:13:40,073 [5] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 17:13:40,073 [5] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 17:13:40,073 [5] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 17:13:40,073 [5] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 18:26:34,673 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 18:26:34,695 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 18:26:34,695 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 18:26:34,695 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 18:26:34,695 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-17 18:26:34,695 [7] DEBUG ServiceNotification - Password                : 
+2024-06-17 18:26:34,695 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 18:26:34,852 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 18:26:34,852 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 18:26:34,852 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 18:26:34,852 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 21:46:53,146 [10] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 21:46:53,162 [10] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 21:46:53,162 [10] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 21:46:53,162 [10] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 21:46:53,162 [10] DEBUG ServiceNotification - UserName                : 
+2024-06-17 21:46:53,162 [10] DEBUG ServiceNotification - Password                : 
+2024-06-17 21:46:53,162 [10] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 21:46:53,276 [10] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 21:46:53,276 [10] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 21:46:53,276 [10] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 21:46:53,276 [10] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 22:11:50,613 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 22:11:50,631 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 22:11:50,631 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 22:11:50,631 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 22:11:50,632 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-17 22:11:50,632 [7] DEBUG ServiceNotification - Password                : 
+2024-06-17 22:11:50,632 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 22:11:50,759 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 22:11:50,760 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 22:11:50,760 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 22:11:50,760 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 22:17:32,475 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 22:17:32,485 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 22:17:32,485 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 22:17:32,485 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 22:17:32,485 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-17 22:17:32,485 [7] DEBUG ServiceNotification - Password                : 
+2024-06-17 22:17:32,485 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 22:17:32,606 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 22:17:32,606 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 22:17:32,606 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 22:17:32,607 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-17 22:27:37,198 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-17 22:27:37,212 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-17 22:27:37,212 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-17 22:27:37,212 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-17 22:27:37,212 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-17 22:27:37,212 [6] DEBUG ServiceNotification - Password                : 
+2024-06-17 22:27:37,212 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-17 22:27:37,361 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-17 22:27:37,361 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-17 22:27:37,361 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-17 22:27:37,361 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-18 09:51:41,093 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-18 09:51:41,116 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-18 09:51:41,117 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-18 09:51:41,117 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-18 09:51:41,117 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-18 09:51:41,117 [6] DEBUG ServiceNotification - Password                : 
+2024-06-18 09:51:41,117 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-18 09:51:41,266 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-18 09:51:41,266 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-18 09:51:41,266 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-18 09:51:41,266 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-18 10:21:57,770 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-18 10:21:57,792 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-18 10:21:57,792 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-18 10:21:57,792 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-18 10:21:57,792 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-18 10:21:57,792 [6] DEBUG ServiceNotification - Password                : 
+2024-06-18 10:21:57,792 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-18 10:21:57,960 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-18 10:21:57,961 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-18 10:21:57,961 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-18 10:21:57,961 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-18 13:23:37,308 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-18 13:23:37,325 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-18 13:23:37,325 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-18 13:23:37,325 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-18 13:23:37,325 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-18 13:23:37,325 [7] DEBUG ServiceNotification - Password                : 
+2024-06-18 13:23:37,325 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-18 13:23:37,546 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-18 13:23:37,547 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-18 13:23:37,547 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-18 13:23:37,547 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-18 13:32:20,774 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-18 13:32:20,807 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-18 13:32:20,807 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-18 13:32:20,807 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-18 13:32:20,807 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-18 13:32:20,807 [7] DEBUG ServiceNotification - Password                : 
+2024-06-18 13:32:20,807 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-18 13:32:20,919 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-18 13:32:20,919 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-18 13:32:20,919 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-18 13:32:20,919 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-18 13:52:20,098 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-18 13:52:20,114 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-18 13:52:20,114 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-18 13:52:20,114 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-18 13:52:20,114 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-18 13:52:20,114 [7] DEBUG ServiceNotification - Password                : 
+2024-06-18 13:52:20,114 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-18 13:52:20,274 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-18 13:52:20,274 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-18 13:52:20,274 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-18 13:52:20,274 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-18 14:15:36,810 [5] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-18 14:15:36,836 [5] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-18 14:15:36,836 [5] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-18 14:15:36,836 [5] DEBUG ServiceNotification - Grant Type              : 
+2024-06-18 14:15:36,836 [5] DEBUG ServiceNotification - UserName                : 
+2024-06-18 14:15:36,836 [5] DEBUG ServiceNotification - Password                : 
+2024-06-18 14:15:36,836 [5] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-18 14:15:37,006 [5] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-18 14:15:37,006 [5] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-18 14:15:37,006 [5] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-18 14:15:37,006 [5] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-18 14:29:01,372 [6] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-18 14:29:01,398 [6] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-18 14:29:01,398 [6] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-18 14:29:01,398 [6] DEBUG ServiceNotification - Grant Type              : 
+2024-06-18 14:29:01,398 [6] DEBUG ServiceNotification - UserName                : 
+2024-06-18 14:29:01,398 [6] DEBUG ServiceNotification - Password                : 
+2024-06-18 14:29:01,398 [6] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-18 14:29:01,569 [6] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-18 14:29:01,569 [6] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-18 14:29:01,569 [6] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-18 14:29:01,569 [6] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-06-18 15:07:13,787 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-06-18 15:07:13,803 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-06-18 15:07:13,803 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-06-18 15:07:13,803 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-06-18 15:07:13,803 [7] DEBUG ServiceNotification - UserName                : 
+2024-06-18 15:07:13,803 [7] DEBUG ServiceNotification - Password                : 
+2024-06-18 15:07:13,804 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-06-18 15:07:13,929 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in D:\AHT\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-06-18 15:07:13,930 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-06-18 15:07:13,930 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-06-18 15:07:13,930 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
