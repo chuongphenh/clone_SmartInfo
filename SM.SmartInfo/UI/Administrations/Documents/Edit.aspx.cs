@@ -9,10 +9,10 @@ using SoftMart.Kernel.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web.UI.WebControls;
+
 namespace SM.SmartInfo.UI.Administrations.Plans
 {
-    public partial class AddNew : PlansBase, ISMFormAddNew<Plan>
+    public partial class Edit : DocumentsBase, ISMFormEdit<Document>
     {
         #region Event
 
@@ -23,8 +23,8 @@ namespace SM.SmartInfo.UI.Administrations.Plans
                 if (!IsPostBack)
                 {
                     SetupForm();
+                    LoadData();
                 }
-                //ucTarget.OnValidateAddTarget += ucOrganizationEmployee_OnValidateAddEmployee;
             }
             catch (SMXException ex)
             {
@@ -36,21 +36,24 @@ namespace SM.SmartInfo.UI.Administrations.Plans
         {
             try
             {
-                object itemID = AddNewItem();
+                UpdateItem();
 
-                Response.Redirect(string.Format(PageURL.Display, itemID.ToString()));
+                Response.Redirect(string.Format(PageURL.Display, hidID.Value));
             }
             catch (SMXException ex)
             {
                 ucErr.ShowError(ex);
             }
         }
+        #region Entry form
 
-        private void ucOrganizationEmployee_OnValidateAddEmployee(int employeeID)
+        private void ucTarget_OnValidateAddEmployee(int employeeID)
         {
-            base.ValidateEmployeeIsInOtherOrganization(employeeID, null);
+            int orgID = int.Parse(hidID.Value);
+            base.ValidateEmployeeIsInOtherOrganization(employeeID, orgID);
         }
 
+        #endregion
 
         #endregion
 
@@ -61,36 +64,59 @@ namespace SM.SmartInfo.UI.Administrations.Plans
             //1. Setup form
             lnkExit.NavigateUrl = PageURL.DisplayNone;
             UIUtility.BindListToDropDownList(rcbReportCycleType, SMX.PlanType.dctReportCycle.ToList(), false);
-
-            ucTarget.BindData(null);
         }
 
-        public object AddNewItem()
+        public void LoadData()
         {
-            PlanParam param = new PlanParam(FunctionType.Administration.Plan.AddNewItem);
-            param.Plan = BindFormToObject();
-            // Get list employees, Managers
-            param.TargetIDs = ucTarget.GetListTargetInGrid().Select(t => t.TargetID.Value).ToList();
-            // Save
+            //2. Get data
+            PlanParam param = new PlanParam(FunctionType.Administration.Plan.LoadDataEdit);
+            param.PlanID = GetIntIdParam();
             MainController.Provider.Execute(param);
 
-            return param.PlanID;
+            //3. Bind data to form
+            var item = param.Plan;
+            hidVersion.Value = Utility.GetString(item.Version);
+
+            ucTarget.BindData(param.TargetInfos);
+
+            BindObjectToForm(item);
         }
 
-        #endregion
-
-        #region Specific
-
-        public Plan BindFormToObject()
+        public void UpdateItem()
         {
-            var item = new Plan();
+            PlanParam param = new PlanParam(FunctionType.Administration.Plan.UpdateItem);
+            param.Plan = BindFormToObject();
+            // Get list target
+            param.TargetIDs = ucTarget.GetListTargetInGrid().Select(t => t.TargetID.Value).ToList();
+            MainController.Provider.Execute(param);
+        }
+
+        public void BindObjectToForm(Document item)
+        {
+            // Main information
+            txtPlanCode.Text = item.PlanCode;
+            txtPlanName.Text = item.Name;
+            rdpStartDate.SelectedDate = item.StartDate;
+            rdpEndDate.SelectedDate = item.EndDate;
+            txtReportCycle.Text = item.ReportCycle;
+            rcbReportCycleType.SelectedValue = Utils.Utility.GetDictionaryValue(SMX.PlanType.dctReportCycle, item.ReportCycleType);
+
+            hidID.Value = item.PlanID.ToString();
+            hidVersion.Value = item.Version.ToString();
+            lnkExit.NavigateUrl = string.Format(PageURL.Display, hidID.Value);
+        }
+
+        public Document BindFormToObject()
+        {
+            var item = new Document();
+            item.PlanID = GetIntIdParam();
             item.PlanCode = txtPlanCode.Text;
             item.Name = txtPlanName.Text;
             item.StartDate = rdpStartDate.SelectedDate;
             item.EndDate = rdpEndDate.SelectedDate;
             item.ReportCycle = txtReportCycle.Text;
+            item.Version = Utility.GetNullableInt(hidVersion.Value);
             item.ReportCycleType = Utility.GetNullableInt(rcbReportCycleType.SelectedValue);
-
             return item;
         }
 
@@ -102,7 +128,8 @@ namespace SM.SmartInfo.UI.Administrations.Plans
             {
                 return new Dictionary<object, string>()
                 {
-                    { btnSave   , FunctionCode.ADD  },
+                    { this      , FunctionCode.EDIT },
+                    { btnSave   , FunctionCode.EDIT },
                 };
             }
         }

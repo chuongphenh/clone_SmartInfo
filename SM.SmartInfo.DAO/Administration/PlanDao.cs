@@ -17,31 +17,30 @@ namespace SM.SmartInfo.DAO.Administration
     {
         private string connectionString = ConfigUtils.ConnectionString;
         #region Modification methods
-        public int InsertPlan(Plan item)
+        public int InsertDocument(Document item)
         {
             string query = @"
-                INSERT INTO [Plan] 
-                (PlanCode, Name, OrganizationName, StartDate, EndDate, ReportCycle, ReportCycleType, Description, Version, Deleted, CreatedBy, CreatedDTG, UpdatedBy, UpdatedDTG) 
-                VALUES 
-                (@PlanCode, @Name, @OrganizationName, @StartDate, @EndDate, @ReportCycle, @ReportCycleType, @Description, @Version, @Deleted, @CreatedBy, @CreatedDTG, @UpdatedBy, @UpdatedDTG); SELECT SCOPE_IDENTITY();";
+        INSERT INTO [Document] 
+        (DocumentCode, DocumentName, IssuerOrganizationID, StartDate, EndDate, Version, Deleted, CreatedBy, CreatedDTG, UpdatedBy, UpdatedDTG, ReleaseDate) 
+        VALUES 
+        (@DocumentCode, @DocumentName, @IssuerOrganizationID, @StartDate, @EndDate, @Version, @Deleted, @CreatedBy, @CreatedDTG, @UpdatedBy, @UpdatedDTG, @ReleaseDate); SELECT SCOPE_IDENTITY();";
+
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@PlanCode", item.PlanCode ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Name", item.Name ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@OrganizationName", item.OrganizationName ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@DocumentCode", item.DocumentCode ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@DocumentName", item.DocumentName ?? (object)DBNull.Value);
+                    cmd.Parameters.AddWithValue("@IssuerOrganizationID", item.IssuerOrganizationID.HasValue ? (object)item.IssuerOrganizationID.Value : DBNull.Value);
                     cmd.Parameters.AddWithValue("@StartDate", item.StartDate.HasValue ? (object)item.StartDate.Value : DBNull.Value);
                     cmd.Parameters.AddWithValue("@EndDate", item.EndDate.HasValue ? (object)item.EndDate.Value : DBNull.Value);
-                    cmd.Parameters.AddWithValue("@ReportCycle", item.ReportCycle ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@ReportCycleType", item.ReportCycleType ?? (object)DBNull.Value);
-                    cmd.Parameters.AddWithValue("@Description", item.Description ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@Version", item.Version ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@Deleted", item.Deleted ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@CreatedBy", item.CreatedBy ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@CreatedDTG", item.CreatedDTG.HasValue ? (object)item.CreatedDTG.Value : DBNull.Value);
                     cmd.Parameters.AddWithValue("@UpdatedBy", item.UpdatedBy ?? (object)DBNull.Value);
                     cmd.Parameters.AddWithValue("@UpdatedDTG", item.UpdatedDTG.HasValue ? (object)item.UpdatedDTG.Value : DBNull.Value);
+                    cmd.Parameters.AddWithValue("@ReleaseDate", item.ReleaseDate.HasValue ? (object)item.ReleaseDate.Value : DBNull.Value);
 
                     conn.Open();
                     object result = cmd.ExecuteScalar();
@@ -51,12 +50,13 @@ namespace SM.SmartInfo.DAO.Administration
                     }
                     else
                     {
-                        throw new Exception("Failed to insert Plan or retrieve PlanID.");
+                        throw new Exception("Failed to insert Document or retrieve DocumentID.");
                     }
                 }
             }
         }
-        public void UpdatePlan(Plan item)
+
+        public void UpdatePlan(Document item)
         {
             string query = @"
                             UPDATE [Plan] 
@@ -111,14 +111,14 @@ namespace SM.SmartInfo.DAO.Administration
 
         #region Getting methods
 
-        public Plan GetPlanByID(int? id)
+        public Document GetPlanByID(int? id)
         {
             using (DataContext dataContext = new DataContext())
             {
-                return dataContext.SelectItemByID<Plan>(id);
+                return dataContext.SelectItemByID<Document>(id);
             }
         }
-        public Plan GetPlanInfoByID(int planID)
+        public Document GetPlanInfoByID(int planID)
         {
             string sql = @"SELECT *
                         FROM [Plan] WHERE Deleted = @isDeleted AND PlanID = @planID";
@@ -129,7 +129,7 @@ namespace SM.SmartInfo.DAO.Administration
 
             using (DataContext dataContext = new DataContext())
             {
-                var item = dataContext.ExecuteSelect<Plan>(command).FirstOrDefault();
+                var item = dataContext.ExecuteSelect<Document>(command).FirstOrDefault();
                 return item;
             }
         }

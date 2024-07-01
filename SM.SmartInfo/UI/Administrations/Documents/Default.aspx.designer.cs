@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SM.SmartInfo.UI.Administrations.Plans
+namespace SM.SmartInfo.UI.Administrations.Documents
 {
 
 

@@ -18,9 +18,9 @@ using System.Web.UI;
 using SoftMart.Core.UIControls;
 using SM.SmartInfo.SharedComponent.Params.Common;
 
-namespace SM.SmartInfo.UI.Administrations.Plans
+namespace SM.SmartInfo.UI.Administrations.Documents
 {
-    public abstract class PlansBase : BasePage
+    public abstract class DocumentsBase : BasePage
     {
         protected string TruncateParentPath(string breadCrumb, string name)
         {

@@ -339,7 +339,7 @@ namespace SM.SmartInfo.PermissionManager.UserAuthentication
 
                 return networkWAN;
             }
-            catch(SMXException ex)
+            catch (SMXException ex)
             {
                 LogManager.WebLogger.LogError("Log in failed", ex);
                 return -1;
@@ -393,28 +393,48 @@ namespace SM.SmartInfo.PermissionManager.UserAuthentication
         {
 
         }
-        #endregion
-
-        #region Log-out
-
         public void Logout()
         {
             UserProfile profile = Profiles.MyProfile;
-            if (profile != null)
+            if (profile?.EmployeeLog != null)
             {
                 // keep log
-                EmployeeLog log = profile.EmployeeLog;
-                log.SignOutDTG = DateTime.Now;
-                _dao.UpdateEmployeeLog(log);
+                profile.EmployeeLog.SignOutDTG = DateTime.Now;
+                _dao.UpdateEmployeeLog(profile.EmployeeLog);
             }
-
             // sign-out
             MembershipHelper.FormService.SignOut();
 
-            // clean session: http://support.microsoft.com/kb/899918
-            HttpContext.Current.Session.Abandon();
-            HttpContext.Current.Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
-            HttpContext.Current.Session.Clear();
+            var httpContext = HttpContext.Current;
+            if (httpContext != null)
+            {
+                httpContext.Session?.Abandon();
+
+                // List of cookie names to clear
+                var cookiesToClear = new[]
+                {
+                    ".ASPXAUTH",
+                    "ASP.NET_SessionId",
+                    "ASPFIXATION",
+                    "SmartInfo_Domain",
+                    "__AntiXsrfToken",
+                    "keepscroll"
+                };
+
+                // Clear each specified cookie
+                foreach (var cookieName in cookiesToClear)
+                {
+                    var cookie = httpContext.Request.Cookies[cookieName];
+                    if (cookie != null)
+                    {
+                        httpContext.Response.Cookies.Add(new HttpCookie(cookieName)
+                        {
+                            Expires = DateTime.Now.AddDays(-1),
+                            Path = "/"
+                        });
+                    }
+                }
+            }
 
             // clean cache
             Profiles.SetMyProfile(null);
@@ -639,32 +659,32 @@ namespace SM.SmartInfo.PermissionManager.UserAuthentication
             {
                 param.StatusCode = _dao.CheckValidUser(param);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return;
             }
 
         }
-        
+
         public void UpdateLoggingAttemp(AuthenticationParam param)
         {
             try
             {
                 _dao.UpdateLoggingAttemp(param);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
         }
-        
+
         public void GetLoggingAttemptByUsername(AuthenticationParam param)
         {
             try
             {
                 param.Employee = _dao.GetLoggingAttemptByUsername(param);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }

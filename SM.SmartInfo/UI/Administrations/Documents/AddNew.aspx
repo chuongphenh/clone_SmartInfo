@@ -1,5 +1,5 @@
-﻿<%@ Page Title="Tạo mới thông tin kế hoạch" Language="C#" AutoEventWireup="true" CodeBehind="AddNew.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
-    Inherits="SM.SmartInfo.UI.Administrations.Plans.AddNew" %>
+﻿<%@ Page Title="Thêm mới văn bản" Language="C#" AutoEventWireup="true" CodeBehind="AddNew.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
+    Inherits="SM.SmartInfo.UI.Administrations.Documents.AddNew" %>
 
 <%@ Register Assembly="SMCUI" Namespace="SoftMart.Core.UIControls" TagPrefix="tk" %>
 <%@ Register Src="~/UI/UserControls/Common/ErrorMessageUC.ascx" TagName="ErrorMessage"
@@ -53,7 +53,7 @@
     <asp:HiddenField ID="hidID" runat="server" />
     <asp:HiddenField ID="HiddenVersion" runat="server" />
     <div class="toolbar">
-        TẠO MỚI THÔNG TIN KẾ HOẠCH
+        TẠO MỚI THÔNG TIN VĂN BẢN
         <ul class="icon_toolbar">
             <li>
                 <asp:LinkButton runat="server" ID="btnSave" OnClick="btnSave_Click"

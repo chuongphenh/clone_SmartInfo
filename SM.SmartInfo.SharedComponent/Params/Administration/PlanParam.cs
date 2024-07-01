@@ -16,8 +16,8 @@ namespace SM.SmartInfo.SharedComponent.Params.Administration
         }
 
         public int? PlanID { get; set; }
-        public Plan Plan { get; set; }
-        public List<Plan> Plans { get; set; }
+        public Document Plan { get; set; }
+        public List<Document> Plans { get; set; }
         public List<int> TargetIDs { get; set; }
         public List<TargetInfo> TargetInfos { get; set; }
 

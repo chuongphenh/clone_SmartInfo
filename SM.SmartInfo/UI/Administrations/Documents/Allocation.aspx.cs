@@ -1,22 +1,16 @@
-﻿using System;
-using SM.SmartInfo.BIZ;
-using SoftMart.Core.BRE;
-using SM.SmartInfo.Utils;
-using SoftMart.Core.UIControls;
-using SM.SmartInfo.CacheManager;
-using SoftMart.Kernel.Exceptions;
-using System.Collections.Generic;
-using SoftMart.Core.BRE.SharedComponent;
-using SM.SmartInfo.SharedComponent.Entities;
+﻿using SM.SmartInfo.BIZ;
 using SM.SmartInfo.PermissionManager.Shared;
 using SM.SmartInfo.SharedComponent.Constants;
-using SM.SmartInfo.SharedComponent.Params.CommonList;
-using System.Linq;
+using SM.SmartInfo.SharedComponent.Entities;
 using SM.SmartInfo.SharedComponent.Params.Administration;
+using SM.SmartInfo.Utils;
+using SoftMart.Kernel.Exceptions;
+using System;
+using System.Collections.Generic;
 
 namespace SM.SmartInfo.UI.Administrations.Plans
 {
-    public partial class Display : PlansBase, ISMFormDisplay<Plan>
+    public partial class Allocation : DocumentsBase, ISMFormDisplay<Document>
     {
         #region Event
 
@@ -75,14 +69,14 @@ namespace SM.SmartInfo.UI.Administrations.Plans
         public void DeleteItems()
         {
             PlanParam param = new PlanParam(FunctionType.Administration.Plan.DeleteItem);
-            Plan deletionPlan = new Plan();
+            Document deletionPlan = new Document();
             deletionPlan.PlanID = Utility.GetNullableInt(hidID.Value);
             //target.Status = Utility.GetInt(hidStatus.Value);
             param.Plan = deletionPlan;
             MainController.Provider.Execute(param);
         }
 
-        public void BindObjectToForm(Plan item)
+        public void BindObjectToForm(Document item)
         {
             // Main information
             lblPlanCode.Text = item.PlanCode;

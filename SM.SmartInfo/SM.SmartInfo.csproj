@@ -251,11 +251,12 @@
     <Content Include="UI\Administrations\Notifications\Default.aspx" />
     <Content Include="UI\Administrations\Notifications\Display.aspx" />
     <Content Include="UI\Administrations\Notifications\Edit.aspx" />
-    <Content Include="UI\Administrations\Plans\AddNew.aspx" />
-    <Content Include="UI\Administrations\Plans\Default.aspx" />
-    <Content Include="UI\Administrations\Plans\Display.aspx" />
-    <Content Include="UI\Administrations\Plans\Edit.aspx" />
-    <Content Include="UI\Administrations\Plans\TargetPlanUC.ascx" />
+    <Content Include="UI\Administrations\Documents\AddNew.aspx" />
+    <Content Include="UI\Administrations\Documents\Default.aspx" />
+    <Content Include="UI\Administrations\Documents\Allocation.aspx" />
+    <Content Include="UI\Administrations\Documents\Display.aspx" />
+    <Content Include="UI\Administrations\Documents\Edit.aspx" />
+    <Content Include="UI\Administrations\Documents\TargetPlanUC.ascx" />
     <Content Include="UI\Administrations\Targets\AddNew.aspx" />
     <Content Include="UI\Administrations\Targets\Default.aspx" />
     <Content Include="UI\Administrations\Targets\Display.aspx" />
@@ -677,42 +678,46 @@
     <Compile Include="UI\Administrations\Organizations\OrgTreeViewUC.ascx.designer.cs">
       <DependentUpon>OrgTreeViewUC.ascx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\AddNew.aspx.cs">
+    <Compile Include="UI\Administrations\Documents\AddNew.aspx.cs">
       <DependentUpon>AddNew.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\AddNew.aspx.designer.cs">
+    <Compile Include="UI\Administrations\Documents\AddNew.aspx.designer.cs">
       <DependentUpon>AddNew.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\Default.aspx.cs">
+    <Compile Include="UI\Administrations\Documents\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\Default.aspx.designer.cs">
+    <Compile Include="UI\Administrations\Documents\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\Display.aspx.cs">
+    <Compile Include="UI\Administrations\Documents\Allocation.aspx.cs">
+      <DependentUpon>Allocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Documents\Allocation.aspx.designer.cs">
+      <DependentUpon>Allocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Documents\Display.aspx.cs">
       <DependentUpon>Display.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\Display.aspx.designer.cs">
+    <Compile Include="UI\Administrations\Documents\Display.aspx.designer.cs">
       <DependentUpon>Display.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\Edit.aspx.cs">
-      <DependentUpon>Edit.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="UI\Administrations\Plans\Edit.aspx.designer.cs">
+    <Compile Include="UI\Administrations\Documents\Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\PlansBase.cs">
+    <Compile Include="UI\Administrations\Documents\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Documents\DocumentsBase.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\TargetPlanUC.ascx.cs">
+    <Compile Include="UI\Administrations\Documents\TargetPlanUC.ascx.cs">
       <DependentUpon>TargetPlanUC.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UI\Administrations\Plans\TargetPlanUC.ascx.designer.cs">
+    <Compile Include="UI\Administrations\Documents\TargetPlanUC.ascx.designer.cs">
       <DependentUpon>TargetPlanUC.ascx</DependentUpon>
     </Compile>
     <Compile Include="UI\Administrations\Province\AddNew.aspx.cs">

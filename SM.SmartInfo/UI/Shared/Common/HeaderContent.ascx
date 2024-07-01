@@ -90,7 +90,7 @@
     <div class="col-sm-1">
         <a href="/UI/Shared/Common/Default.aspx" class="href-logo">
             <div class="head-logo" style="text-align: center;margin-top:20px;">
-                <img src="../../../Images/smart-infos/logo.svg" alt="Smart info" style="margin-bottom: 5px;width:90px;" />
+                <%--<img src="../../../Images/smart-infos/logo.svg" alt="Smart info" style="margin-bottom: 5px;width:90px;" />--%>
             </div>
         </a>
     </div>

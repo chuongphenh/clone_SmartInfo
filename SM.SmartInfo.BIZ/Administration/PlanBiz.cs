@@ -31,7 +31,7 @@ namespace SM.SmartInfo.BIZ.Administration
 
             #region Prepare system data
 
-            Plan item = param.Plan;
+            Document item = param.Plan;
             item.Deleted = SMX.smx_IsNotDeleted;
             item.Version = SMX.smx_FirstVersion;
             item.CreatedBy = SM.SmartInfo.CacheManager.Profiles.MyProfile.UserName;
@@ -76,7 +76,7 @@ namespace SM.SmartInfo.BIZ.Administration
         }
         private void ValidatePlanInDatabase(PlanParam param, bool isEdit = false)
         {
-            Plan item = param.Plan;
+            Document item = param.Plan;
             List<string> lstMsg = new List<string>();
 
             // Validate Code
@@ -114,7 +114,7 @@ namespace SM.SmartInfo.BIZ.Administration
         {
             int planID = param.PlanID ?? default(int);
             // Get plan info
-            Plan item = _dao.GetPlanInfoByID(planID);
+            Document item = _dao.GetPlanInfoByID(planID);
             if (item == null)
                 throw new SMXException(Messages.ItemNotExisted);
 
@@ -172,7 +172,7 @@ namespace SM.SmartInfo.BIZ.Administration
         
         public void DeleteItems(PlanParam param)
         {
-            Plan item = param.Plan;
+            Document item = param.Plan;
             item.UpdatedBy = Profiles.MyProfile.UserName;
             item.UpdatedDTG = DateTime.Now;
             item.Deleted = SMX.smx_IsDeleted;
@@ -196,7 +196,7 @@ namespace SM.SmartInfo.BIZ.Administration
 
         public void ApproveRejectEmailTemplate(PlanParam param)
         {
-            Plan item = param.Plan;
+            Document item = param.Plan;
             item.UpdatedBy = Profiles.MyProfile.UserName;
             item.UpdatedDTG = DateTime.Now;
 

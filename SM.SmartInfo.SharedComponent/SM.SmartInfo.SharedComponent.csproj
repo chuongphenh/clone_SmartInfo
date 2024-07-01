@@ -122,7 +122,7 @@
     <Compile Include="Entities\ntf_NotificationPushHistory.cs" />
     <Compile Include="Entities\Profile.cs" />
     <Compile Include="Entities\Setting.cs" />
-    <Compile Include="Entities\Plan.cs" />
+    <Compile Include="Entities\Document.cs" />
     <Compile Include="Entities\PlanTarget.cs" />
     <Compile Include="Entities\Target.cs" />
     <Compile Include="Entities\SharingManagement.cs" />

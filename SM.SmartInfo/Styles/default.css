@@ -9637,24 +9637,37 @@ a.btnClose {
 .rpt-edit {
     width: 20px;
 }
+.rpt-edit a{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url('../Images/edit.png') no-repeat center center;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-indent: 20px;
+    overflow: hidden;
+}
 
-    .rpt-edit a {
-        background: url('../Images/edit.png') no-repeat;
-        background-color: black;
-        display: block;
-        width: 18px;
-        height: 18px;
-        background-repeat: no-repeat;
-        border: 1px solid transparent;
-        border-radius: 3px;
-        background-position: center center;
-        text-indent: 20px;
-        overflow: hidden;
-    }
+.rpt-edit a:hover, .rpt-allocation a:hover {
+    background-color: #de5810;
+}
 
-        .rpt-edit a:hover {
-            background-color: #de5810;
-        }
+/*.rpt-allocation {
+    width: 40px;
+}*/
+.rpt-allocation a {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url('../Images/icon_change.png') no-repeat center center;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-indent: 20px;
+    overflow: hidden;
+}
+
 
 .rpt-delete {
     width: 20px;

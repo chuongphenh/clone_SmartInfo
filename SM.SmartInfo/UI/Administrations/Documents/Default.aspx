@@ -1,5 +1,5 @@
-﻿<%@ Page Title="Danh sách mẫu Email/Sms" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
-    Inherits="SM.SmartInfo.UI.Administrations.Plans.Default" %>
+﻿<%@ Page Title="Danh mục văn bản" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
+    Inherits="SM.SmartInfo.UI.Administrations.Documents.Default" %>
 
 <%@ Register Src="~/UI/UserControls/DynamicReportUC.ascx" TagName="DynamicReportUC"
     TagPrefix="uc" %>

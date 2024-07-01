@@ -25,31 +25,13 @@ namespace SM.SmartInfo.SharedComponent.Entities
             set { _TargetCode = value; NotifyPropertyChanged(C_TargetCode); }
         }
 
-        public const string C_Name = "Name";
-        private string _Name;
-        [PropertyEntity(C_Name, false)]
-        public string Name
+        public const string C_TargetName = "TargetName";
+        private string _TargetName;
+        [PropertyEntity(C_TargetName, false)]
+        public string TargetName
         {
-            get { return _Name; }
-            set { _Name = value; NotifyPropertyChanged(C_Name); }
-        }
-
-        public const string C_TargetType = "TargetType";
-        private int? _TargetType;
-        [PropertyEntity(C_TargetType, false)]
-        public int? TargetType
-        {
-            get { return _TargetType; }
-            set { _TargetType = value; NotifyPropertyChanged(C_TargetType); }
-        }
-
-        public const string C_Description = "Description";
-        private string _Description;
-        [PropertyEntity(C_Description, false)]
-        public string Description
-        {
-            get { return _Description; }
-            set { _Description = value; NotifyPropertyChanged(C_Description); }
+            get { return _TargetName; }
+            set { _TargetName = value; NotifyPropertyChanged(C_TargetName); }
         }
 
         public const string C_Version = "Version";
