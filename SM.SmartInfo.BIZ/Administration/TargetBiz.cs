@@ -45,7 +45,7 @@ namespace SM.SmartInfo.BIZ.Administration
             if (param.Target != null && string.IsNullOrWhiteSpace(param.Target.TargetCode))
                 lsmMess.Add(Messages.Target.NoCode);
 
-            if (param.Target != null && string.IsNullOrWhiteSpace(param.Target.Name))
+            if (param.Target != null && string.IsNullOrWhiteSpace(param.Target.TargetName))
                 lsmMess.Add(Messages.Target.NoName);
 
             //if (param.Target != null && param.EmailTemplate.TemplateType == null)

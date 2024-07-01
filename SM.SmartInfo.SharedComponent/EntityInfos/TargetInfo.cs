@@ -16,14 +16,14 @@ namespace SM.SmartInfo.SharedComponent.EntityInfos
         //[PropertyEntity("OrganizationOfManagerName", false)]
         //public string OrganizationOfManagerName { get; set; }
 
-        public string StrTargetType
-        {
-            get
-            {
-                return this.TargetType.HasValue && SMX.TargetType.dctTargetTypes.ContainsKey(this.TargetType) ? SMX.dicGender[this.TargetType] : string.Empty;
-            }
-        }
-        public string TargetName { get; set; }
+        //public string StrTargetType
+        //{
+        //    get
+        //    {
+        //        return this.TargetType.HasValue && SMX.TargetType.dctTargetTypes.ContainsKey(this.TargetType) ? SMX.dicGender[this.TargetType] : string.Empty;
+        //    }
+        //}
+        //public string TargetName { get; set; }
         public string TargetDescription { get; set; }
         #region Properties used for approve process flow (committee)
 

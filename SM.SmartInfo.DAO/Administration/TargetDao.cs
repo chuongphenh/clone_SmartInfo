@@ -56,7 +56,7 @@ namespace SM.SmartInfo.DAO.Administration
 
             string cmdText = @"SELECT *
                                FROM Target
-                               WHERE (@Name IS NULL OR Name like @Name) AND (@Subject is null or Subject like @Subject) AND Deleted = @NotDeleted";
+                               WHERE (@Name IS NULL OR TargetName like @Name) AND (@Subject is null or Subject like @Subject) AND Deleted = @NotDeleted";
             var cmd = new SqlCommand(cmdText);
             //cmd.Parameters.AddWithValue("@Name", BuildLikeFilter(target.N));
             //cmd.Parameters.AddWithValue("@Subject", BuildLikeFilter(target.Subject));
@@ -73,11 +73,10 @@ namespace SM.SmartInfo.DAO.Administration
 
             using (DataContext dataContext = new DataContext())
             {
-                var res = dataContext.SelectFieldsByColumnName<TargetInfo>(new string[] { Target.C_TargetCode, Target.C_Name, Target.C_Description, Target.C_TargetType,Target.C_TargetID },
+                var res = dataContext.SelectFieldsByColumnName<TargetInfo>(new string[] { Target.C_TargetCode, Target.C_TargetName, Target.C_RequestResult, Target.C_TargetID },
                                                         new ConditionList()
                                                         {
                                                             {Target.C_TargetID, targetID},
-                                                            //{Target.C_Status, SMX.Status.Active},
                                                         }).FirstOrDefault();
 
                 return res;

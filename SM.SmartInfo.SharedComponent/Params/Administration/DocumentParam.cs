@@ -7,17 +7,17 @@ using SM.SmartInfo.SharedComponent.EntityInfos;
 
 namespace SM.SmartInfo.SharedComponent.Params.Administration
 {
-    public class PlanParam : BaseParam
+    public class DocumentParam : BaseParam
     {
 
-        public PlanParam(string functionType)
+        public DocumentParam(string functionType)
             : base(Constants.BusinessType.Administrations, functionType)
         {
         }
 
-        public int? PlanID { get; set; }
-        public Plan Plan { get; set; }
-        public List<Plan> Plans { get; set; }
+        public int? DocumentID { get; set; }
+        public Document Document { get; set; }
+        public List<Document> Documents { get; set; }
         public List<int> TargetIDs { get; set; }
         public List<TargetInfo> TargetInfos { get; set; }
 

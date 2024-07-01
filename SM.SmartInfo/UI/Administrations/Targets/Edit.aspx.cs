@@ -56,11 +56,6 @@ namespace SM.SmartInfo.UI.Administrations.Targets
         public void SetupForm()
         {
             lnkExit.NavigateUrl = PageURL.Default;
-            //bind radcombobox control
-            UIUtility.BindListToDropDownList(ddTargetType, SMX.TargetType.dctTargetTypes.ToList(), false);
-            //UIUtility.BindListToDropDownList(ddTransformType, SMX.TransformType.dctName.ToList(), false);
-            //UIUtility.BindListToDropDownList(ddStatus, SMX.Status.dctStatus.ToList(), false);
-            //UIUtility.BindDicToDropDownList<int?, string>(ddlTriggerType, SMX.TriggerType.dicDes, true);
         }
 
         public void LoadData()
@@ -86,10 +81,10 @@ namespace SM.SmartInfo.UI.Administrations.Targets
         public void BindObjectToForm(Target item)
         {
             lblCode.Text = item.TargetCode;
-            txtName.Text = item.Name;
-            ddTargetType.SelectedValue = Utils.Utility.GetString(item.TargetType);
+            txtName.Text = item.TargetName;
+            //ddTargetType.SelectedValue = Utils.Utility.GetString(item.TargetType);
 
-            txtDescription.Text = item.Description;
+            txtDescription.Text = item.RequestResult;
 
             hidId.Value = Utility.GetString(item.TargetID);
             hidVersion.Value = Utility.GetString(item.Version);
@@ -102,9 +97,9 @@ namespace SM.SmartInfo.UI.Administrations.Targets
             item.TargetID = Utility.GetNullableInt(hidId.Value);
             item.Version = Utility.GetNullableInt(hidVersion.Value);
             item.TargetCode = lblCode.Text;
-            item.Name = txtName.Text.Trim();
-            item.TargetType = Utils.Utility.GetNullableInt(ddTargetType.SelectedValue);
-            item.Description = txtDescription.Text.Trim();
+            item.TargetName = txtName.Text.Trim();
+            //item.TargetType = Utils.Utility.GetNullableInt(ddTargetType.SelectedValue);
+            item.RequestResult = txtDescription.Text.Trim();
 
             return item;
         }

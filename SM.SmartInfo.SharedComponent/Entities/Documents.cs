@@ -3,44 +3,44 @@ using System;
 
 namespace SM.SmartInfo.SharedComponent.Entities
 {
-    public partial class Plan : BaseEntity
+    public partial class Document : BaseEntity
     {
         #region Primitive members
 
-        public const string C_PlanID = "PlanID";
-        private int? _PlanID;
-        [PropertyEntity(C_PlanID, true)]
-        public int? PlanID
+        public const string C_DocumentID = "DocumentID";
+        private int? _DocumentID;
+        [PropertyEntity(C_DocumentID, true)]
+        public int? DocumentID
         {
-            get { return _PlanID; }
-            set { _PlanID = value; NotifyPropertyChanged(C_PlanID); }
+            get { return _DocumentID; }
+            set { _DocumentID = value; NotifyPropertyChanged(C_DocumentID); }
         }
 
-        public const string C_PlanCode = "PlanCode";
-        private string _PlanCode;
-        [PropertyEntity(C_PlanCode, false)]
-        public string PlanCode
+        public const string C_DocumentCode = "DocumentCode";
+        private string _DocumentCode;
+        [PropertyEntity(C_DocumentCode, false)]
+        public string DocumentCode
         {
-            get { return _PlanCode; }
-            set { _PlanCode = value; NotifyPropertyChanged(C_PlanCode); }
+            get { return _DocumentCode; }
+            set { _DocumentCode = value; NotifyPropertyChanged(C_DocumentCode); }
         }
 
-        public const string C_Name = "Name";
-        private string _Name;
-        [PropertyEntity(C_Name, false)]
-        public string Name
+        public const string C_DocumentName = "DocumentName";
+        private string _DocumentName;
+        [PropertyEntity(C_DocumentName, false)]
+        public string DocumentName
         {
-            get { return _Name; }
-            set { _Name = value; NotifyPropertyChanged(C_Name); }
+            get { return _DocumentName; }
+            set { _DocumentName = value; NotifyPropertyChanged(C_DocumentName); }
         }
 
-        public const string C_OrganizationName = "OrganizationName";
-        private string _OrganizationName;
-        [PropertyEntity(C_OrganizationName, false)]
-        public string OrganizationName
+        public const string C_IssuerOrganizationID = "IssuerOrganizationID";
+        private int? _IssuerOrganizationID;
+        [PropertyEntity(C_IssuerOrganizationID, false)]
+        public int? IssuerOrganizationID
         {
-            get { return _OrganizationName; }
-            set { _OrganizationName = value; NotifyPropertyChanged(C_OrganizationName); }
+            get { return _IssuerOrganizationID; }
+            set { _IssuerOrganizationID = value; NotifyPropertyChanged(C_IssuerOrganizationID); }
         }
 
         public const string C_StartDate = "StartDate";
@@ -59,33 +59,6 @@ namespace SM.SmartInfo.SharedComponent.Entities
         {
             get { return _EndDate; }
             set { _EndDate = value; NotifyPropertyChanged(C_EndDate); }
-        }
-
-        public const string C_ReportCycle = "ReportCycle";
-        private string _ReportCycle;
-        [PropertyEntity(C_ReportCycle, false)]
-        public string ReportCycle
-        {
-            get { return _ReportCycle; }
-            set { _ReportCycle = value; NotifyPropertyChanged(C_ReportCycle); }
-        }
-
-        public const string C_ReportCycleType = "ReportCycleType";
-        private int? _ReportCycleType;
-        [PropertyEntity(C_ReportCycleType, false)]
-        public int? ReportCycleType
-        {
-            get { return _ReportCycleType; }
-            set { _ReportCycleType = value; NotifyPropertyChanged(C_ReportCycleType); }
-        }
-
-        public const string C_Description = "Description";
-        private string _Description;
-        [PropertyEntity(C_Description, false)]
-        public string Description
-        {
-            get { return _Description; }
-            set { _Description = value; NotifyPropertyChanged(C_Description); }
         }
 
         public const string C_Version = "Version";
@@ -142,7 +115,16 @@ namespace SM.SmartInfo.SharedComponent.Entities
             set { _UpdatedDTG = value; NotifyPropertyChanged(C_UpdatedDTG); }
         }
 
-        public Plan() : base("Plan", "PlanID", "Deleted", "Version") { }
+        public const string C_ReleaseDate = "ReleaseDate";
+        private DateTime? _ReleaseDate;
+        [PropertyEntity(C_ReleaseDate, false)]
+        public DateTime? ReleaseDate
+        {
+            get { return _ReleaseDate; }
+            set { _ReleaseDate = value; NotifyPropertyChanged(C_ReleaseDate); }
+        }
+
+        public Document() : base("Document", "DocumentID", "Deleted", "Version") { }
 
         #endregion
     }

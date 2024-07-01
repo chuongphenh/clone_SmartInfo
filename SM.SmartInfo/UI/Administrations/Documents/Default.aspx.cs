@@ -1,22 +1,14 @@
-﻿using System;
-using System.Web.UI.WebControls;
-using SM.SmartInfo.Utils;
+﻿using SM.SmartInfo.PermissionManager.Shared;
 using SM.SmartInfo.SharedComponent.Constants;
-using SM.SmartInfo.SharedComponent.Entities;
-using SM.SmartInfo.UI.UserControls;
-using SM.SmartInfo.SharedComponent.Params;
-using SM.SmartInfo.SharedComponent.Params.Administration;
-using SM.SmartInfo.BIZ;
 using SoftMart.Kernel.Exceptions;
+using System;
 using System.Collections.Generic;
-using SM.SmartInfo.PermissionManager;
-using SM.SmartInfo.PermissionManager.Shared;
 
-namespace SM.SmartInfo.UI.Administrations.Plans
+namespace SM.SmartInfo.UI.Administrations.Documents
 {
     public partial class Default : BasePage, ISMForm
     {
-        private const string REPORT_TYPE = SMX.DynamicReport.AdministrationPlans;
+        private const string REPORT_TYPE = SMX.DynamicReport.AdministrationDocuments;
 
         #region events
 

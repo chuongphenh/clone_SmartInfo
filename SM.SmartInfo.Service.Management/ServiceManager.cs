@@ -63,9 +63,9 @@ namespace SM.SmartInfo.Service.Management
                 EnableSsl = ConfigUtils.EmailEnableSSL,
                 From = ConfigUtils.EmailFrom
             };
-            SoftMart.Service.Notification.NotificationApi.ConfigService(appCnnKey, temporaryFolder,
-                                                                        new SM.SmartInfo.Service.Notification.BIZ.BizProvider(),
-                                                                        mailServerInfo);
+            //---?SoftMart.Service.Notification.NotificationApi.ConfigService(appCnnKey, temporaryFolder,
+            //                                                            new SM.SmartInfo.Service.Notification.BIZ.BizProvider(),
+            //                                                            mailServerInfo);
             #region NotUsed
             //Config BatchProcessing service
             //SoftMart.Service.BatchProcessing.BatchProcessingApi.ConfigService(appCnnKey, xmlConfigFolderBPS, templateFolder, temporaryFolder,

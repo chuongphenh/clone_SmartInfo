@@ -43,11 +43,10 @@ namespace SM.SmartInfo.DAO.Commons
         {
             using (DataContext dataContext = new DataContext())
             {
-                var res = dataContext.SelectFieldsByColumnName<TargetInfo>(new string[] { Target.C_Name, Target.C_TargetID, Target.C_TargetCode, Target.C_Description, Target.C_TargetType },
+                var res = dataContext.SelectFieldsByColumnName<TargetInfo>(new string[] { Target.C_TargetName, Target.C_TargetID, Target.C_TargetCode, Target.C_RequestResult },
                                                         new ConditionList()
                                                         {
                                                             {Target.C_TargetID, targetID},
-                                                            //{Employee.C_Status, SMX.Status.Active},
                                                         }).FirstOrDefault();
 
                 return res;
@@ -60,11 +59,11 @@ namespace SM.SmartInfo.DAO.Commons
 
         public List<Target> SearchShortTarget(string keyWord)
         {
-            string sql = @"select top 20 TargetID, Name, TargetCode
+            string sql = @"select top 20 TargetID, TargetName, TargetCode
                            from Target
                            where Deleted = 0
-                               and (Name like @KeyWord OR TargetCode like @KeyWord)
-                           order by Name";
+                               and (TargetName like @KeyWord OR TargetCode like @KeyWord)
+                           order by TargetName";
 
             SqlCommand command = new SqlCommand(sql);
             //command.Parameters.AddWithValue("@Status", SMX.Status.Active);

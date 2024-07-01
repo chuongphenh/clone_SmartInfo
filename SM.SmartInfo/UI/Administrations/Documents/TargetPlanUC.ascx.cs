@@ -64,13 +64,13 @@ namespace SM.SmartInfo.UI.Administrations.Plans
                 hidEmployeeID.Value = item.TargetID.ToString();
 
                 Label lblTargetName = (Label)e.Item.FindControl("lblTargetName");
-                lblTargetName.Text = item.Name;
+                lblTargetName.Text = item.TargetName;
 
-                Label lblTargetType = (Label)e.Item.FindControl("lblTargetType");
-                lblTargetType.Text = Utility.GetDictionaryValue(SMX.TargetType.dctTargetTypes, item.TargetType);
+                //Label lblTargetType = (Label)e.Item.FindControl("lblTargetType");
+                //lblTargetType.Text = Utility.GetDictionaryValue(SMX.TargetType.dctTargetTypes, item.TargetType);
 
                 Label lblDescribe = (Label)e.Item.FindControl("lblDescribe");
-                lblDescribe.Text = item.Description;
+                lblDescribe.Text = item.RequestResult;
 
                 LinkButton btnDelete = e.Item.FindControl("btnDelete") as LinkButton;
                 btnDelete.OnClientClick = "return confirm('Bạn có thực sự muốn xóa?')";
@@ -142,10 +142,10 @@ namespace SM.SmartInfo.UI.Administrations.Plans
 
                 var target = new TargetInfo();
                 target.TargetCode = lblTargetCode.Text;
-                target.Name = lblTargetName.Text;
-                target.TargetType = Utility.GetDictionaryKey(SMX.TargetType.dctTargetTypes, lblTargetType.Text);
+                target.TargetName = lblTargetName.Text;
+                //target.TargetType = Utility.GetDictionaryKey(SMX.TargetType.dctTargetTypes, lblTargetType.Text);
                 target.TargetID = Utility.GetInt(hidTargetID.Value);
-                target.Description = lblDescribe.Text;
+                target.RequestResult = lblDescribe.Text;
 
                 lstTarget.Add(target);
             }

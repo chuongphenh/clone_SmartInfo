@@ -121,14 +121,5 @@ namespace SM.SmartInfo.UI.Administrations.Targets
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::SoftMart.Core.UIControls.MultiLineLabel lblDescription;
-
-        /// <summary>
-        /// lblTemplateType control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTemplateType;
     }
 }

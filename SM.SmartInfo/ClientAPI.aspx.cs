@@ -41,7 +41,7 @@ namespace SM.CollateralManagement
 
 
             // Chuyển đổi dữ liệu tìm kiếm được về IList<DynamicObject>
-            IList lstTarget = param.Targets.Select(en => new { en.TargetID, en.Name, TargetCode = en.TargetCode }).ToList();
+            IList lstTarget = param.Targets.Select(en => new { en.TargetID, en.TargetName, TargetCode = en.TargetCode }).ToList();
 
             // Chuyển đổi IList<DynamicObject> về JSONString
             return AjaxSearchBox.ParseClientData(lstTarget);

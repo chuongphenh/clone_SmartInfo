@@ -50,7 +50,7 @@ namespace SM.SmartInfo.UI.Administrations.Targets
         public void SetupForm()
         {
             lnkExit.NavigateUrl = PageURL.Default;
-            UIUtility.BindListToDropDownList(ddTargrtType, SMX.TargetType.dctTargetTypes.ToList(), false);
+            //UIUtility.BindListToDropDownList(ddTargrtType, SMX.TargetType.dctTargetTypes.ToList(), false);
         }
 
         public object AddNewItem()
@@ -72,9 +72,9 @@ namespace SM.SmartInfo.UI.Administrations.Targets
             Target item = new Target();
 
             item.TargetCode = txtCode.Text;
-            item.Name = txtName.Text;
-            item.TargetType = Utils.Utility.GetNullableInt(ddTargrtType.SelectedValue);
-            item.Description = txtDescription.Text;
+            item.TargetName = txtName.Text;
+            //item.TargetType = Utils.Utility.GetNullableInt(ddTargrtType.SelectedValue);
+            item.RequestResult = txtDescription.Text;
             return item;
         }
 
