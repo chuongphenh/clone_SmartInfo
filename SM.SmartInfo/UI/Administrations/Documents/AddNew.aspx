@@ -1,6 +1,5 @@
-﻿<%@ Page Title="Thêm mới văn bản" Language="C#" AutoEventWireup="true" CodeBehind="AddNew.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
+<%@ Page Title="Thêm mới văn bản" Language="C#" AutoEventWireup="true" CodeBehind="AddNew.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
     Inherits="SM.SmartInfo.UI.Administrations.Documents.AddNew" %>
-
 <%@ Register Assembly="SMCUI" Namespace="SoftMart.Core.UIControls" TagPrefix="tk" %>
 <%@ Register Src="~/UI/UserControls/Common/ErrorMessageUC.ascx" TagName="ErrorMessage"
     TagPrefix="uc" %>
@@ -141,4 +140,4 @@
             </asp:Panel>
         </div>
     </div>
-</asp:Content>
+</asp:Content>--%>

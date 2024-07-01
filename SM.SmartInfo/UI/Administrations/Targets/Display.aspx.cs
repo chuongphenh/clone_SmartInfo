@@ -146,9 +146,9 @@ namespace SM.SmartInfo.UI.Administrations.Targets
 
             // Record data
             lblCode.Text = item.TargetCode;
-            lblName.Text = item.Name;
-            lblTemplateType.Text = Utils.Utility.GetDictionaryValue(SMX.TargetType.dctTargetTypes, item.TargetType);
-            lblDescription.Text = item.Description;
+            lblName.Text = item.TargetName;
+            //lblTemplateType.Text = Utils.Utility.GetDictionaryValue(SMX.TargetType.dctTargetTypes, item.TargetType);
+            lblDescription.Text = item.RequestResult;
         }
 
         #endregion

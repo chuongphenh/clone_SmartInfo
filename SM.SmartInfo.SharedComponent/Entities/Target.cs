@@ -88,6 +88,15 @@ namespace SM.SmartInfo.SharedComponent.Entities
             set { _UpdatedDTG = value; NotifyPropertyChanged(C_UpdatedDTG); }
         }
 
+        public const string C_RequestResult = "RequestResult";
+        private string _RequestResult;
+        [PropertyEntity(C_RequestResult, false)]
+        public string RequestResult
+        {
+            get { return _RequestResult; }
+            set { _RequestResult = value; NotifyPropertyChanged(C_RequestResult); }
+        }
+
         public Target() : base("Target", "TargetID", "Deleted", "Version") { }
 
         #endregion

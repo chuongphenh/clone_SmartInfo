@@ -112,7 +112,7 @@ namespace SM.SmartInfo.UI.UserControls
             ltrTargetCode.Text = enTarget.TargetCode;
 
             Literal ltrTargetName = (Literal)e.Item.FindControl("ltrTargetName");
-            ltrTargetName.Text = enTarget.Name;
+            ltrTargetName.Text = enTarget.TargetName;
         }
 
         protected void rcbTarget_TextChanged(object sender, string newText)

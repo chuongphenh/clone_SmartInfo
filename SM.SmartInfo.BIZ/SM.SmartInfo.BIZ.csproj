@@ -99,7 +99,7 @@
     <Compile Include="Administration\AnniversaryBiz.cs" />
     <Compile Include="Administration\CountryBiz.cs" />
     <Compile Include="Administration\DistrictBiz.cs" />
-    <Compile Include="Administration\PlanBiz.cs" />
+    <Compile Include="Administration\DocumentBiz.cs" />
     <Compile Include="Administration\TargetBiz.cs" />
     <Compile Include="Administration\EmailTemplateBiz.cs" />
     <Compile Include="Administration\NotificationBiz.cs" />

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Chi tiết mẫu Email/Sms" Language="C#" AutoEventWireup="true" CodeBehind="Display.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
+﻿<%@ Page Title="Chi tiết chỉ tiêu" Language="C#" AutoEventWireup="true" CodeBehind="Display.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
  Inherits="SM.SmartInfo.UI.Administrations.Targets.Display" %>
 
 <%@ Register Src="~/UI/UserControls/Common/ErrorMessageUC.ascx" TagName="ErrorMessage"
@@ -56,72 +56,12 @@
             </tr>
             <tr>
                 <th>
-                    Mô tả
+                    Kết quả yêu cầu
                 </th>
                 <td>
                     <tk:MultiLineLabel ID="lblDescription" runat="server"></tk:MultiLineLabel>
                 </td>
-                <th>
-                    Loại mẫu
-                </th>
-                <td>
-                    <asp:Label ID="lblTemplateType" runat="server"></asp:Label>
-                </td>
-                <%--<th>
-                    Cách thức sinh
-                </th>
-                <td>
-                    <asp:Label ID="lblTransformType" runat="server"></asp:Label>
-                </td>--%>
             </tr>
-            <%--<tr>
-                <th>
-                    Trạng thái
-                </th>
-                <td colspan="3">
-                    <asp:Label runat="server" ID="lblStatus" />
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    Thuộc tính
-                </th>
-                <td colspan="3">
-                    <asp:Label ID="lblProperties" runat="server"></asp:Label>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    Tần suất gửi
-                </th>
-                <td>
-                    <asp:Label runat="server" ID="lblTriggerType" />
-                </td>
-                <th>
-                    Thời điểm gửi
-                </th>
-                <td>
-                    <asp:Label runat="server" ID="lblTriggerTime" />
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    Tiêu đề
-                </th>
-                <td colspan="3">
-                    <asp:Label ID="lblSubject" runat="server"></asp:Label>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    Nội dung
-                </th>
-                <td colspan="3">
-                    <tk:MultiLineLabel ID="lblContent" runat="server" Visible="false"></tk:MultiLineLabel>
-                    <asp:LinkButton ID="lbtImage" runat="server" Text="Tải file" Font-Underline="false"
-                        ForeColor="Blue" OnClick="lbtImage_Click" Visible="false"></asp:LinkButton>
-                </td>
-            </tr>--%>
         </table>
     </div>
 </asp:Content>

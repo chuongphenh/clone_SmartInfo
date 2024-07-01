@@ -8,19 +8,19 @@
 <%@ Register Src="~/UI/UserControls/ReportControl/ExportingPopupUC.ascx" TagName="ExportingPopup"
     TagPrefix="uc" %>
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="MainContent">
-                    <style>
-                .icon_toolbar li a{
-            background:#F2F3F8;
-            padding:5px 10px;
-            border-radius:4px;
-            font-weight:bold;
+    <style>
+        .icon_toolbar li a {
+            background: #F2F3F8;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
         }
-        .icon_toolbar li a i{
-            padding-top:0;
+        .icon_toolbar li a i {
+            padding-top: 0;
         }
     </style>
     <div class="toolbar">
-        DANH SÁCH KẾ HOẠCH
+        DANH MỤC VĂN BẢN
         <ul class="icon_toolbar">
             <li>
                 <asp:LinkButton ID="btnExport" runat="server" OnClick="btnExport_Click">

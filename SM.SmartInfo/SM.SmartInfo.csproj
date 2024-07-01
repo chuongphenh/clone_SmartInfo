@@ -343,7 +343,7 @@
     <Content Include="XmlConfigs\Administration_Country.xml" />
     <Content Include="XmlConfigs\Administration_District.xml" />
     <Content Include="XmlConfigs\Administration_Targets.xml" />
-    <Content Include="XmlConfigs\Administration_Plans.xml" />
+    <Content Include="XmlConfigs\Administration_Documents.xml" />
     <Content Include="XmlConfigs\Administration_Emails.xml" />
     <Content Include="XmlConfigs\Administration_Notification.xml" />
     <Content Include="XmlConfigs\Administration_Province.xml" />
@@ -680,7 +680,6 @@
     </Compile>
     <Compile Include="UI\Administrations\Documents\AddNew.aspx.cs">
       <DependentUpon>AddNew.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UI\Administrations\Documents\AddNew.aspx.designer.cs">
       <DependentUpon>AddNew.aspx</DependentUpon>

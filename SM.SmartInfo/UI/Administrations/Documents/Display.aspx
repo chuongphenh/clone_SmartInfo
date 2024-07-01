@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Chi tiết cơ cấu tổ chức" Language="C#" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
+﻿<%--<%@ Page Title="Chi tiết cơ cấu tổ chức" Language="C#" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
     AutoEventWireup="true" CodeBehind="Display.aspx.cs" Inherits="SM.SmartInfo.UI.Administrations.Plans.Display" %>
 
 <%@ Register Assembly="SMCUI" Namespace="SoftMart.Core.UIControls" TagPrefix="tk" %>
@@ -141,4 +141,4 @@
             </div>
         </ContentTemplate>
     </asp:UpdatePanel>
-</asp:Content>
+</asp:Content>--%>

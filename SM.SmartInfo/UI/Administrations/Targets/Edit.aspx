@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Chỉnh sửa mấu Email/Sms" Language="C#" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
+﻿<%@ Page Title="Chỉnh sửa chỉ tiêu" Language="C#" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
      Inherits="SM.SmartInfo.UI.Administrations.Targets.Edit" %>
 
 <%@ Register Src="~/UI/UserControls/Common/ErrorMessageUC.ascx" TagName="ErrorMessage"
@@ -60,19 +60,11 @@
             </tr>
             <tr>
                 <th>
-                    Mô tả
+                    Kết quả yêu cầu
                 </th>
                 <td>
                    <tk:TextArea ID="txtDescription"  runat="server" Width="100%" TextMode="MultiLine"
                         Rows="1"></tk:TextArea>
-                </td>
-                <th>
-                    Loại chỉ tiêu
-                </th>
-                <td>
-                    <asp:DropDownList ID="ddTargetType" runat="server" DataTextField="Value" DataValueField="Key"
-                        Width="200">
-                    </asp:DropDownList>
                 </td>
             </tr>
         </table>

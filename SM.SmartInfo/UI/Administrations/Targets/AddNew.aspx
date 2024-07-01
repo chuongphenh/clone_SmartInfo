@@ -55,67 +55,13 @@
                 </td>
             </tr>
             <tr>
-                <th>Mô tả
+                <th>Kết quả yêu cầu
                 </th>
                 <td >
                     <tk:TextArea ID="txtDescription" runat="server"  TextMode="MultiLine"  Width="100%"
                         Rows="1"></tk:TextArea>
                 </td>
-                <th>Loại chỉ tiêu<%-- <span class="star">*</span>--%>
-                </th>
-                <td>
-                    <asp:DropDownList ID="ddTargrtType" runat="server" DataTextField="Value" DataValueField="Key"
-                        Width="200">
-                    </asp:DropDownList>
-                </td>
             </tr>
-            <%--<tr>
-                <th>Trạng thái
-                </th>
-                <td colspan="3">
-                    <asp:DropDownList ID="ddStatus" runat="server" DataTextField="Value" DataValueField="Key"
-                        Width="200" />
-                </td>
-            </tr>
-            <tr>
-                <th>Thuộc tính
-                </th>
-                <td colspan="3">
-                    <asp:TextBox ID="txtProperties" runat="server" MaxLength="512" Width="200" />
-                </td>
-            </tr>
-            <tr>
-                <th>Tần suất gửi
-                </th>
-                <td>
-                    <asp:DropDownList runat="server" ID="ddlTriggerType" OnSelectedIndexChanged="ddlTriggerType_OnSelectedIndexChanged" AutoPostBack="true" />
-                </td>
-                <th>Thời điểm gửi
-                </th>
-                <td>
-                    <asp:DropDownList runat="server" ID="ddlTriggerTime" />
-                    (<asp:Label runat="server" ID="lblTriggerTimeNote" Font-Italic="true" />)
-                </td>
-            </tr>
-            <tr>
-                <th>Tiêu đề
-                </th>
-                <td colspan="3">
-                    <asp:TextBox ID="txtSubject" runat="server" Width="300" MaxLength="256" />
-                </td>
-            </tr>
-            <tr>
-                <th>Nội dung
-                </th>
-                <td colspan="3">
-                    <tk:TextArea ID="txtContent" Visible="false" runat="server" Width="100%" TextMode="MultiLine"
-                        Rows="7"></tk:TextArea>
-                    <asp:FileUpload ID="fileUpload" runat="server" Width="300" />
-                    <asp:RegularExpressionValidator ID="regexValidator" runat="server" ControlToValidate="fileUpload"
-                        Display="None" ForeColor="Red" ErrorMessage="Chỉ cho phép upload file word or html"
-                        ValidationExpression="(.*?)\.(doc|docx|html|xsl)$"></asp:RegularExpressionValidator>
-                </td>
-            </tr>--%>
         </table>
     </div>
 </asp:Content>
