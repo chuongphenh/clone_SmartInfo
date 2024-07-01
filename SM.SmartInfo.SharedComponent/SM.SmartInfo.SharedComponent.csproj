@@ -122,7 +122,7 @@
     <Compile Include="Entities\ntf_NotificationPushHistory.cs" />
     <Compile Include="Entities\Profile.cs" />
     <Compile Include="Entities\Setting.cs" />
-    <Compile Include="Entities\Plan.cs" />
+    <Compile Include="Entities\Documents.cs" />
     <Compile Include="Entities\PlanTarget.cs" />
     <Compile Include="Entities\Target.cs" />
     <Compile Include="Entities\SharingManagement.cs" />
@@ -145,7 +145,7 @@
     <Compile Include="EntityInfos\ReportInfo.cs" />
     <Compile Include="EntityViews\vOrganization.cs" />
     <Compile Include="Interfaces\IPVIC.cs" />
-    <Compile Include="Params\Administration\PlanParam.cs" />
+    <Compile Include="Params\Administration\DocumentParam.cs" />
     <Compile Include="Params\Administration\TargetParam.cs" />
     <Compile Include="Params\Administration\EmailTemplateParam.cs" />
     <Compile Include="Params\Administration\OrganizationParam.cs" />

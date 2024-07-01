@@ -11660,3 +11660,1003 @@
     </LogInfo>
   </Inners>
 </LogInfo>
+<LogInfo Time="[20240627 10:14:52 149]" Name="/" Duration="560" />
+<LogInfo Time="[20240627 10:15:03 110]" Name="/UI/Shared/Common/Default.aspx" Duration="386" />
+<LogInfo Time="[20240627 10:15:03 556]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" Duration="1030" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - ReloadCache" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - ReloadCache" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                              <Inners>
+                                                <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Time="[20240627 10:15:09 063]" Name="DataContext - InsertEmployeeLog" Duration="705" />
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240627 10:15:09 810]" Name="/UI/Shared/Common/Default.aspx" UserName="system" Duration="426">
+  <Inners>
+    <LogInfo Time="[10:15:09 813]" Name="Permission: AccessPage" Duration="8" />
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Users/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:15:23 795]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="MainController: Administrations - GetAllRole" Duration="0">
+      <Inners>
+        <LogInfo Time="[10:15:23 892]" Name="DataContext - GetAllActiveRole" Duration="80" />
+        <LogInfo Time="[20240627 10:15:23 976]" Name="MainController: Administrations - GetItemsForView" Duration="395">
+          <Inners>
+            <LogInfo Time="[10:15:23 988]" Name="DataContext - GetEmployeesForView" Duration="308" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Users/AddNew.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:15:36 059]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="DataContext - ReloadCache" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - ReloadCache" Duration="0">
+          <Inners>
+            <LogInfo Name="MainController: Administrations - SetupAddNewForm" Duration="0">
+              <Inners>
+                <LogInfo Time="[20240627 10:15:36 262]" Name="DataContext - GetAllActiveRole" Duration="230">
+                  <Inners>
+                    <LogInfo Time="[10:15:36 319]" Name="DataContext - GetAllShortOrganization" Duration="66" />
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Organizations/Display.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:15:50 880]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="OrgTreeViewUC.ascx" Duration="0">
+      <Inners>
+        <LogInfo Name="MainController: Administrations - GetOrganizationTreeData" Duration="0">
+          <Inners>
+            <LogInfo Time="[10:15:51 010]" Name="DataContext - GetAllShortOrganization" Duration="73" />
+            <LogInfo Name="MainController: Administrations - LoadDataDisplayOrganization" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetOrganizationInfoByID" Duration="0">
+                  <Inners>
+                    <LogInfo Time="[20240627 10:15:51 187]" Name="DataContext - GetEmployeeInOrganizationByOrgID" Duration="345">
+                      <Inners>
+                        <LogInfo Time="[10:15:51 247]" Name="DataContext - GetManagerInOrganizationByOrgID" Duration="64" />
+                        <LogInfo Time="[10:15:51 327]" Name="DataContext - ReloadCache" Duration="204" />
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Organizations/Display.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:15:56 998]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="OrgTreeViewUC.ascx" Duration="0">
+      <Inners>
+        <LogInfo Name="MainController: Administrations - LoadDataDisplayOrganization" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetOrganizationInfoByID" Duration="0">
+              <Inners>
+                <LogInfo Time="[20240627 10:15:57 173]" Name="DataContext - GetEmployeeInOrganizationByOrgID" Duration="329">
+                  <Inners>
+                    <LogInfo Time="[10:15:57 227]" Name="DataContext - GetManagerInOrganizationByOrgID" Duration="60" />
+                    <LogInfo Time="[10:15:57 287]" Name="DataContext - ReloadCache" Duration="210" />
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Users/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:16:10 006]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="MainController: Administrations - GetAllRole" Duration="0">
+      <Inners>
+        <LogInfo Time="[10:16:10 006]" Name="DataContext - GetAllActiveRole" Duration="56" />
+        <LogInfo Time="[20240627 10:16:10 063]" Name="MainController: Administrations - GetItemsForView" Duration="184">
+          <Inners>
+            <LogInfo Time="[10:16:10 063]" Name="DataContext - GetEmployeesForView" Duration="119" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Users/Edit.aspx?ID=1" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:16:13 186]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="DataContext - ReloadCache" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - ReloadCache" Duration="0">
+          <Inners>
+            <LogInfo Name="MainController: Administrations - LoadDataEditUser" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetItemByID" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetOrganizationOfManager" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetEmployeeRoleByEmployeeID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetAllActiveRole" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetEmployeeImageByEmployeeID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Time="[20240627 10:16:13 753]" Name="DataContext - GetAllActiveRole" Duration="196">
+                                          <Inners>
+                                            <LogInfo Time="[10:16:13 811]" Name="DataContext - GetAllShortOrganization" Duration="55" />
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Roles/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:16:36 968]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240627 10:16:36 976]" Name="MainController: Administrations - GetItemsForView" Duration="109">
+      <Inners>
+        <LogInfo Time="[10:16:36 981]" Name="DataContext - SearchRole" Duration="40" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Organizations/Display.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:16:43 393]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="OrgTreeViewUC.ascx" Duration="0">
+      <Inners>
+        <LogInfo Name="MainController: Administrations - GetOrganizationTreeData" Duration="0">
+          <Inners>
+            <LogInfo Time="[10:16:43 393]" Name="DataContext - GetAllShortOrganization" Duration="49" />
+            <LogInfo Name="MainController: Administrations - LoadDataDisplayOrganization" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetOrganizationInfoByID" Duration="0">
+                  <Inners>
+                    <LogInfo Time="[20240627 10:16:43 492]" Name="DataContext - GetEmployeeInOrganizationByOrgID" Duration="221">
+                      <Inners>
+                        <LogInfo Time="[10:16:43 549]" Name="DataContext - GetManagerInOrganizationByOrgID" Duration="56" />
+                        <LogInfo Time="[10:16:43 605]" Name="DataContext - ReloadCache" Duration="107" />
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Organizations/Edit.aspx?ID=1" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:16:47 431]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="OrgTreeViewUC.ascx" Duration="0">
+      <Inners>
+        <LogInfo Name="MainController: Administrations - GetOrganizationTreeData" Duration="0">
+          <Inners>
+            <LogInfo Time="[10:16:47 506]" Name="DataContext - GetAllShortOrganization" Duration="58" />
+            <LogInfo Name="MainController: Administrations - SetupEditForm" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetAllActiveSystemParametersByFeatureID" Duration="0">
+                  <Inners>
+                    <LogInfo Time="[10:16:47 627]" Name="DataContext - GetAllCommittees" Duration="48" />
+                    <LogInfo Name="MainController: Administrations - LoadDataEditOrganization" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetOrganizationInfoByID" Duration="0">
+                          <Inners>
+                            <LogInfo Time="[20240627 10:16:47 831]" Name="DataContext - GetEmployeeInOrganizationByOrgID" Duration="292">
+                              <Inners>
+                                <LogInfo Time="[10:16:47 952]" Name="DataContext - GetManagerInOrganizationByOrgID" Duration="61" />
+                                <LogInfo Time="[10:16:48 013]" Name="DataContext - ReloadCache" Duration="110" />
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Setting/ConfigRight.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:16:55 413]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240627 10:16:55 494]" Name="MainController: Administrations - SetupViewForm" Duration="146">
+      <Inners>
+        <LogInfo Time="[10:16:55 495]" Name="DataContext - GetAllActiveFeature" Duration="66" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240627 10:17:23 726]" Name="/UI/Administrations/Organizations/Edit.aspx?ID=1" UserName="system" Duration="208">
+  <Inners>
+    <LogInfo Time="[10:17:23 726]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[10:17:23 726]" Name="OrgTreeViewUC.ascx" Duration="208" />
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Roles/Default.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:17:57 409]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240627 10:17:57 409]" Name="MainController: Administrations - GetItemsForView" Duration="97">
+      <Inners>
+        <LogInfo Time="[10:17:57 409]" Name="DataContext - SearchRole" Duration="48" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Setting/ConfigRight.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:18:09 281]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240627 10:18:09 281]" Name="MainController: Administrations - SetupViewForm" Duration="119">
+      <Inners>
+        <LogInfo Time="[10:18:09 281]" Name="DataContext - GetAllActiveFeature" Duration="60" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Organizations/Display.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:18:24 786]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Name="OrgTreeViewUC.ascx" Duration="0">
+      <Inners>
+        <LogInfo Name="MainController: Administrations - GetOrganizationTreeData" Duration="0">
+          <Inners>
+            <LogInfo Time="[10:18:24 786]" Name="DataContext - GetAllShortOrganization" Duration="61" />
+            <LogInfo Name="MainController: Administrations - LoadDataDisplayOrganization" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetOrganizationInfoByID" Duration="0">
+                  <Inners>
+                    <LogInfo Time="[20240627 10:18:24 907]" Name="DataContext - GetEmployeeInOrganizationByOrgID" Duration="265">
+                      <Inners>
+                        <LogInfo Time="[10:18:24 966]" Name="DataContext - GetManagerInOrganizationByOrgID" Duration="76" />
+                        <LogInfo Time="[10:18:25 043]" Name="DataContext - ReloadCache" Duration="129" />
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240627 10:18:35 807]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="1564">
+  <Inners>
+    <LogInfo Time="[10:18:35 841]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[10:18:35 850]" Name="DynamicReportUC.ascx" Duration="1521">
+      <Inners>
+        <LogInfo Time="[10:18:35 875]" Name="ExportingPopupUC.ascx" Duration="1496">
+          <Inners>
+            <LogInfo Time="[10:18:37 011]" Name="GetReportData" Duration="231" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240627 10:18:51 124]" Name="/UI/Administrations/Plans/Default.aspx" UserName="system" Duration="258">
+  <Inners>
+    <LogInfo Time="[10:18:51 149]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[10:18:51 161]" Name="DynamicReportUC.ascx" Duration="221">
+      <Inners>
+        <LogInfo Time="[10:18:51 167]" Name="ExportingPopupUC.ascx" Duration="215">
+          <Inners>
+            <LogInfo Time="[10:18:51 184]" Name="GetReportData" Duration="130" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240627 10:19:00 035]" Name="/UI/Administrations/Plans/AddNew.aspx" UserName="system" Duration="206">
+  <Inners>
+    <LogInfo Time="[10:19:00 070]" Name="Permission: AccessPage" Duration="0" />
+  </Inners>
+</LogInfo>
+<LogInfo Name="MainController: Commons - SearchShortTarget" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[20240627 10:21:35 686]" Name="DataContext - SearchShortTarget" Duration="82" />
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Plans/AddNew.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[10:21:39 541]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240627 10:21:39 708]" Name="MainController: Commons - GetShortTargetByID" Duration="178">
+      <Inners>
+        <LogInfo Time="[10:21:39 710]" Name="DataContext - GetShortTargetByID" Duration="88" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:39:41 089]" Name="/UI/Administrations/Documents/AddNew.aspx" Duration="106" />
+<LogInfo Time="[20240630 21:39:41 376]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fAdministrations%2fDocuments%2fAddNew.aspx" Duration="425" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fAdministrations%2fDocuments%2fAddNew.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - ReloadCache" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - ReloadCache" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                              <Inners>
+                                                <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Time="[20240630 21:40:11 158]" Name="DataContext - InsertEmployeeLog" Duration="196" />
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:40:11 375]" Name="/UI/Administrations/Documents/AddNew.aspx" UserName="system" Duration="67">
+  <Inners>
+    <LogInfo Time="[21:40:11 377]" Name="Permission: AccessPage" Duration="2" />
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:40:11 460]" Name="/UI/Shared/Common/Error.aspx" UserName="system" Duration="46" />
+<LogInfo Time="[20240630 21:40:16 242]" Name="/" UserName="system" Duration="111" />
+<LogInfo Time="[20240630 21:40:18 837]" Name="/UI/Shared/Common/Default.aspx" UserName="system" Duration="246">
+  <Inners>
+    <LogInfo Time="[21:40:18 859]" Name="Permission: AccessPage" Duration="0" />
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:40:23 651]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="465">
+  <Inners>
+    <LogInfo Time="[21:40:23 665]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[21:40:23 671]" Name="DynamicReportUC.ascx" Duration="445">
+      <Inners>
+        <LogInfo Time="[21:40:23 681]" Name="ExportingPopupUC.ascx" Duration="435">
+          <Inners>
+            <LogInfo Time="[21:40:24 044]" Name="GetReportData" Duration="71" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:55:39 704]" Name="/" Duration="247" />
+<LogInfo Time="[20240630 21:55:46 854]" Name="/UI/Shared/Common/Default.aspx" Duration="73" />
+<LogInfo Time="[20240630 21:55:46 944]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" Duration="269" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - ReloadCache" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - ReloadCache" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                              <Inners>
+                                                <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Time="[20240630 21:55:50 021]" Name="DataContext - InsertEmployeeLog" Duration="138" />
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:55:50 173]" Name="/UI/Shared/Common/Default.aspx" UserName="system" Duration="162">
+  <Inners>
+    <LogInfo Time="[21:55:50 174]" Name="Permission: AccessPage" Duration="1" />
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:55:53 359]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="304">
+  <Inners>
+    <LogInfo Time="[21:55:53 366]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[21:55:53 370]" Name="DynamicReportUC.ascx" Duration="293">
+      <Inners>
+        <LogInfo Time="[21:55:53 386]" Name="ExportingPopupUC.ascx" Duration="276">
+          <Inners>
+            <LogInfo Time="[21:55:53 626]" Name="GetReportData" Duration="36" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:56:32 713]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="305">
+  <Inners>
+    <LogInfo Time="[21:56:32 713]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[21:56:32 714]" Name="DynamicReportUC.ascx" Duration="304">
+      <Inners>
+        <LogInfo Time="[21:56:32 714]" Name="ExportingPopupUC.ascx" Duration="304">
+          <Inners>
+            <LogInfo Time="[21:56:32 718]" Name="GetReportData" Duration="300" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:58:37 610]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="31">
+  <Inners>
+    <LogInfo Time="[21:58:37 610]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[21:58:37 610]" Name="DynamicReportUC.ascx" Duration="31">
+      <Inners>
+        <LogInfo Time="[21:58:37 610]" Name="ExportingPopupUC.ascx" Duration="31">
+          <Inners>
+            <LogInfo Time="[21:58:37 614]" Name="GetReportData" Duration="27" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:58:38 570]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="40">
+  <Inners>
+    <LogInfo Time="[21:58:38 570]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[21:58:38 571]" Name="DynamicReportUC.ascx" Duration="39">
+      <Inners>
+        <LogInfo Time="[21:58:38 571]" Name="ExportingPopupUC.ascx" Duration="39">
+          <Inners>
+            <LogInfo Time="[21:58:38 575]" Name="GetReportData" Duration="33" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 21:59:09 255]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="52971">
+  <Inners>
+    <LogInfo Time="[21:59:09 255]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[21:59:09 255]" Name="DynamicReportUC.ascx" Duration="52557">
+      <Inners>
+        <LogInfo Time="[21:59:09 255]" Name="ExportingPopupUC.ascx" Duration="50910">
+          <Inners>
+            <LogInfo Time="[21:59:46 231]" Name="GetReportData" Duration="300" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:00:45 520]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="3347">
+  <Inners>
+    <LogInfo Time="[22:00:45 520]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[22:00:45 520]" Name="DynamicReportUC.ascx" Duration="3347">
+      <Inners>
+        <LogInfo Time="[22:00:45 520]" Name="ExportingPopupUC.ascx" Duration="3346">
+          <Inners>
+            <LogInfo Time="[22:00:48 833]" Name="GetReportData" Duration="33" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:00:58 871]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="1748">
+  <Inners>
+    <LogInfo Time="[22:00:58 872]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[22:00:58 872]" Name="DynamicReportUC.ascx" Duration="1747">
+      <Inners>
+        <LogInfo Time="[22:00:58 872]" Name="ExportingPopupUC.ascx" Duration="1747">
+          <Inners>
+            <LogInfo Time="[22:01:00 503]" Name="GetReportData" Duration="74" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:01:16 412]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="4827">
+  <Inners>
+    <LogInfo Time="[22:01:16 412]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[22:01:16 412]" Name="DynamicReportUC.ascx" Duration="4827">
+      <Inners>
+        <LogInfo Time="[22:01:16 412]" Name="ExportingPopupUC.ascx" Duration="4827">
+          <Inners>
+            <LogInfo Time="[22:01:21 148]" Name="GetReportData" Duration="70" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:01:24 951]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="99">
+  <Inners>
+    <LogInfo Time="[22:01:24 951]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[22:01:24 952]" Name="DynamicReportUC.ascx" Duration="98">
+      <Inners>
+        <LogInfo Time="[22:01:24 952]" Name="ExportingPopupUC.ascx" Duration="98">
+          <Inners>
+            <LogInfo Time="[22:01:24 982]" Name="GetReportData" Duration="50" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:01:31 186]" Name="/UI/Administrations/Targets/AddNew.aspx" UserName="system" Duration="48">
+  <Inners>
+    <LogInfo Time="[22:01:31 193]" Name="Permission: AccessPage" Duration="0" />
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:05:59 642]" Name="/UI/Administrations/Targets/AddNew.aspx" Duration="77" />
+<LogInfo Time="[20240630 22:05:59 800]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fAdministrations%2fTargets%2fAddNew.aspx" Duration="339" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fAdministrations%2fTargets%2fAddNew.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - ReloadCache" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - ReloadCache" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                              <Inners>
+                                                <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Time="[20240630 22:07:20 446]" Name="DataContext - InsertEmployeeLog" Duration="171" />
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:07:20 638]" Name="/UI/Administrations/Targets/AddNew.aspx" UserName="system" Duration="187">
+  <Inners>
+    <LogInfo Time="[22:07:20 640]" Name="Permission: AccessPage" Duration="3" />
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:07:40 674]" Name="/UI/Administrations/Targets/AddNew.aspx" UserName="system" Duration="29">
+  <Inners>
+    <LogInfo Time="[22:07:40 674]" Name="Permission: AccessPage" Duration="0" />
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Targets/AddNew.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[22:08:11 781]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240630 22:08:11 828]" Name="MainController: Administrations - AddNewItem" Duration="105">
+      <Inners>
+        <LogInfo Time="[22:08:11 831]" Name="DataContext - InsertTarget" Duration="58" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Targets/Display.aspx?ID=1004" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[22:08:11 963]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240630 22:08:11 974]" Name="MainController: Administrations - LoadDataDisplay" Duration="68">
+      <Inners>
+        <LogInfo Time="[22:08:11 975]" Name="DataContext - GetTargetByID" Duration="34" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:08:21 596]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="393">
+  <Inners>
+    <LogInfo Time="[22:08:21 610]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[22:08:21 614]" Name="DynamicReportUC.ascx" Duration="375">
+      <Inners>
+        <LogInfo Time="[22:08:21 627]" Name="ExportingPopupUC.ascx" Duration="362">
+          <Inners>
+            <LogInfo Time="[22:08:21 849]" Name="GetReportData" Duration="87" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Targets/Edit.aspx?id=1004" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[22:08:26 391]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240630 22:08:26 406]" Name="MainController: Administrations - LoadDataEdit" Duration="64">
+      <Inners>
+        <LogInfo Time="[22:08:26 406]" Name="DataContext - GetTargetByID" Duration="36" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:08:29 067]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="117">
+  <Inners>
+    <LogInfo Time="[22:08:29 067]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[22:08:29 067]" Name="DynamicReportUC.ascx" Duration="117">
+      <Inners>
+        <LogInfo Time="[22:08:29 067]" Name="ExportingPopupUC.ascx" Duration="117">
+          <Inners>
+            <LogInfo Time="[22:08:29 074]" Name="GetReportData" Duration="82" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:12:54 203]" Name="/UI/Administrations/Targets/Edit.aspx" Duration="120" />
+<LogInfo Time="[20240630 22:12:54 430]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fAdministrations%2fTargets%2fEdit.aspx" Duration="307" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fAdministrations%2fTargets%2fEdit.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - ReloadCache" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - ReloadCache" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                              <Inners>
+                                                <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Time="[20240630 22:13:41 707]" Name="DataContext - InsertEmployeeLog" Duration="192" />
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:13:41 928]" Name="/UI/Administrations/Targets/Edit.aspx" UserName="system" Duration="265">
+  <Inners>
+    <LogInfo Time="[22:13:41 929]" Name="Permission: AccessPage" Duration="2" />
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:13:51 079]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="456">
+  <Inners>
+    <LogInfo Time="[22:13:51 088]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[22:13:51 091]" Name="DynamicReportUC.ascx" Duration="444">
+      <Inners>
+        <LogInfo Time="[22:13:51 099]" Name="ExportingPopupUC.ascx" Duration="436">
+          <Inners>
+            <LogInfo Time="[22:13:51 367]" Name="GetReportData" Duration="113" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Targets/Edit.aspx?id=1004" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[22:13:54 313]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240630 22:13:54 317]" Name="MainController: Administrations - LoadDataEdit" Duration="91">
+      <Inners>
+        <LogInfo Time="[22:13:54 323]" Name="DataContext - GetTargetByID" Duration="49" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Targets/Edit.aspx?id=1004" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[22:14:02 777]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240630 22:14:02 832]" Name="MainController: Administrations - UpdateItem" Duration="102">
+      <Inners>
+        <LogInfo Time="[22:14:02 833]" Name="DataContext - UpdateTarget" Duration="57" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Name="/UI/Administrations/Targets/Display.aspx?ID=1004" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Time="[22:14:02 957]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[20240630 22:14:02 964]" Name="MainController: Administrations - LoadDataDisplay" Duration="61">
+      <Inners>
+        <LogInfo Time="[22:14:02 964]" Name="DataContext - GetTargetByID" Duration="32" />
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:14:06 144]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="100">
+  <Inners>
+    <LogInfo Time="[22:14:06 144]" Name="Permission: AccessPage" Duration="1" />
+    <LogInfo Time="[22:14:06 145]" Name="DynamicReportUC.ascx" Duration="99">
+      <Inners>
+        <LogInfo Time="[22:14:06 145]" Name="ExportingPopupUC.ascx" Duration="99">
+          <Inners>
+            <LogInfo Time="[22:14:06 149]" Name="GetReportData" Duration="67" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:14:14 723]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="171">
+  <Inners>
+    <LogInfo Time="[22:14:14 725]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[22:14:14 725]" Name="DynamicReportUC.ascx" Duration="170">
+      <Inners>
+        <LogInfo Time="[22:14:14 725]" Name="ExportingPopupUC.ascx" Duration="170">
+          <Inners>
+            <LogInfo Time="[22:14:14 779]" Name="GetReportData" Duration="89" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240630 22:14:17 777]" Name="/UI/Administrations/Targets/Default.aspx" UserName="system" Duration="168">
+  <Inners>
+    <LogInfo Time="[22:14:17 777]" Name="Permission: AccessPage" Duration="0" />
+    <LogInfo Time="[22:14:17 778]" Name="DynamicReportUC.ascx" Duration="167">
+      <Inners>
+        <LogInfo Time="[22:14:17 778]" Name="ExportingPopupUC.ascx" Duration="166">
+          <Inners>
+            <LogInfo Time="[22:14:17 842]" Name="GetReportData" Duration="71" />
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240701 00:03:17 530]" Name="/" Duration="380" />
+<LogInfo Time="[20240701 00:03:27 228]" Name="/UI/Shared/Common/Default.aspx" Duration="51" />
+<LogInfo Time="[20240701 00:03:27 300]" Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" Duration="349" />
+<LogInfo Name="/UI/Shared/Common/login.aspx?ReturnUrl=%2fUI%2fShared%2fCommon%2fDefault.aspx" UserName="system" Duration="0">
+  <Inners>
+    <LogInfo Name="DataContext - ReloadCache" Duration="0">
+      <Inners>
+        <LogInfo Name="DataContext - ReloadCache" Duration="0">
+          <Inners>
+            <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+              <Inners>
+                <LogInfo Name="DataContext - GetActiveEmployee" Duration="0">
+                  <Inners>
+                    <LogInfo Name="DataContext - GetRolesOfEmployee" Duration="0">
+                      <Inners>
+                        <LogInfo Name="DataContext - GetRightsOfEmployee" Duration="0">
+                          <Inners>
+                            <LogInfo Name="DataContext - GetActiveFeaturesByID" Duration="0">
+                              <Inners>
+                                <LogInfo Name="DataContext - GetFeatureFunctionsByID" Duration="0">
+                                  <Inners>
+                                    <LogInfo Name="DataContext - GetFunctionsByID" Duration="0">
+                                      <Inners>
+                                        <LogInfo Name="DataContext - GetListManagingOrganizationID" Duration="0">
+                                          <Inners>
+                                            <LogInfo Name="DataContext - GetListOwningOrganizationID" Duration="0">
+                                              <Inners>
+                                                <LogInfo Name="DataContext - GetOrganizationOfEmployee" Duration="0">
+                                                  <Inners>
+                                                    <LogInfo Time="[20240701 00:03:55 475]" Name="DataContext - InsertEmployeeLog" Duration="178" />
+                                                  </Inners>
+                                                </LogInfo>
+                                              </Inners>
+                                            </LogInfo>
+                                          </Inners>
+                                        </LogInfo>
+                                      </Inners>
+                                    </LogInfo>
+                                  </Inners>
+                                </LogInfo>
+                              </Inners>
+                            </LogInfo>
+                          </Inners>
+                        </LogInfo>
+                      </Inners>
+                    </LogInfo>
+                  </Inners>
+                </LogInfo>
+              </Inners>
+            </LogInfo>
+          </Inners>
+        </LogInfo>
+      </Inners>
+    </LogInfo>
+  </Inners>
+</LogInfo>
+<LogInfo Time="[20240701 00:03:55 670]" Name="/UI/Shared/Common/Default.aspx" UserName="system" Duration="150">
+  <Inners>
+    <LogInfo Time="[00:03:55 671]" Name="Permission: AccessPage" Duration="2" />
+  </Inners>
+</LogInfo>

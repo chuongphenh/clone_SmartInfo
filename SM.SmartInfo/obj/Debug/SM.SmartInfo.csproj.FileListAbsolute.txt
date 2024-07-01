@@ -83,8 +83,6 @@ F:\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.csproj.CoreCompileInputs.
 F:\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.csproj.CopyComplete
 F:\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.dll
 F:\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.pdb
-D:\AHT\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.csproj.AssemblyReference.cache
-D:\AHT\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.csproj.CoreCompileInputs.cache
 D:\AHT\Clone_SmartInfo\SM.SmartInfo\bin\SM.SmartInfo.dll.config
 D:\AHT\Clone_SmartInfo\SM.SmartInfo\bin\SM.SmartInfo.dll
 D:\AHT\Clone_SmartInfo\SM.SmartInfo\bin\SM.SmartInfo.pdb
@@ -119,6 +117,8 @@ D:\AHT\Clone_SmartInfo\SM.SmartInfo\bin\EPPlus.xml
 D:\AHT\Clone_SmartInfo\SM.SmartInfo\bin\zxing.xml
 D:\AHT\Clone_SmartInfo\SM.SmartInfo\bin\zxing.presentation.xml
 D:\AHT\Clone_SmartInfo\SM.SmartInfo\bin\SM.SmartInfo.DAO.Common.pdb
+D:\AHT\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.csproj.AssemblyReference.cache
+D:\AHT\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.csproj.CoreCompileInputs.cache
 D:\AHT\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.Smart.6C57CB6F.Up2Date
 D:\AHT\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.dll
 D:\AHT\Clone_SmartInfo\SM.SmartInfo\obj\Debug\SM.SmartInfo.pdb
