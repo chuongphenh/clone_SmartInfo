@@ -1219,3 +1219,48 @@ Parameter name: uriString
 2024-07-01 00:03:55,600 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
 2024-07-01 00:03:55,600 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
 2024-07-01 00:03:55,600 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-07-01 15:16:14,717 [9] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-07-01 15:16:14,740 [9] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-07-01 15:16:14,740 [9] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-07-01 15:16:14,740 [9] DEBUG ServiceNotification - Grant Type              : 
+2024-07-01 15:16:14,740 [9] DEBUG ServiceNotification - UserName                : 
+2024-07-01 15:16:14,740 [9] DEBUG ServiceNotification - Password                : 
+2024-07-01 15:16:14,740 [9] DEBUG ServiceNotification - URL push Notification   : 
+2024-07-01 15:16:14,919 [9] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-07-01 15:16:14,919 [9] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-07-01 15:16:14,919 [9] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-07-01 15:16:14,919 [9] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-07-01 15:22:46,661 [10] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-07-01 15:22:46,661 [10] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-07-01 15:22:46,661 [10] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-07-01 15:22:46,661 [10] DEBUG ServiceNotification - Grant Type              : 
+2024-07-01 15:22:46,661 [10] DEBUG ServiceNotification - UserName                : 
+2024-07-01 15:22:46,661 [10] DEBUG ServiceNotification - Password                : 
+2024-07-01 15:22:46,661 [10] DEBUG ServiceNotification - URL push Notification   : 
+2024-07-01 15:22:46,812 [10] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-07-01 15:22:46,812 [10] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-07-01 15:22:46,812 [10] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-07-01 15:22:46,812 [10] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB
+2024-07-01 15:25:07,812 [7] DEBUG ServiceNotification - START: LOGIN - Calling Keycloak WEB
+2024-07-01 15:25:07,839 [7] DEBUG ServiceNotification - START: >>>>>>>>>>>>>>>>> Call Keycloak >>>>>>>>>>>>>>>>>
+2024-07-01 15:25:07,839 [7] DEBUG ServiceNotification - URL Call Keycloak       : 
+2024-07-01 15:25:07,839 [7] DEBUG ServiceNotification - Grant Type              : 
+2024-07-01 15:25:07,839 [7] DEBUG ServiceNotification - UserName                : 
+2024-07-01 15:25:07,839 [7] DEBUG ServiceNotification - Password                : 
+2024-07-01 15:25:07,839 [7] DEBUG ServiceNotification - URL push Notification   : 
+2024-07-01 15:25:08,021 [7] ERROR ServiceNotification - ERROR: Call API KeyCloak Failed: 
+System.ArgumentNullException: Value cannot be null.
+Parameter name: uriString
+   at System.Uri..ctor(String uriString)
+   at SM.SmartInfo.DAO.Firebase.ApiFirebase.<GetTokenAsync>d__7.MoveNext() in F:\Clone_SmartInfo\SM.SmartInfo.DAO\Firebase\ApiFirebase.cs:line 47
+2024-07-01 15:25:08,022 [7] DEBUG ServiceNotification - END: Kết thúc gọi keycloak
+2024-07-01 15:25:08,022 [7] DEBUG ServiceNotification - SUCCESS: LOGIN - Call KeyCloak thành công. ==> Key == null
+2024-07-01 15:25:08,022 [7] DEBUG ServiceNotification - END: LOGIN - Calling Keycloak WEB

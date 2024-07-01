@@ -5,13 +5,6 @@ F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.SharedComponent\obj\Debug\SM.S
 F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.dll
 F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.pdb
 F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.csproj.AssemblyReference.cache
-F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\bin\Debug\SM.SmartInfo.SharedComponent.dll
-F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\bin\Debug\SM.SmartInfo.SharedComponent.pdb
-F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.csproj.AssemblyReference.cache
-F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.csproj.CoreCompileInputs.cache
-F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.csproj.CopyComplete
-F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.dll
-F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.pdb
 D:\AHT\Clone_SmartInfo\SM.SmartInfo.SharedComponent\bin\Debug\SM.SmartInfo.SharedComponent.dll
 D:\AHT\Clone_SmartInfo\SM.SmartInfo.SharedComponent\bin\Debug\SM.SmartInfo.SharedComponent.pdb
 D:\AHT\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.csproj.AssemblyReference.cache
@@ -19,3 +12,10 @@ D:\AHT\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.Share
 D:\AHT\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.Smart.A25FB821.Up2Date
 D:\AHT\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.dll
 D:\AHT\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.pdb
+F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\bin\Debug\SM.SmartInfo.SharedComponent.dll
+F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\bin\Debug\SM.SmartInfo.SharedComponent.pdb
+F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.csproj.AssemblyReference.cache
+F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.csproj.CoreCompileInputs.cache
+F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.Smart.A25FB821.Up2Date
+F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.dll
+F:\Clone_SmartInfo\SM.SmartInfo.SharedComponent\obj\Debug\SM.SmartInfo.SharedComponent.pdb

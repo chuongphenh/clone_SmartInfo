@@ -87,13 +87,13 @@
 
 <%--TITLE--%>
 <div class="row" style="display:flex;">
-    <div class="col-sm-1">
+   <%-- <div class="col-sm-1">
         <a href="/UI/Shared/Common/Default.aspx" class="href-logo">
             <div class="head-logo" style="text-align: center;margin-top:20px;">
                 <img src="../../../Images/smart-infos/logo.svg" alt="Smart info" style="margin-bottom: 5px;width:90px;" />
             </div>
         </a>
-    </div>
+    </div>--%>
     <!--/navbar-collapse-->
     <div id="divMenu" class="col-md-8" style="text-align: center; margin-top: 5px; height: 42px; flex: 8;">
         <div class="menu collapse navbar-collapse navbar-responsive-collapse" >

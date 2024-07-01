@@ -400,25 +400,41 @@ namespace SM.SmartInfo.PermissionManager.UserAuthentication
         public void Logout()
         {
             UserProfile profile = Profiles.MyProfile;
-            if (profile != null)
+            if (profile?.EmployeeLog != null)
             {
                 // keep log
-                EmployeeLog log = profile.EmployeeLog;
-                log.SignOutDTG = DateTime.Now;
-                _dao.UpdateEmployeeLog(log);
+                profile.EmployeeLog.SignOutDTG = DateTime.Now;
+                _dao.UpdateEmployeeLog(profile.EmployeeLog);
             }
 
             // sign-out
             MembershipHelper.FormService.SignOut();
 
-            // clean session: http://support.microsoft.com/kb/899918
-            HttpContext.Current.Session.Abandon();
-            HttpContext.Current.Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", ""));
-            HttpContext.Current.Session.Clear();
+            var httpContext = HttpContext.Current;
+            if (httpContext != null)
+            {
+                httpContext.Session.Abandon();
+                httpContext.Response.Cookies.Add(new HttpCookie("ASP.NET_SessionId", "")
+                {
+                    Expires = DateTime.Now.AddDays(-1) // Ensure the cookie is expired
+                });
+
+                // Clear each cookie by setting its expiration date to the past
+                foreach (var cookie in httpContext.Request.Cookies.AllKeys.Select(key => httpContext.Response.Cookies[key]))
+                {
+                    if (cookie != null)
+                    {
+                        cookie.Expires = DateTime.Now.AddDays(-1);
+                    }
+                }
+
+                httpContext.Session.Clear();
+            }
 
             // clean cache
             Profiles.SetMyProfile(null);
         }
+
 
         #endregion
 

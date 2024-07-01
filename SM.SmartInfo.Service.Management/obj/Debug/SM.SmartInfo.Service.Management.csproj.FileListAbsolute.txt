@@ -33,3 +33,5 @@ F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Service.Management\obj\Debug\S
 F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.dll
 F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.pdb
 F:\SmartInfo\SmartInfo\smartinfo-web\SM.SmartInfo.Service.Management\bin\Debug\Newtonsoft.Json.xml
+F:\Clone_SmartInfo\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.csproj.AssemblyReference.cache
+F:\Clone_SmartInfo\SM.SmartInfo.Service.Management\obj\Debug\SM.SmartInfo.Service.Management.csproj.CoreCompileInputs.cache
