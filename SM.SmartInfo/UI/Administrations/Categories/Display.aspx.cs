@@ -45,61 +45,9 @@ namespace SM.SmartInfo.UI.Administrations.Categories
             }
         }
 
-        //protected void lbtImage_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (!string.IsNullOrWhiteSpace(hidBinaryContent.Value))
-        //        {
-        //            string fileType = string.Empty;
-        //            int? transformType = Utility.GetNullableInt(hiTransformType.Value);
-        //            if (transformType.HasValue)
-        //            {
-        //                switch (transformType.Value)
-        //                {
-        //                    case SMX.TransformType.TransformByWord:
-        //                        {
-        //                            fileType = ".doc";
-        //                            break;
-        //                        }
-        //                    case SMX.TransformType.TransformByXslt:
-        //                        {
-        //                            fileType = ".xsl";
-        //                            break;
-        //                        }
-        //                    default:
-        //                        break;
-        //                }
-        //            }
-        //            string displayName = lblCode.Text + fileType;//.xls: Extension of 4 templates
-        //            byte[] bytes = Convert.FromBase64String(hidBinaryContent.Value);
-
-        //            SoftMart.Core.Utilities.DownloadHelper.PushBinaryContent(SoftMart.Core.Utilities.DownloadHelper.CONTENT_TYPE_TEXT, bytes, displayName);
-        //        }
-        //    }
-        //    catch (SMXException ex)
-        //    {
-        //        ucErr.ShowError(ex);
-        //    }
-        //}
-
         #endregion
 
         #region Private
-
-        private void ApproveReject(int status)
-        {
-            EmailTemplateParam param = new EmailTemplateParam(FunctionType.Administration.EmailTemplate.ApproveRejectEmailTemplate);
-
-            Flex_EmailTemplate email = new Flex_EmailTemplate();
-            email.EmailTemplateID = base.GetIntIdParam(SMX.Parameter.ID);
-            email.Status = status;
-            email.Version = Utility.GetNullableInt(hidVersion.Value);
-
-            param.EmailTemplate = email;
-
-            MainController.Provider.Execute(param);
-        }
 
         #endregion
 

@@ -140,7 +140,6 @@
     <Compile Include="Entities\SystemSupporting.cs" />
     <Compile Include="Entities\WordTransform.cs" />
     <Compile Include="EntityInfos\BatchProcessingInfo.cs" />
-    <Compile Include="EntityInfos\CategoryInfo.cs" />
     <Compile Include="EntityInfos\TargetInfo.cs" />
     <Compile Include="EntityInfos\EmployeeInfo.cs" />
     <Compile Include="EntityInfos\ExcelRenderInfo.cs" />

@@ -50,7 +50,7 @@ namespace SM.SmartInfo.DAO.Administration
             }
         }
 
-        public void GetEmailTemplates(CategoryParam param)
+        public void GetCategoryTemplates(CategoryParam param)
         {
             var Category = param.Categories;
 
@@ -58,28 +58,12 @@ namespace SM.SmartInfo.DAO.Administration
                                FROM Category
                                WHERE (@Name IS NULL OR CategoryName like @Name) AND (@Subject is null or Subject like @Subject) AND Deleted = @NotDeleted";
             var cmd = new SqlCommand(cmdText);
-            //cmd.Parameters.AddWithValue("@Name", BuildLikeFilter(Category.N));
-            //cmd.Parameters.AddWithValue("@Subject", BuildLikeFilter(Category.Subject));
             cmd.Parameters.AddWithValue("@NotDeleted", SMX.smx_IsNotDeleted);
 
 
             using (var dataContext = new DataContext())
             {
                 param.Categories = base.ExecutePaging<Category>(dataContext, cmd, " Name desc", param.PagingInfo);
-            }
-        }
-        public CategoryInfo GetShortCategoryByID(int CategoryID)
-        {
-
-            using (DataContext dataContext = new DataContext())
-            {
-                var res = dataContext.SelectFieldsByColumnName<CategoryInfo>(new string[] { Category.C_CategoryName, Category.C_CategoryID },
-                                                        new ConditionList()
-                                                        {
-                                                            {Category.C_CategoryID, CategoryID},
-                                                        }).FirstOrDefault();
-
-                return res;
             }
         }
         #endregion

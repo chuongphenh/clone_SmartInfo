@@ -103,7 +103,7 @@ namespace SM.SmartInfo.BIZ.Administration
 
         public void SearchItemsForView(CategoryParam param)
         {
-            _dao.GetEmailTemplates(param);
+            _dao.GetCategoryTemplates(param);
         }
 
         public void ApproveRejectEmailTemplate(CategoryParam param)

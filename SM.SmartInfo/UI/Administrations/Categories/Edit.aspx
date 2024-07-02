@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Chỉnh sửa chỉ tiêu" Language="C#" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
+﻿<%@ Page Title="Chỉnh sửa phân loại" Language="C#" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" MasterPageFile="~/UI/MasterPages/Common/SmartInfo.Master"
      Inherits="SM.SmartInfo.UI.Administrations.Categories.Edit" %>
 
 <%@ Register Src="~/UI/UserControls/Common/ErrorMessageUC.ascx" TagName="ErrorMessage"

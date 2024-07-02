@@ -88,7 +88,7 @@
         }
         public class Category
         {
-            public const string NoItemCategory = "Không có Chỉ tiêu nào để thực thi.";
+            public const string NoItemCategory = "Không có phân loại nào để thực thi.";
             public const string NoName = "Bạn chưa nhập [Tên phân loại].";
             public const string IsChanged = "Chỉ tiêu đã bị thay đổi. Hãy refresh và thử lại.";
             public const string DuplicateCategoryInGrid = "Danh sách phân loại không được phép trùng phân loại.";
