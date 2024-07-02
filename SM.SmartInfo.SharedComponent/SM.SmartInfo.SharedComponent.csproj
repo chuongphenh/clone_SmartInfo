@@ -93,6 +93,7 @@
     <Compile Include="Entities\AwardingType.cs" />
     <Compile Include="Entities\CampaignNews.cs" />
     <Compile Include="Entities\CatalogNews.cs" />
+    <Compile Include="Entities\Categories.cs" />
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\Committee.cs" />
     <Compile Include="Entities\DataTracking.cs" />
@@ -145,6 +146,7 @@
     <Compile Include="EntityInfos\ReportInfo.cs" />
     <Compile Include="EntityViews\vOrganization.cs" />
     <Compile Include="Interfaces\IPVIC.cs" />
+    <Compile Include="Params\Administration\CategoryParam.cs" />
     <Compile Include="Params\Administration\DocumentParam.cs" />
     <Compile Include="Params\Administration\TargetParam.cs" />
     <Compile Include="Params\Administration\EmailTemplateParam.cs" />

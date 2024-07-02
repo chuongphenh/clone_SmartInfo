@@ -626,6 +626,7 @@ namespace SM.SmartInfo.SharedComponent.Constants
             public const string AdministrationAnniversary = "AdministrationAnniversary";
             public const string AdministrationTargets = "AdministrationTargets";
             public const string AdministrationDocuments = "AdministrationDocuments";
+            public const string AdministrationCategories = "AdministrationCategories";
             // Lich su truy cap
             public const string REPORT_LOGINHISTORYSUMMARY = "REPORT_LOGINHISTORYSUMMARY";
 
@@ -649,6 +650,7 @@ namespace SM.SmartInfo.SharedComponent.Constants
                 //
                 {AdministrationTargets             , new DynamicReportUserInputInfo("Danh sách các chỉ tiêu"          , "Administration_Targets.xml")},
                 {AdministrationDocuments             , new DynamicReportUserInputInfo("Danh mục văn bản"          , "Administration_Documents.xml")},
+                {AdministrationCategories             , new DynamicReportUserInputInfo("Danh mục phân loại"          , "Administration_Categories.xml")},
             };
 
         }
