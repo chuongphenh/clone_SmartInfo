@@ -247,6 +247,10 @@
     <Content Include="UI\Administrations\Anniversarys\Default.aspx" />
     <Content Include="UI\Administrations\Anniversarys\Display.aspx" />
     <Content Include="UI\Administrations\Anniversarys\Edit.aspx" />
+    <Content Include="UI\Administrations\Categories\AddNew.aspx" />
+    <Content Include="UI\Administrations\Categories\Default.aspx" />
+    <Content Include="UI\Administrations\Categories\Display.aspx" />
+    <Content Include="UI\Administrations\Categories\Edit.aspx" />
     <Content Include="UI\Administrations\Notifications\AddNew.aspx" />
     <Content Include="UI\Administrations\Notifications\Default.aspx" />
     <Content Include="UI\Administrations\Notifications\Display.aspx" />
@@ -341,6 +345,7 @@
     <Content Include="XmlConfigs\Administration_Committees.xml" />
     <Content Include="XmlConfigs\Administration_Country.xml" />
     <Content Include="XmlConfigs\Administration_District.xml" />
+    <Content Include="XmlConfigs\Administration_Categories.xml" />
     <Content Include="XmlConfigs\Administration_Targets.xml" />
     <Content Include="XmlConfigs\Administration_Documents.xml" />
     <Content Include="XmlConfigs\Administration_Emails.xml" />
@@ -525,6 +530,34 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UI\Administrations\Anniversarys\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Categories\AddNew.aspx.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Categories\AddNew.aspx.designer.cs">
+      <DependentUpon>AddNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Categories\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Categories\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Categories\Display.aspx.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Categories\Display.aspx.designer.cs">
+      <DependentUpon>Display.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Administrations\Categories\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Administrations\Categories\Edit.aspx.designer.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="UI\Administrations\Country\AddNew.aspx.cs">

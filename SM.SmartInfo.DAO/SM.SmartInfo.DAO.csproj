@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administration\CategoryDAO.cs" />
     <Compile Include="Administration\DocumentDao.cs" />
     <Compile Include="Administration\TargetDao.cs" />
     <Compile Include="Administration\EmailTemplateDao.cs" />

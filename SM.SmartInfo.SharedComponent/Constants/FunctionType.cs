@@ -497,6 +497,21 @@
                 public const string DeleteItem = "DeleteItem";
                 public const string GetItemsForView = "GetItemsForView";
             }
+            public class Category
+            {
+                public const string SetupAddNewForm = "SetupAddNewForm";
+                public const string AddNewItem = "AddNewItem";
+
+                public const string LoadDataDisplay = "LoadDataDisplay";
+
+                public const string SetupEditForm = "SetupEditForm";
+                public const string LoadDataEdit = "LoadDataEdit";
+                public const string UpdateItem = "UpdateItem";
+
+                public const string SetupViewForm = "SetupViewForm";
+                public const string DeleteItem = "DeleteItem";
+                public const string GetItemsForView = "GetItemsForView";
+            }
             public class Plan
             {
                 public const string SetupAddNewForm = "SetupAddNewForm";

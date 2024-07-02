@@ -39,7 +39,10 @@ namespace SM.SmartInfo.BIZ
                     break;
                 case "TargetParam":
                     ExecuteAdministration(param as TargetParam);
-                    break; 
+                    break;
+                case "CategoryParam":
+                    ExecuteAdministration(param as CategoryParam);
+                    break;
                 case "PlanParam":
                     ExecuteAdministration(param as DocumentParam);
                     break;
@@ -745,6 +748,41 @@ namespace SM.SmartInfo.BIZ
                     biz.DeleteItems(param);
                     break;
                 case FunctionType.Administration.Target.GetItemsForView:
+                    biz.SearchItemsForView(param);
+                    break;
+            }
+        }
+        private void ExecuteAdministration(CategoryParam param)
+        {
+            CategoryBiz biz = new CategoryBiz();
+
+            switch (param.FunctionType)
+            {
+                case FunctionType.Administration.Category.SetupAddNewForm:
+                    biz.SetupAddNewForm(param);
+                    break;
+                case FunctionType.Administration.Category.AddNewItem:
+                    biz.AddNewItem(param);
+                    break;
+                case FunctionType.Administration.Category.LoadDataDisplay:
+                    biz.LoadDataDisplay(param);
+                    break;
+                case FunctionType.Administration.Category.SetupEditForm:
+                    biz.SetupEditForm(param);
+                    break;
+                case FunctionType.Administration.Category.LoadDataEdit:
+                    biz.LoadDataEdit(param);
+                    break;
+                case FunctionType.Administration.Category.UpdateItem:
+                    biz.UpdateItem(param);
+                    break;
+                case FunctionType.Administration.Category.SetupViewForm:
+                    biz.SetupViewForm(param);
+                    break;
+                case FunctionType.Administration.Category.DeleteItem:
+                    biz.DeleteItems(param);
+                    break;
+                case FunctionType.Administration.Category.GetItemsForView:
                     biz.SearchItemsForView(param);
                     break;
             }
